@@ -19,11 +19,7 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
         strokeLinecap="round"
       />
       <circle cx="30" cy="74" r="7" fill="#EA4335" />
-      <circle cx="70" cy="50" r="5" fill="#34A853" />
-      <path
-        d="M78 24C72.4772 24 68 28.4772 68 34C68 37.6578 70.3857 40.8564 73.5 42.4418C74.9084 43.1534 76.4173 43.5 78 43.5C83.5228 43.5 88 39.0228 88 33.5C88 28.1667 83.5228 24 78 24Z"
-        fill="#FBBC05"
-      />
+      <circle cx="70" cy="28" r="7" fill="#FBBC05" />
     </svg>
   );
 }
