@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Sparkles } from 'lucide-react';
+import { Menu } from 'lucide-react';
+import { Logo } from '@/components/icons/logo';
 
 export function Header() {
   return (
@@ -9,7 +10,7 @@ export function Header() {
       <div className="container flex h-16 max-w-7xl items-center mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mr-4 flex">
           <Link href="/" className="flex items-center space-x-2">
-            <Sparkles className="h-6 w-6 text-primary" />
+            <Logo className="h-8 w-8" />
             <span className="font-bold text-lg">SISIAPP</span>
           </Link>
         </div>
@@ -38,7 +39,7 @@ export function Header() {
             <SheetContent side="left">
               <div className="p-4">
                 <Link href="/" className="flex items-center space-x-2 mb-8">
-                  <Sparkles className="h-6 w-6 text-primary" />
+                  <Logo className="h-8 w-8" />
                   <span className="font-bold text-lg">SISIAPP</span>
                 </Link>
                 <nav className="grid gap-4">
