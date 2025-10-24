@@ -7,19 +7,19 @@ interface CategoryIconProps extends LucideProps {
 }
 
 const iconMap: Record<string, FC<LucideProps>> = {
-  'Home Services': Home,
-  'Auto Repair': Wrench,
-  'Health & Wellness': Heart,
-  'Gardening': Leaf,
-  'Food & Dining': Utensils,
-  'Creative Services': Brush,
+  'Servicios del Hogar': Home,
+  'Reparación de Autos': Wrench,
+  'Salud y Bienestar': Heart,
+  'Jardinería': Leaf,
+  'Comida y Restaurantes': Utensils,
+  'Servicios Creativos': Brush,
   default: Sparkles,
 };
 
 export function CategoryIcon({ category, className, ...props }: CategoryIconProps) {
   const Icon = iconMap[category] || iconMap.default;
   
-  const colorClass = ['Home Services', 'Health & Wellness', 'Gardening'].includes(category)
+  const colorClass = ['Servicios del Hogar', 'Salud y Bienestar', 'Jardinería'].includes(category)
     ? 'text-success'
     : 'text-destructive';
     

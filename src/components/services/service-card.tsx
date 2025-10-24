@@ -23,7 +23,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
           <CardTitle className="text-xl font-headline">{service.name}</CardTitle>
           <CategoryIcon category={service.category} className="h-10 w-10" />
         </div>
-        <CardDescription>By {service.provider}</CardDescription>
+        <CardDescription>Por {service.provider}</CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">
         <p className="text-muted-foreground line-clamp-3">{service.description}</p>
@@ -32,12 +32,12 @@ export function ServiceCard({ service }: ServiceCardProps) {
         {service.isValidated ? (
           <Badge className="bg-success text-success-foreground hover:bg-success/90">
             <CheckCircle2 className="mr-2 h-4 w-4" />
-            Validated
+            Validado
           </Badge>
         ) : (
           <Badge variant="secondary">
             <ShieldAlert className="mr-2 h-4 w-4 text-accent-foreground" />
-            Pending Validation
+            Pendiente de Validación
           </Badge>
         )}
       </CardFooter>

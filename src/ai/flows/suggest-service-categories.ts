@@ -13,12 +13,12 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const SuggestServiceCategoriesInputSchema = z.object({
-  serviceDescription: z.string().describe('The description of the service.'),
+  serviceDescription: z.string().describe('La descripción del servicio.'),
 });
 export type SuggestServiceCategoriesInput = z.infer<typeof SuggestServiceCategoriesInputSchema>;
 
 const SuggestServiceCategoriesOutputSchema = z.object({
-  suggestedCategories: z.array(z.string()).describe('An array of suggested service categories.'),
+  suggestedCategories: z.array(z.string()).describe('Un array de categorías de servicio sugeridas.'),
 });
 export type SuggestServiceCategoriesOutput = z.infer<typeof SuggestServiceCategoriesOutputSchema>;
 
@@ -30,11 +30,11 @@ const suggestServiceCategoriesPrompt = ai.definePrompt({
   name: 'suggestServiceCategoriesPrompt',
   input: {schema: SuggestServiceCategoriesInputSchema},
   output: {schema: SuggestServiceCategoriesOutputSchema},
-  prompt: `You are a service categorization expert. Given a service description, you will suggest relevant service categories.
+  prompt: `Eres un experto en categorización de servicios. Dada una descripción de un servicio, sugerirás categorías de servicio relevantes en español.
 
-Service Description: {{{serviceDescription}}}
+Descripción del Servicio: {{{serviceDescription}}}
 
-Suggest service categories:
+Sugerir categorías de servicio:
 `,
 });
 

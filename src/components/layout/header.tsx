@@ -19,13 +19,13 @@ export function Header() {
             href="/#services"
             className="transition-colors hover:text-foreground/80 text-foreground/60"
           >
-            Services
+            Servicios
           </Link>
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="hidden md:flex items-center">
             <Button asChild>
-              <Link href="/register">Register Service</Link>
+              <Link href="/register">Registrar Servicio</Link>
             </Button>
           </nav>
           
@@ -33,7 +33,7 @@ export function Header() {
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-6 w-6" />
-                <span className="sr-only">Toggle Menu</span>
+                <span className="sr-only">Abrir Menú</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
@@ -47,13 +47,13 @@ export function Header() {
                     href="/#services"
                     className="flex w-full items-center py-2 text-lg font-semibold"
                   >
-                    Services
+                    Servicios
                   </Link>
                   <Link
                     href="/register"
                     className="flex w-full items-center py-2 text-lg font-semibold"
                   >
-                    Register Service
+                    Registrar Servicio
                   </Link>
                 </nav>
               </div>

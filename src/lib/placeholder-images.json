@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-services",
-      "description": "A bustling local community scene with diverse people",
+      "description": "Una animada escena de una comunidad local con gente diversa",
       "imageUrl": "https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsb2NhbCUyMGNvbW11bml0eXxlbnwwfHx8fDE3NjEzNDk5NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "local community"
+      "imageHint": "comunidad local"
     }
   ]
 }

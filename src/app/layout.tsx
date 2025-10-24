@@ -4,8 +4,8 @@ import { Header } from '@/components/layout/header';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'SISIAPP - Find Trusted Local Services',
-  description: 'SISIAPP connects you with trusted local service providers, validated by our team for quality and reliability.',
+  title: 'SISIAPP - Encuentra Servicios Locales de Confianza',
+  description: 'SISIAPP te conecta con proveedores de servicios locales de confianza, validados por nuestro equipo para garantizar calidad y fiabilidad.',
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
