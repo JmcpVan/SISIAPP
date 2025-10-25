@@ -10,7 +10,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 export default function Home() {
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#d8edea]">
+    <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-1">
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
@@ -44,20 +44,20 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="servicios" className="py-12 md:py-24 bg-white">
+        <section id="servicios" className="py-12 md:py-24 bg-card">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-center text-primary mb-8">Servicios más solicitados</h2>
                 {/* Placeholder for featured services */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div className="border rounded-lg p-6 text-center shadow-lg">
+                    <div className="border rounded-lg p-6 text-center shadow-lg bg-background">
                         <h3 className="text-xl font-semibold text-primary">Consulta General</h3>
                         <p className="mt-2 text-muted-foreground">Atención médica primaria para toda la familia.</p>
                     </div>
-                    <div className="border rounded-lg p-6 text-center shadow-lg">
+                    <div className="border rounded-lg p-6 text-center shadow-lg bg-background">
                         <h3 className="text-xl font-semibold text-primary">Seguimiento de Crónicos</h3>
                         <p className="mt-2 text-muted-foreground">Control y manejo de condiciones crónicas.</p>
                     </div>
-                    <div className="border rounded-lg p-6 text-center shadow-lg">
+                    <div className="border rounded-lg p-6 text-center shadow-lg bg-background">
                         <h3 className="text-xl font-semibold text-primary">Orientación Pediátrica</h3>
                         <p className="mt-2 text-muted-foreground">Consejos y cuidados para la salud de los niños.</p>
                     </div>
