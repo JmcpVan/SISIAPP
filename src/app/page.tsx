@@ -100,7 +100,7 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="servicios" className="pt-12 md:pt-24 lg:pt-20 pb-12 md:pb-16 px-8 md:px-12 lg:px-24">
+        <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 pt-12 md:pt-24 lg:pt-20 pb-12 md:pb-16">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Users className="h-8 w-8 text-google-blue" />
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="py-12 md:py-24 bg-background px-8 md:px-12 lg:px-24">
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 bg-background">
           <div className="grid md:grid-cols-2 gap-12" id="contacto">
             <div>
               <div className="flex items-center gap-2 mb-8">
@@ -173,11 +173,11 @@ export default function Home() {
           </div>
         </section>
         
-        <section className="py-12 bg-background flex justify-center">
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-background flex justify-center">
             <HelpCircle className="h-16 w-16 text-google-blue" />
         </section>
 
-        <section id="help" className="pb-12 md:pb-24 bg-background px-8 md:px-12 lg:px-24">
+        <section id="help" className="container mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-24 bg-background">
           <div className="flex items-center gap-2 mb-8">
             <h2 className="text-3xl font-bold text-foreground">Preguntas Frecuentes (Ayuda)</h2>
           </div>
