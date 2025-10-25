@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
-import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell } from 'lucide-react';
+import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail } from 'lucide-react';
 import { FeaturedServices, FeaturedService, HeroSlides } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -166,7 +166,10 @@ export default function Home() {
         <section className="py-12 md:py-24 bg-background px-8 md:px-12 lg:px-24">
           <div className="grid md:grid-cols-2 gap-12" id="contacto">
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-8">Contacto</h2>
+              <div className="flex items-center gap-2 mb-8">
+                <Mail className="h-8 w-8 text-google-blue" />
+                <h2 className="text-3xl font-bold text-foreground">Contacto</h2>
+              </div>
               <form className="space-y-6">
                 <div>
                   <Label htmlFor="name">Nombre</Label>
