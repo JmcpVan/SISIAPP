@@ -163,38 +163,39 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contacto" className="py-12 md:py-24 bg-background px-8 md:px-12">
-            <div className="max-w-2xl mx-auto">
-                <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Contacto</h2>
+        <section className="py-12 md:py-24 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-2 gap-12">
+              <div id="contacto">
+                <h2 className="text-3xl font-bold text-foreground mb-8">Contacto</h2>
                 <form className="space-y-6">
-                    <div>
-                        <Label htmlFor="name">Nombre</Label>
-                        <Input id="name" type="text" placeholder="Tu nombre" />
-                    </div>
-                    <div>
-                        <Label htmlFor="email">Email</Label>
-                        <Input id="email" type="email" placeholder="Tu correo electrónico" />
-                    </div>
-                    <div>
-                        <Label htmlFor="message">Mensaje</Label>
-                        <Textarea id="message" placeholder="Escribe tu mensaje aquí" />
-                    </div>
-                    <Button type="submit" className="w-full">Enviar Mensaje</Button>
+                  <div>
+                    <Label htmlFor="name">Nombre</Label>
+                    <Input id="name" type="text" placeholder="Tu nombre" />
+                  </div>
+                  <div>
+                    <Label htmlFor="email">Email</Label>
+                    <Input id="email" type="email" placeholder="Tu correo electrónico" />
+                  </div>
+                  <div>
+                    <Label htmlFor="message">Mensaje</Label>
+                    <Textarea id="message" placeholder="Escribe tu mensaje aquí" />
+                  </div>
+                  <Button type="submit" className="w-full">Enviar Mensaje</Button>
                 </form>
-            </div>
-        </section>
-
-        <section id="legal" className="py-12 md:py-24 bg-gray-50 dark:bg-gray-800/20 px-8 md:px-12">
-            <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-bold text-foreground mb-4">Aviso Legal</h2>
+              </div>
+              <div id="legal">
+                <h2 className="text-3xl font-bold text-foreground mb-8">Aviso Legal</h2>
                 <div className="text-muted-foreground space-y-4 text-justify">
-              <p>El uso de SisiApp está sujeto a los términos y condiciones descritos en este aviso. Al utilizar la aplicación, aceptas cumplir con todas las políticas y regulaciones aplicables. La información proporcionada en esta plataforma no constituye asesoramiento profesional y debe ser utilizada únicamente con fines informativos.</p>
-              <p>SisiApp no se hace responsable de los acuerdos o transacciones realizadas entre usuarios y proveedores de servicios. Recomendamos a los usuarios verificar las credenciales y la idoneidad de los profesionales antes de contratar cualquier servicio. Todos los profesionales registrados en la plataforma han pasado por un proceso de verificación, pero la responsabilidad final recae en el usuario.</p>
+                  <p>El uso de SisiApp está sujeto a los términos y condiciones descritos en este aviso. Al utilizar la aplicación, aceptas cumplir con todas las políticas y regulaciones aplicables. La información proporcionada en esta plataforma no constituye asesoramiento profesional y debe ser utilizada únicamente con fines informativos.</p>
+                  <p>SisiApp no se hace responsable de los acuerdos o transacciones realizadas entre usuarios y proveedores de servicios. Recomendamos a los usuarios verificar las credenciales y la idoneidad de los profesionales antes de contratar cualquier servicio. Todos los profesionales registrados en la plataforma han pasado por un proceso de verificación, pero la responsabilidad final recae en el usuario.</p>
+                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </section>
         
-        <section id="help" className="py-12 md:py-24 bg-background px-8 md:px-12">
+        <section id="help" className="py-12 md:py-24 bg-gray-50 dark:bg-gray-800/20 px-8 md:px-12">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-foreground mb-8">Preguntas Frecuentes (Ayuda)</h2>
             <Accordion type="single" collapsible className="w-full">
