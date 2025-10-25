@@ -81,7 +81,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="my-8">
-                <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={256} height={256} className="mx-auto w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80" />
+                <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={320} height={320} className="mx-auto w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80" />
               </div>
               <div>
                 <p className="mt-4 text-muted-foreground text-justify">
@@ -122,8 +122,8 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="servicios" className="py-12 md:py-24">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="servicios" className="py-12 md:py-24 px-8 md:px-12">
+            <div className="max-w-7xl mx-auto">
                 <h2 className="text-3xl font-bold text-foreground mb-8">Servicios más solicitados</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                   {FeaturedServices.map((service: FeaturedService) => {
@@ -153,8 +153,8 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="bg-gray-50 dark:bg-gray-800/20 py-12 md:py-24">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="bg-gray-50 dark:bg-gray-800/20 py-12 md:py-24 px-8 md:px-12">
+          <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-foreground mb-4">Comunidad de Confianza</h2>
             <div className="text-muted-foreground">
               <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
@@ -162,31 +162,29 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contacto" className="py-12 md:py-24 bg-background">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="contacto" className="py-12 md:py-24 bg-background px-8 md:px-12">
+            <div className="max-w-2xl mx-auto">
                 <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Contacto</h2>
-                <div className="max-w-2xl mx-auto">
-                    <form className="space-y-6">
-                        <div>
-                            <Label htmlFor="name">Nombre</Label>
-                            <Input id="name" type="text" placeholder="Tu nombre" />
-                        </div>
-                        <div>
-                            <Label htmlFor="email">Email</Label>
-                            <Input id="email" type="email" placeholder="Tu correo electrónico" />
-                        </div>
-                        <div>
-                            <Label htmlFor="message">Mensaje</Label>
-                            <Textarea id="message" placeholder="Escribe tu mensaje aquí" />
-                        </div>
-                        <Button type="submit" className="w-full">Enviar Mensaje</Button>
-                    </form>
-                </div>
+                <form className="space-y-6">
+                    <div>
+                        <Label htmlFor="name">Nombre</Label>
+                        <Input id="name" type="text" placeholder="Tu nombre" />
+                    </div>
+                    <div>
+                        <Label htmlFor="email">Email</Label>
+                        <Input id="email" type="email" placeholder="Tu correo electrónico" />
+                    </div>
+                    <div>
+                        <Label htmlFor="message">Mensaje</Label>
+                        <Textarea id="message" placeholder="Escribe tu mensaje aquí" />
+                    </div>
+                    <Button type="submit" className="w-full">Enviar Mensaje</Button>
+                </form>
             </div>
         </section>
 
-        <section id="seguridad" className="py-12 md:py-24">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="seguridad" className="py-12 md:py-24 px-8 md:px-12">
+            <div className="max-w-7xl mx-auto">
                 <div className="flex mb-4">
                     <ShieldCheck className="h-12 w-12 text-primary" />
                 </div>
