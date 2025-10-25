@@ -184,7 +184,10 @@ export default function Home() {
               </form>
             </div>
             <div id="legal">
-              <h2 className="text-3xl font-bold text-foreground mb-8">Aviso Legal</h2>
+              <div className="flex items-center gap-2 mb-8">
+                <ShieldCheck className="h-8 w-8 text-google-blue" />
+                <h2 className="text-3xl font-bold text-foreground">Aviso Legal</h2>
+              </div>
               <div className="text-muted-foreground space-y-4 text-justify">
                 <p>El uso de SisiApp está sujeto a los términos y condiciones descritos en este aviso. Al utilizar la aplicación, aceptas cumplir con todas las políticas y regulaciones aplicables. La información proporcionada en esta plataforma no constituye asesoramiento profesional y debe ser utilizada únicamente con fines informativos.</p>
                 <p>SisiApp no se hace responsable de los acuerdos o transacciones realizadas entre usuarios y proveedores de servicios. Recomendamos a los usuarios verificar las credenciales y la idoneidad de los profesionales antes de contratar cualquier servicio. Todos los profesionales registrados en la plataforma han pasado por un proceso de verificación, pero la responsabilidad final recae en el usuario.</p>
