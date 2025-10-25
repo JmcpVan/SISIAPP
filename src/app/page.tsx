@@ -111,11 +111,11 @@ export default function Home() {
                     alt={slide.description}
                     fill
                     className={cn(
-                      "object-cover transition-opacity duration-1000",
+                      "absolute inset-0 object-cover transition-opacity duration-1000",
                       index === currentSlide ? "opacity-100" : "opacity-0"
                     )}
                     data-ai-hint={slide.imageHint}
-                    priority
+                    priority={index === 0}
                   />
                 ))}
               </div>
