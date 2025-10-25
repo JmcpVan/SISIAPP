@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
-import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star } from 'lucide-react';
+import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell } from 'lucide-react';
 import { FeaturedServices, FeaturedService, HeroSlides } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -20,6 +20,8 @@ const iconComponents: { [key: string]: React.ElementType } = {
   HardHat,
   Dog,
   Scale,
+  Zap,
+  Dumbbell
 };
 
 const colorClasses: { [key: string]: string } = {
@@ -28,7 +30,9 @@ const colorClasses: { [key: string]: string } = {
   'purple-500': 'text-purple-500',
   'indigo-500': 'text-indigo-500',
   'google-blue': 'text-google-blue',
-  'orange-500': 'text-orange-500'
+  'orange-500': 'text-orange-500',
+  'yellow-400': 'text-yellow-400',
+  'red-500': 'text-red-500'
 };
 
 
@@ -121,7 +125,7 @@ export default function Home() {
         <section id="servicios" className="py-12 md:py-24">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-foreground mb-8">Servicios más solicitados</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                   {FeaturedServices.map((service: FeaturedService) => {
                     const IconComponent = iconComponents[service.icon];
                     const iconColorClass = colorClasses[service.color] || 'text-primary';
@@ -150,7 +154,7 @@ export default function Home() {
         </section>
 
         <section className="bg-gray-50 dark:bg-gray-800/20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
             <h2 className="text-3xl font-bold text-foreground mb-4">Comunidad de Confianza</h2>
             <div className="text-muted-foreground">
               <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>

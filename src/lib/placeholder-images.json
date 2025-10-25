@@ -114,6 +114,30 @@
       "imageHint": "legal advice",
       "icon": "Scale",
       "color": "indigo-500"
+    },
+    {
+      "id": "service-7",
+      "name": "Electricista Certificado",
+      "description": "Instalaciones y reparaciones eléctricas seguras.",
+      "provider": "Jorge Nuñez",
+      "price": "90.00",
+      "rating": 4,
+      "imageUrl": "https://picsum.photos/seed/electric1/400/300",
+      "imageHint": "electrician working",
+      "icon": "Zap",
+      "color": "yellow-400"
+    },
+    {
+      "id": "service-8",
+      "name": "Entrenador Personal",
+      "description": "Rutinas de ejercicio personalizadas para alcanzar tus metas.",
+      "provider": "Mariana Torres",
+      "price": "80.00",
+      "rating": 5,
+      "imageUrl": "https://picsum.photos/seed/trainer1/400/300",
+      "imageHint": "personal trainer",
+      "icon": "Dumbbell",
+      "color": "red-500"
     }
   ]
 }

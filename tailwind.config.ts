@@ -11,7 +11,9 @@ export default {
     'bg-google-blue',
     'bg-google-red',
     'bg-primary',
-    'bg-orange-500'
+    'bg-orange-500',
+    'bg-yellow-400',
+    'bg-red-500'
   ],
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
