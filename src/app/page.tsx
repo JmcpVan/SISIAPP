@@ -199,39 +199,37 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="help" className="py-12 md:py-24 bg-gray-50 dark:bg-gray-800/20 px-8 md:px-12 lg:px-24">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex items-center gap-2 mb-8">
-              <HelpCircle className="h-8 w-8 text-google-blue" />
-              <h2 className="text-3xl font-bold text-foreground">Preguntas Frecuentes (Ayuda)</h2>
-            </div>
-            <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="item-1">
-                <AccordionTrigger>¿Cómo funciona la verificación de profesionales?</AccordionTrigger>
-                <AccordionContent>
-                  Todos nuestros profesionales pasan por un riguroso proceso de verificación que incluye la validación de su identidad, antecedentes y credenciales profesionales para garantizar tu seguridad y confianza.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-2">
-                <AccordionTrigger>¿Cómo se procesan los pagos?</AccordionTrigger>
-                <AccordionContent>
-                  Los pagos se procesan de forma segura a través de nuestra plataforma. Puedes añadir tu tarjeta de crédito o débito y todos los pagos se realizarán una vez que confirmes que el servicio ha sido completado a tu satisfacción.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger>¿Qué hago si tengo un problema con un servicio?</AccordionTrigger>
-                <AccordionContent>
-                  Si tienes algún problema, puedes contactar a nuestro equipo de soporte 24/7 a través de la sección de "Contacto" o directamente desde el detalle del servicio en la aplicación. Estamos aquí para ayudarte a resolver cualquier inconveniente.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-4">
-                <AccordionTrigger>¿Puedo cancelar un servicio?</AccordionTrigger>
-                <AccordionContent>
-                  Sí, puedes cancelar un servicio. Por favor, consulta nuestras políticas de cancelación en los Términos de Servicio para entender los plazos y posibles cargos que podrían aplicarse.
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
+        <section id="help" className="py-12 md:py-24 bg-background px-8 md:px-12 lg:px-24">
+          <div className="flex items-center gap-2 mb-8">
+            <HelpCircle className="h-8 w-8 text-google-blue" />
+            <h2 className="text-3xl font-bold text-foreground">Preguntas Frecuentes (Ayuda)</h2>
           </div>
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>¿Cómo funciona la verificación de profesionales?</AccordionTrigger>
+              <AccordionContent>
+                Todos nuestros profesionales pasan por un riguroso proceso de verificación que incluye la validación de su identidad, antecedentes y credenciales profesionales para garantizar tu seguridad y confianza.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>¿Cómo se procesan los pagos?</AccordionTrigger>
+              <AccordionContent>
+                Los pagos se procesan de forma segura a través de nuestra plataforma. Puedes añadir tu tarjeta de crédito o débito y todos los pagos se realizarán una vez que confirmes que el servicio ha sido completado a tu satisfacción.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>¿Qué hago si tengo un problema con un servicio?</AccordionTrigger>
+              <AccordionContent>
+                Si tienes algún problema, puedes contactar a nuestro equipo de soporte 24/7 a través de la sección de "Contacto" o directamente desde el detalle del servicio en la aplicación. Estamos aquí para ayudarte a resolver cualquier inconveniente.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger>¿Puedo cancelar un servicio?</AccordionTrigger>
+              <AccordionContent>
+                Sí, puedes cancelar un servicio. Por favor, consulta nuestras políticas de cancelación en los Términos de Servicio para entender los plazos y posibles cargos que podrían aplicarse.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </section>
 
       </main>
