@@ -102,7 +102,7 @@ export default function Home() {
                             <div className="flex-grow">
                                 <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
                                 <p className="mt-1 text-sm text-muted-foreground">{service.description}</p>
-                                <div className="flex items-center mt-3">
+                                <div className="flex items-center justify-end mt-3">
                                   <User className="h-4 w-4 mr-2 text-primary" />
                                   <p className="text-sm font-medium text-primary">{service.provider}</p>
                                 </div>
