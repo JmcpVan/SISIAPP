@@ -70,7 +70,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
       <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)] overflow-hidden">
-          <div className="flex flex-col justify-start md:pt-16 p-8 md:p-12 animate-slide-in-left">
+          <div className="flex flex-col justify-start md:pt-16 p-8 md:p-12 lg:px-8 animate-slide-in-left">
             <div className="w-full">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="relative flex items-center justify-center p-8 md:p-12 animate-slide-in-right">
+          <div className="relative flex items-center justify-center p-8 md:p-12 lg:px-8 animate-slide-in-right">
             <div className="relative w-full h-full max-w-lg mx-auto">
               <div
                 className={cn(
