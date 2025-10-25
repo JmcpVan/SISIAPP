@@ -125,7 +125,7 @@ export default function Home() {
         <section id="servicios" className="pt-12 md:pt-24 lg:pt-20 pb-12 md:pb-16 px-8 md:px-12 lg:px-24">
             <div>
                 <h2 className="text-3xl font-bold text-foreground mb-8">Servicios más solicitados</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                   {FeaturedServices.map((service: FeaturedService) => {
                     const IconComponent = iconComponents[service.icon];
                     const iconColorClass = colorClasses[service.color] || 'text-primary';
