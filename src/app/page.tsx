@@ -1,12 +1,10 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck } from 'lucide-react';
+import { SisiLogoHero } from '@/components/icons/sisi-logo-hero';
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'doctor-hero');
-
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <Header />
@@ -29,16 +27,8 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="relative h-full min-h-[400px] md:min-h-0">
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                fill
-                className="object-cover"
-                data-ai-hint={heroImage.imageHint}
-              />
-            )}
+          <div className="relative h-full min-h-[400px] md:min-h-0 flex items-center justify-center bg-[#d8edea] p-8">
+            <SisiLogoHero className="w-64 h-64 md:w-80 md:h-80 text-primary" />
           </div>
         </section>
         
