@@ -1,19 +1,8 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 100 100"
-  preserveAspectRatio="xMidYMid meet"
->
-  <circle cx="25" cy="70" r="5" fill="#EA4335" />
-  <path
-    d="M 28 65 C 20 45, 45 45, 65 25"
-    stroke="white"
-    strokeWidth="6"
-    fill="none"
-    strokeLinecap="round"
-  />
-  <path
-    d="M65,10 a10,10 0 1,1 0,20 a10,10 0 1,1 0,-20 M65,18 a2,2 0 1,0 0,4 a2,2 0 1,0 0,-4"
-    fill="#FBBC05"
-  />
-  <circle cx="70" cy="40" r="3.5" fill="#34A853" />
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="24" cy="24" r="24" fill="#1A202C"/>
+<path d="M15.4286 29.5714C15.4286 29.5714 19.381 22.8571 24 22.8571C28.619 22.8571 30.8571 18.2857 30.8571 18.2857" stroke="#4285F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29.5714 15.4286C29.5714 17.587 27.9585 19.381 26 19.381C24.0415 19.381 22.4286 17.587 22.4286 15.4286C22.4286 13.2699 24.0415 11.4762 26 11.4762C27.9585 11.4762 29.5714 13.2699 29.5714 15.4286Z" fill="#FBBC05"/>
+<path d="M26 19.381C28.619 22.8571 29.5714 24.5238 29.5714 24.5238" stroke="#FBBC05" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="14" cy="31" r="2" fill="#EA4335"/>
+<circle cx="28" cy="19" r="1" fill="#34A853"/>
 </svg>
