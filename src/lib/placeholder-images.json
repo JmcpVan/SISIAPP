@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "doctor-hero",
-      "description": "Doctor reviewing a patient's file",
-      "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb2N0b3J8ZW58MHx8fHwxNzYxMzI0MjU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "doctor with tablet"
+      "description": "Aplicación de navegación GPS en un teléfono",
+      "imageUrl": "https://images.unsplash.com/photo-1593392931754-582575775b9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxncHMlMjBuYXZpZ2F0aW9ufGVufDB8fHx8MTc2MTQwOTE3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gps navigation"
     },
     {
       "id": "doctor-consultation",
@@ -23,6 +23,8 @@
     {
       "id": "service-1",
       "name": "Consulta General",
+      "description": "Atención médica primaria para toda la familia.",
+      "provider": "Dr. Juan Pérez",
       "price": "50.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/doc1/400/300",
@@ -31,6 +33,8 @@
     {
       "id": "service-2",
       "name": "Seguimiento de Crónicos",
+      "description": "Control y manejo de condiciones crónicas.",
+      "provider": "Dra. Ana Gómez",
       "price": "75.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/doc2/400/300",
@@ -39,10 +43,42 @@
     {
       "id": "service-3",
       "name": "Orientación Pediátrica",
+      "description": "Consejos y cuidados para la salud de los niños.",
+      "provider": "Dr. Carlos Ruiz",
       "price": "60.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/doc3/400/300",
       "imageHint": "pediatric advice"
+    },
+    {
+      "id": "service-4",
+      "name": "Consulta Dermatológica",
+      "description": "Atención especializada para problemas de la piel.",
+      "provider": "Dra. Laura Méndez",
+      "price": "85.00",
+      "rating": 5,
+      "imageUrl": "https://picsum.photos/seed/doc4/400/300",
+      "imageHint": "dermatology"
+    },
+    {
+      "id": "service-5",
+      "name": "Asesoría Nutricional",
+      "description": "Planes de alimentación personalizados.",
+      "provider": "Lic. Sofía Castillo",
+      "price": "65.00",
+      "rating": 5,
+      "imageUrl": "https://picsum.photos/seed/doc5/400/300",
+      "imageHint": "nutrition advice"
+    },
+    {
+      "id": "service-6",
+      "name": "Apoyo Psicológico",
+      "description": "Terapia y apoyo para la salud mental.",
+      "provider": "Psic. Roberto Diaz",
+      "price": "70.00",
+      "rating": 5,
+      "imageUrl": "https://picsum.photos/seed/doc6/400/300",
+      "imageHint": "psychological support"
     }
   ]
 }

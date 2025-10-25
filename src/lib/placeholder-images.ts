@@ -10,6 +10,8 @@ export type ImagePlaceholder = {
 export type FeaturedService = {
   id: string;
   name: string;
+  description: string;
+  provider: string;
   price: string;
   rating: number;
   imageUrl: string;

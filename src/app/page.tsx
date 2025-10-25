@@ -70,20 +70,14 @@ export default function Home() {
         <section id="servicios" className="py-12 md:py-24">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-center text-primary mb-8">Servicios más solicitados</h2>
-                {/* Placeholder for featured services */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div className="border rounded-lg p-6 text-center shadow-lg bg-background">
-                        <h3 className="text-xl font-semibold text-primary">Consulta General</h3>
-                        <p className="mt-2 text-muted-foreground">Atención médica primaria para toda la familia.</p>
-                    </div>
-                    <div className="border rounded-lg p-6 text-center shadow-lg bg-background">
-                        <h3 className="text-xl font-semibold text-primary">Seguimiento de Crónicos</h3>
-                        <p className="mt-2 text-muted-foreground">Control y manejo de condiciones crónicas.</p>
-                    </div>
-                    <div className="border rounded-lg p-6 text-center shadow-lg bg-background">
-                        <h3 className="text-xl font-semibold text-primary">Orientación Pediátrica</h3>
-                        <p className="mt-2 text-muted-foreground">Consejos y cuidados para la salud de los niños.</p>
-                    </div>
+                  {FeaturedServices.map((service) => (
+                      <div key={service.id} className="border rounded-lg p-6 text-center shadow-lg bg-background">
+                          <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
+                          <p className="mt-2 text-muted-foreground">{service.description}</p>
+                          <p className="mt-2 text-sm font-medium text-primary">{service.provider}</p>
+                      </div>
+                  ))}
                 </div>
             </div>
         </section>
