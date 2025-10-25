@@ -77,7 +77,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="my-8">
-                <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={256} height={256} className="mx-auto w-48 h-48 md:w-64 md:h-64" />
+                <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={256} height={256} className="mx-auto w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80" />
               </div>
               <div>
                 <p className="mt-4 text-muted-foreground text-justify">
