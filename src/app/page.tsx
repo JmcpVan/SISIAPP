@@ -68,7 +68,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-      <section className="w-full py-12 md:py-16 min-h-[85vh] grid md:grid-cols-2 gap-8 h-full">
+      <section className="w-full grid md:grid-cols-2 gap-8 min-h-[calc(100vh-5rem)]">
           <div className="flex flex-col justify-center animate-slide-in-left px-8 md:px-12 lg:px-24">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
