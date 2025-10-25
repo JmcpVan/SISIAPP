@@ -91,10 +91,10 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-center p-8 md:p-12">
             <div className="max-w-md text-center md:text-left">
-              <h1 className="mt-2 text-4xl md:text-5xl font-bold text-primary tracking-tight">
+              <h1 className="mt-2 text-4xl md:text-5xl font-bold text-foreground tracking-tight">
                 SisiApp
               </h1>
-              <p className="mt-2 text-base text-primary/90">
+              <p className="mt-2 text-base text-foreground/90">
                 Profesionales verificados, tranquilidad garantizada.
               </p>
               <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -106,7 +106,7 @@ export default function Home() {
         
         <section id="servicios" className="py-12 md:py-24">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl font-bold text-primary mb-8">Servicios más solicitados</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-8">Servicios más solicitados</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {FeaturedServices.map((service: FeaturedService) => {
                     const IconComponent = iconComponents[service.icon];
@@ -118,13 +118,13 @@ export default function Home() {
                             <div className="flex justify-center mb-4">
                                 {IconComponent && <IconComponent className={`h-16 w-16 ${iconColorClass}`} />}
                             </div>
-                            <h3 className="text-xl font-semibold text-primary text-center">{service.name}</h3>
+                            <h3 className="text-xl font-semibold text-foreground text-center">{service.name}</h3>
                             <p className="mt-2 text-sm text-muted-foreground text-center">{service.description}</p>
                             <div className="flex items-center justify-between mt-4">
                               <Rating rating={service.rating} />
                               <div className="flex items-center">
                                 <User className="h-4 w-4 mr-2 text-primary" />
-                                <p className="text-sm font-medium text-primary">{service.provider}</p>
+                                <p className="text-sm font-medium text-foreground">{service.provider}</p>
                               </div>
                             </div>
                         </div>
@@ -137,7 +137,7 @@ export default function Home() {
 
         <section id="contacto" className="py-12 md:py-24 bg-background">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl font-bold text-primary mb-8">Contacto</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-8">Contacto</h2>
                 <div className="max-w-2xl mx-auto">
                     <form className="space-y-6">
                         <div>
@@ -163,7 +163,7 @@ export default function Home() {
                 <div className="flex mb-4">
                     <ShieldCheck className="h-12 w-12 text-primary" />
                 </div>
-                <h2 className="text-3xl font-bold text-primary">SisiApp, tu seguridad garantizada</h2>
+                <h2 className="text-3xl font-bold text-foreground">SisiApp, tu seguridad garantizada</h2>
                 <p className="mt-4 text-lg text-muted-foreground">Profesionales verificados, tranquilidad garantizada, enfocado en la validación y tu seguridad.</p>
             </div>
         </section>
