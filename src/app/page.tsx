@@ -1,91 +1,62 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages, FeaturedServices } from '@/lib/placeholder-images';
-import { Star } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/layout/header';
-import { Card, CardContent } from '@/components/ui/card';
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-1');
+  const heroImage = PlaceHolderImages.find(img => img.id === 'doctor-hero');
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-white">
       <Header />
       <main className="flex-1">
-        <section className="relative w-full bg-background overflow-hidden">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-8 items-center py-12 md:py-24">
-              <div className="space-y-6 text-center lg:text-left">
-                <div className="inline-block bg-accent text-accent-foreground rounded-md px-3 py-1 text-sm font-medium">
-                  Mejores precios
-                </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
-                  Súper precios en tus servicios favoritos
-                </h1>
-                <p className="max-w-md mx-auto lg:mx-0 text-lg text-muted-foreground">
-                  Gana más por tu dinero
-                </p>
-                <div>
-                  <Button size="lg">regístrate</Button>
-                </div>
-              </div>
-              <div className="relative mx-auto w-full max-w-2xl">
-                 {heroImage && <Image
-                    src={heroImage.imageUrl}
-                    alt={heroImage.description}
-                    width={600}
-                    height={400}
-                    className="w-full rounded-xl object-cover aspect-video"
-                    data-ai-hint={heroImage.imageHint}
-                  />
-                 }
-              </div>
+        <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
+          <div className="relative h-full min-h-[400px] md:min-h-0">
+            {heroImage && (
+              <Image
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                fill
+                className="object-cover"
+                data-ai-hint={heroImage.imageHint}
+              />
+            )}
+          </div>
+          <div className="flex items-center justify-center p-8 md:p-12 bg-[#d8edea]">
+            <div className="max-w-md text-center md:text-left">
+              <p className="text-primary/80">Confiable y accesible para todos</p>
+              <h1 className="mt-2 text-4xl md:text-5xl font-bold text-primary tracking-tight">
+                Dra. Alicia Haz
+              </h1>
+              <p className="mt-2 text-3xl md:text-4xl text-primary/90">
+                Servicio médico en línea
+              </p>
+              <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
+                Reservar una cita online
+              </Button>
             </div>
           </div>
         </section>
         
-        <section className="w-full py-12 md:py-24">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Servicios Destacados</h2>
-              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Descubre nuestros servicios mejor valorados por la comunidad.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {FeaturedServices.map((service) => (
-                <Card key={service.id} className="overflow-hidden group">
-                  <CardContent className="p-0">
-                    <div className="overflow-hidden">
-                      <Image
-                        src={service.imageUrl}
-                        alt={service.name}
-                        width={400}
-                        height={300}
-                        className="w-full object-cover aspect-video transition-transform duration-300 group-hover:scale-105"
-                        data-ai-hint={service.imageHint}
-                      />
+        <section id="servicios" className="py-12 md:py-24">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="text-3xl font-bold text-center text-primary mb-8">Servicios más solicitados</h2>
+                {/* Placeholder for featured services */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="border rounded-lg p-6 text-center shadow-lg">
+                        <h3 className="text-xl font-semibold text-primary">Consulta General</h3>
+                        <p className="mt-2 text-muted-foreground">Atención médica primaria para toda la familia.</p>
                     </div>
-                    <div className="p-4 space-y-2">
-                      <h3 className="text-lg font-bold">{service.name}</h3>
-                      <div className="flex items-center">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className={`h-5 w-5 ${
-                              i < service.rating ? 'text-yellow-400 fill-yellow-400' : 'text-muted-foreground/30'
-                            }`}
-                          />
-                        ))}
-                      </div>
-                      <p className="text-xl font-semibold">${service.price}</p>
-                      <Button className="w-full">Contratar</Button>
+                    <div className="border rounded-lg p-6 text-center shadow-lg">
+                        <h3 className="text-xl font-semibold text-primary">Seguimiento de Crónicos</h3>
+                        <p className="mt-2 text-muted-foreground">Control y manejo de condiciones crónicas.</p>
                     </div>
-                  </CardContent>
-                </Card>
-              ))}
+                    <div className="border rounded-lg p-6 text-center shadow-lg">
+                        <h3 className="text-xl font-semibold text-primary">Orientación Pediátrica</h3>
+                        <p className="mt-2 text-muted-foreground">Consejos y cuidados para la salud de los niños.</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </section>
       </main>
     </div>

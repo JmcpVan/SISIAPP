@@ -1,44 +1,36 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-1",
-      "description": "Una persona sosteniendo un smartphone en un ambiente claro.",
-      "imageUrl": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbf1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzbWFydHBob25lfGVufDB8fHx8MTc2MTg4MjA3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "smartphone user"
+      "id": "doctor-hero",
+      "description": "Mother and daughter looking at a tablet together on a couch.",
+      "imageUrl": "https://images.unsplash.com/photo-1593352222497-e3d47a3e2164?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBvbmxpbmV8ZW58MHx8fHwxNzM3MjA0MjUxfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "mother child tablet"
     }
   ],
   "featuredServices": [
     {
       "id": "service-1",
-      "name": "Consultoría Web",
-      "price": "25,999.00",
+      "name": "Consulta General",
+      "price": "50.00",
       "rating": 5,
-      "imageUrl": "https://picsum.photos/seed/4/400/300",
-      "imageHint": "web consulting"
+      "imageUrl": "https://picsum.photos/seed/doc1/400/300",
+      "imageHint": "medical consultation"
     },
     {
       "id": "service-2",
-      "name": "Diseño de Marca",
-      "price": "1,899.00",
-      "rating": 4,
-      "imageUrl": "https://picsum.photos/seed/5/400/300",
-      "imageHint": "brand design"
+      "name": "Seguimiento de Crónicos",
+      "price": "75.00",
+      "rating": 5,
+      "imageUrl": "https://picsum.photos/seed/doc2/400/300",
+      "imageHint": "chronic care"
     },
     {
       "id": "service-3",
-      "name": "Marketing Digital",
-      "price": "12,500.00",
+      "name": "Orientación Pediátrica",
+      "price": "60.00",
       "rating": 5,
-      "imageUrl": "https://picsum.photos/seed/6/400/300",
-      "imageHint": "digital marketing"
-    },
-    {
-      "id": "service-4",
-      "name": "Soporte Técnico",
-      "price": "4,750.00",
-      "rating": 4,
-      "imageUrl": "https://picsum.photos/seed/7/400/300",
-      "imageHint": "tech support"
+      "imageUrl": "https://picsum.photos/seed/doc3/400/300",
+      "imageHint": "pediatric advice"
     }
   ]
 }
