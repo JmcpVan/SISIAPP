@@ -11,6 +11,7 @@ const navLinks = [
   { href: '#servicios', label: 'Servicios' },
   { href: '#', label: 'Póliza de Seguro' },
   { href: '#contacto', label: 'Contacto' },
+  { href: '#privacy', label: 'Privacidad' },
 ];
 
 export function Header() {

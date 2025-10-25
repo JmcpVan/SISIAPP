@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Logo } from '@/components/icons/logo';
 import { Facebook, Twitter, Instagram } from 'lucide-react';
@@ -47,8 +48,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-white/80 transition-colors">
-                  Política de Privacidad
+                <Link href="#privacy" className="text-sm hover:text-white/80 transition-colors">
+                  Aviso de Privacidad
                 </Link>
               </li>
             </ul>
