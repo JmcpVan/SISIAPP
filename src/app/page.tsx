@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail, HelpCircle, Users } from 'lucide-react';
-import { FeaturedServices, HeroSlides } from '@/lib/placeholder-images';
+import { FeaturedServices, HeroSlides, PlaceHolderImages } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
@@ -54,6 +54,7 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const womanPayingImage = PlaceHolderImages.find(p => p.id === 'woman-paying');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -97,6 +98,16 @@ export default function Home() {
                 activeSlide.bgColor
               )}
             />
+            {womanPayingImage && (
+              <Image
+                src={womanPayingImage.imageUrl}
+                alt={womanPayingImage.description}
+                width={600}
+                height={400}
+                data-ai-hint={womanPayingImage.imageHint}
+                className="absolute w-5/6 transform -rotate-6 rounded-[2rem] shadow-2xl"
+              />
+            )}
           </div>
         </section>
         

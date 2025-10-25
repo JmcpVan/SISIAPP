@@ -24,6 +24,12 @@
   ],
   "placeholderImages": [
     {
+      "id": "woman-paying",
+      "description": "Woman paying at a counter",
+      "imageUrl": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "woman paying"
+    },
+    {
       "id": "doctor-hero",
       "description": "Aplicación de navegación GPS en un teléfono",
       "imageUrl": "https://images.unsplash.com/photo-1583542224773-1a7b4f5a343b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXAlMjBhcHAlMjBzbWFydHBob25lfGVufDB8fHx8MTc2MjI0NzU5Nnww&ixlib=rb-4.0.3&q=80&w=1080",
