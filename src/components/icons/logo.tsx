@@ -13,7 +13,7 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
       <circle cx="50" cy="50" r="50" fill="#1E293B" />
       <path
         d="M34.5 70.5C34.5 70.5 30.5 58.5 45.5 57.5C60.5 56.5 56 46 56 46"
-        stroke="#3B82F6"
+        stroke="hsl(var(--primary))"
         strokeWidth="4"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -21,14 +21,14 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
       />
       <path
         d="M62.5 32C59.1863 32 56.5 35.134 56.5 39C56.5 44.5 62.5 50 62.5 50C62.5 50 68.5 44.5 68.5 39C68.5 35.134 65.8137 32 62.5 32Z"
-        stroke="#FBBF24"
+        stroke="hsl(var(--accent))"
         strokeWidth="4"
         strokeLinecap="round"
         strokeLinejoin="round"
         fill="none"
       />
-      <circle cx="65.5" cy="53.5" r="3.5" fill="#4ADE80" />
-      <circle cx="31" cy="62" r="5" fill="#EF4444" />
+      <circle cx="65.5" cy="53.5" r="3.5" fill="hsl(var(--success))" />
+      <circle cx="31" cy="62" r="5" fill="hsl(var(--destructive))" />
     </svg>
   );
 }
