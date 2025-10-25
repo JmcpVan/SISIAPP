@@ -94,7 +94,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="relative flex items-center justify-center p-8 overflow-hidden">
+            <div className="relative flex items-center justify-center p-8">
               <div
                 className={cn(
                   'absolute inset-8 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
