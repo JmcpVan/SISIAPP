@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    scroll-padding-top: 5rem; /* Adjust for sticky header */
+    scroll-padding-top: 7rem; /* Adjust for sticky header */
     scroll-behavior: smooth;
   }
   
