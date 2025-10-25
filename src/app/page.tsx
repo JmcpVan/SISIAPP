@@ -197,12 +197,11 @@ export default function Home() {
         </section>
         
         <section className="py-12 bg-background flex justify-center">
-            <HelpCircle className="h-16 w-16 text-gray-300" />
+            <HelpCircle className="h-16 w-16 text-google-blue" />
         </section>
 
         <section id="help" className="pb-12 md:pb-24 bg-background px-8 md:px-12 lg:px-24">
           <div className="flex items-center gap-2 mb-8">
-            <HelpCircle className="h-8 w-8 text-google-blue" />
             <h2 className="text-3xl font-bold text-foreground">Preguntas Frecuentes (Ayuda)</h2>
           </div>
           <Accordion type="single" collapsible className="w-full">
