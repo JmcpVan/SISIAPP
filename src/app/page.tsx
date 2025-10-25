@@ -106,6 +106,7 @@ export default function Home() {
                   src={slide.imageUrl}
                   alt={slide.description}
                   fill
+                  priority={index === 0}
                   className={cn(
                     "absolute inset-0 object-cover transition-opacity duration-1000",
                     index === currentSlide ? "opacity-100" : "opacity-0"
