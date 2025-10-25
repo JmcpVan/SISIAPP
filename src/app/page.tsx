@@ -123,7 +123,7 @@ export default function Home() {
         </section>
         
         <section id="servicios" className="py-12 md:py-24 px-8 md:px-12">
-            <div className="max-w-7xl mx-auto">
+            <div>
                 <h2 className="text-3xl font-bold text-foreground mb-8">Servicios más solicitados</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                   {FeaturedServices.map((service: FeaturedService) => {
@@ -154,7 +154,7 @@ export default function Home() {
         </section>
 
         <section className="bg-gray-50 dark:bg-gray-800/20 py-12 md:py-24 px-8 md:px-12">
-          <div className="max-w-7xl mx-auto">
+          <div>
             <h2 className="text-3xl font-bold text-foreground mb-4">Comunidad de Confianza</h2>
             <div className="text-muted-foreground">
               <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
@@ -184,7 +184,7 @@ export default function Home() {
         </section>
 
         <section id="seguridad" className="py-12 md:py-24 px-8 md:px-12">
-            <div className="max-w-7xl mx-auto">
+            <div>
                 <div className="flex mb-4">
                     <ShieldCheck className="h-12 w-12 text-primary" />
                 </div>
