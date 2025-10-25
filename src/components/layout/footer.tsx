@@ -18,22 +18,22 @@ export function Footer() {
             <h3 className="text-lg font-semibold">Navegación</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="#" className="text-sm hover:text-white/80 transition-colors">
+                <Link href="/#" className="text-sm hover:text-white/80 transition-colors">
                   Acerca de
                 </Link>
               </li>
               <li>
-                <Link href="#servicios" className="text-sm hover:text-white/80 transition-colors">
+                <Link href="/#servicios" className="text-sm hover:text-white/80 transition-colors">
                   Servicios
                 </Link>
               </li>
               <li>
-                <Link href="#contacto" className="text-sm hover:text-white/80 transition-colors">
+                <Link href="/#contacto" className="text-sm hover:text-white/80 transition-colors">
                   Contacto
                 </Link>
               </li>
               <li>
-                <Link href="#help" className="text-sm hover:text-white/80 transition-colors">
+                <Link href="/#help" className="text-sm hover:text-white/80 transition-colsors">
                   Ayuda
                 </Link>
               </li>
@@ -53,7 +53,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#legal" className="text-sm hover:text-white/80 transition-colors">
+                <Link href="/#legal" className="text-sm hover:text-white/80 transition-colors">
                   Aviso Legal
                 </Link>
               </li>

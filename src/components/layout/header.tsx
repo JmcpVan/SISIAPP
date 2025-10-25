@@ -7,12 +7,12 @@ import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '#', label: 'Acerca de' },
-  { href: '#servicios', label: 'Servicios' },
-  { href: '#legal', label: 'Legal' },
-  { href: '#contacto', label: 'Contacto' },
+  { href: '/#', label: 'Acerca de' },
+  { href: '/#servicios', label: 'Servicios' },
+  { href: '/#legal', label: 'Legal' },
+  { href: '/#contacto', label: 'Contacto' },
   { href: '/privacy', label: 'Privacidad' },
-  { href: '#help', label: 'Ayuda' },
+  { href: '/#help', label: 'Ayuda' },
 ];
 
 export function Header() {
