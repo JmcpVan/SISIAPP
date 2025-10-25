@@ -68,8 +68,8 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-      <section className="w-full py-12 md:py-16 min-h-[85vh] grid md:grid-cols-2 gap-8 h-full px-8 md:px-12 lg:px-24">
-          <div className="flex flex-col justify-center animate-slide-in-left">
+      <section className="w-full py-12 md:py-16 min-h-[85vh] grid md:grid-cols-2 gap-8 h-full">
+          <div className="flex flex-col justify-center animate-slide-in-left px-8 md:px-12 lg:px-24">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
                   SisiApp
@@ -90,7 +90,7 @@ export default function Home() {
                 </Button>
               </div>
           </div>
-          <div className="relative flex items-center justify-center p-8 overflow-hidden">
+          <div className="relative flex items-center justify-center p-8 overflow-hidden px-8 md:px-12 lg:px-24">
             <div
               className={cn(
                 'absolute inset-8 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
