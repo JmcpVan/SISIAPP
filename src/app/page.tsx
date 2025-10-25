@@ -1,3 +1,6 @@
+
+'use client';
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
@@ -6,17 +9,41 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  type CarouselApi,
 } from '@/components/ui/carousel';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import React from 'react';
 
 export default function Home() {
+  const [api, setApi] = React.useState<CarouselApi>();
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    const interval = setInterval(() => {
+      if (api.canScrollNext()) {
+        api.scrollNext();
+      } else {
+        api.scrollTo(0);
+      }
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <Header />
       <main className="flex-1">
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
           <div className="relative w-full h-full bg-[#d8edea]">
-            <Carousel className="w-full h-full" opts={{ loop: true }}>
+            <Carousel
+              className="w-full h-full"
+              opts={{ loop: true }}
+              setApi={setApi}
+            >
               <CarouselContent>
                 {PlaceHolderImages.map((img) => (
                   <CarouselItem key={img.id}>
