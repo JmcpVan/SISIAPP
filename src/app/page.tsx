@@ -68,7 +68,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-      <section className="w-full py-12 md:py-16">
+      <section className="w-full py-12 md:py-16 min-h-[85vh] flex items-center">
           <div className="container mx-auto grid md:grid-cols-2 gap-8 h-full">
             <div className="flex flex-col justify-center animate-slide-in-left">
               <div className="w-full">
@@ -94,7 +94,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="relative flex items-center justify-center p-8">
+            <div className="relative flex items-center justify-center p-8 overflow-hidden">
               <div
                 className={cn(
                   'absolute inset-8 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
@@ -219,7 +219,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
-
-    
