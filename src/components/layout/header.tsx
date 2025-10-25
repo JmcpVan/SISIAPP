@@ -31,10 +31,6 @@ export function Header() {
             </Link>
           ))}
         </nav>
-
-        <div className="flex items-center gap-4">
-          {/* The "Entrar" button has been removed */}
-        </div>
       </div>
     </header>
   );
