@@ -105,18 +105,22 @@ export default function Home() {
               ></div>
               <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-[2rem] overflow-hidden">
                 {HeroSlides.map((slide, index) => (
-                  <Image
+                  <div
                     key={slide.id}
-                    src={slide.imageUrl}
-                    alt={slide.description}
-                    fill
                     className={cn(
-                      "absolute inset-0 object-cover transition-opacity duration-1000",
+                      "absolute inset-0 transition-opacity duration-1000",
                       index === currentSlide ? "opacity-100" : "opacity-0"
                     )}
-                    data-ai-hint={slide.imageHint}
-                    priority={index === 0}
-                  />
+                  >
+                    <Image
+                      src={slide.imageUrl}
+                      alt={slide.description}
+                      fill
+                      className="object-cover"
+                      data-ai-hint={slide.imageHint}
+                      priority={index === 0}
+                    />
+                  </div>
                 ))}
               </div>
             </div>
@@ -237,3 +241,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
