@@ -57,7 +57,7 @@ export default function Home() {
             >
               <CarouselContent className="h-[calc(100vh-80px)]">
                 {PlaceHolderImages.map((image) => (
-                  <CarouselItem key={image.id}>
+                  <CarouselItem key={image.id} className="h-full">
                     <div className="relative w-full h-full">
                       <Image
                         src={image.imageUrl}
@@ -97,8 +97,8 @@ export default function Home() {
                     return (
                       <div key={service.id} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 bg-white">
                         <div className={`absolute top-0 left-0 w-full h-2 bg-${service.color}`}></div>
-                        <div className="p-6">
-                            {IconComponent && <IconComponent className={`h-16 w-16 mb-4 ${iconColorClass}`} />}
+                        <div className="p-6 text-center">
+                            {IconComponent && <IconComponent className={`h-16 w-16 mb-4 mx-auto ${iconColorClass}`} />}
                             <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
                             <p className="mt-1 text-sm text-muted-foreground">{service.description}</p>
                             <div className="flex items-center justify-end mt-4">
