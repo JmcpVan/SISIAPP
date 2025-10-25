@@ -18,7 +18,10 @@ export default function Home() {
               <h1 className="mt-2 text-4xl md:text-5xl font-bold text-primary tracking-tight">
                 SisiApp
               </h1>
-              <p className="mt-2 text-3xl md:text-4xl text-primary/90">
+              <p className="mt-2 text-base text-primary/90">
+                Profesionales verificados, tranquilidad garantizada – enfocado en la validación y tu seguridad.
+              </p>
+              <p className="mt-4 text-3xl md:text-4xl text-primary/90">
                 Servicio médico en línea
               </p>
               <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -66,6 +69,7 @@ export default function Home() {
                     <ShieldCheck className="h-12 w-12 text-primary" />
                 </div>
                 <h2 className="text-3xl font-bold text-primary">SisiApp, tu seguridad garantizada</h2>
+                <p className="mt-4 text-lg text-muted-foreground">Profesionales verificados, tranquilidad garantizada – enfocado en la validación y tu seguridad.</p>
             </div>
         </section>
 
