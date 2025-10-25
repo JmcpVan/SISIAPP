@@ -125,7 +125,13 @@ export default function Home() {
         
         <section id="servicios" className="pt-12 md:pt-24 lg:pt-20 pb-12 md:pb-16 px-8 md:px-12 lg:px-24">
             <div>
-                <h2 className="text-3xl font-bold text-foreground mb-8">Servicios más solicitados</h2>
+              <div className="flex items-center gap-2 mb-4">
+                <Users className="h-8 w-8 text-google-blue" />
+                <h2 className="text-3xl font-bold text-foreground">Servicios más solicitados</h2>
+              </div>
+              <div className="text-muted-foreground mb-8">
+                <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
+              </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                   {FeaturedServices.map((service: FeaturedService) => {
                     const IconComponent = iconComponents[service.icon];
@@ -152,18 +158,6 @@ export default function Home() {
                   })}
                 </div>
             </div>
-        </section>
-
-        <section className="bg-gray-50 dark:bg-gray-800/20 py-12 md:py-24 px-8 md:px-12 lg:px-24">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Users className="h-8 w-8 text-google-blue" />
-              <h2 className="text-3xl font-bold text-foreground">Comunidad de Confianza</h2>
-            </div>
-            <div className="text-muted-foreground">
-              <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
-            </div>
-          </div>
         </section>
 
         <section className="py-12 md:py-24 bg-background px-8 md:px-12 lg:px-24">
@@ -202,7 +196,11 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="help" className="py-12 md:py-24 bg-background px-8 md:px-12 lg:px-24">
+        <section className="py-12 bg-background flex justify-center">
+            <HelpCircle className="h-16 w-16 text-gray-300" />
+        </section>
+
+        <section id="help" className="pb-12 md:pb-24 bg-background px-8 md:px-12 lg:px-24">
           <div className="flex items-center gap-2 mb-8">
             <HelpCircle className="h-8 w-8 text-google-blue" />
             <h2 className="text-3xl font-bold text-foreground">Preguntas Frecuentes (Ayuda)</h2>
