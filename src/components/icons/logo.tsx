@@ -1,6 +1,7 @@
 export function Logo() {
   return (
     <div className="flex items-center gap-2 px-4 py-2 rounded-md">
+      <span className="text-2xl font-bold text-primary">S</span>
       <svg
         width="24"
         height="33"
