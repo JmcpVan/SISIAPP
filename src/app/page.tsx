@@ -34,9 +34,6 @@ export default function Home() {
               <p className="mt-2 text-base text-primary/90">
                 Profesionales verificados, tranquilidad garantizada, enfocado en la validación y tu seguridad.
               </p>
-              <p className="mt-4 text-3xl md:text-4xl text-primary/90">
-                Servicio médico en línea
-              </p>
               <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
                 Reservar una cita online
               </Button>
