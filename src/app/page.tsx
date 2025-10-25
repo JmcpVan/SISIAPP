@@ -55,7 +55,7 @@ export default function Home() {
                 SisiApp
               </h1>
               <p className="mt-2 text-base text-primary/90">
-                Profesionales verificados, tranquilidad garantizada, enfocado en la validación y tu seguridad.
+                Profesionales verificados, tranquilidad garantizada.
               </p>
               <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
                 Reservar una cita online
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="servicios" className="py-12 md:py-24 bg-card">
+        <section id="servicios" className="py-12 md:py-24">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-center text-primary mb-8">Servicios más solicitados</h2>
                 {/* Placeholder for featured services */}
@@ -85,7 +85,7 @@ export default function Home() {
             </div>
         </section>
 
-        <section id="seguridad" className="py-12 md:py-24 bg-accent/30">
+        <section id="seguridad" className="py-12 md:py-24">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div className="flex justify-center mb-4">
                     <ShieldCheck className="h-12 w-12 text-primary" />
