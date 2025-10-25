@@ -118,7 +118,6 @@ export default function Home() {
                       fill
                       className="object-cover"
                       data-ai-hint={slide.imageHint}
-                      priority={index === 0}
                     />
                   </div>
                 ))}
@@ -241,6 +240,8 @@ export default function Home() {
     </div>
   );
 }
+
+    
 
     
 
