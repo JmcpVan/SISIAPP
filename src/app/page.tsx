@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/layout/header';
+import { ShieldCheck } from 'lucide-react';
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'doctor-hero');
@@ -58,6 +59,17 @@ export default function Home() {
                 </div>
             </div>
         </section>
+
+        <section id="seguridad" className="py-12 md:py-24 bg-accent/30">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div className="flex justify-center mb-4">
+                    <ShieldCheck className="h-12 w-12 text-primary" />
+                </div>
+                <h2 className="text-3xl font-bold text-primary">Profesionales verificados, tranquilidad garantizada</h2>
+                <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">Enfocado en la validación y tu seguridad.</p>
+            </div>
+        </section>
+
       </main>
     </div>
   );
