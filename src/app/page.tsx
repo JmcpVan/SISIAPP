@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck } from 'lucide-react';
-import { SisiLogoHero } from '@/components/icons/sisi-logo-hero';
 
 export default function Home() {
   return (
@@ -28,7 +27,14 @@ export default function Home() {
             </div>
           </div>
           <div className="relative h-full min-h-[400px] md:min-h-0 flex items-center justify-center bg-[#d8edea] p-8">
-            <SisiLogoHero className="w-64 h-64 md:w-80 md:h-80 text-primary" />
+            <Image
+              src="https://picsum.photos/seed/gps/600/400"
+              alt="Mapa de GPS"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-lg"
+              data-ai-hint="gps route"
+            />
           </div>
         </section>
         
