@@ -68,9 +68,9 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-      <section className="min-h-[calc(100vh-80px)] w-full">
-          <div className="container mx-auto grid md:grid-cols-2 h-full">
-            <div className="flex flex-col justify-start md:pt-16 p-8 md:p-12 lg:px-8 animate-slide-in-left">
+      <section className="w-full py-12 md:py-16">
+          <div className="container mx-auto grid md:grid-cols-2 gap-8 h-full">
+            <div className="flex flex-col justify-center animate-slide-in-left">
               <div className="w-full">
                 <div>
                   <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
@@ -81,7 +81,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="my-8">
-                  <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={320} height={320} className="mx-auto w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80" />
+                  <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={256} height={256} className="mx-auto w-40 h-40 md:w-48 md:h-48" />
                 </div>
                 <div>
                   <p className="mt-4 text-muted-foreground text-justify">
@@ -94,7 +94,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="relative flex items-center justify-center p-8 md:p-12 lg:px-8 animate-slide-in-right">
+            <div className="relative flex items-center justify-center p-8">
               <div
                 className={cn(
                   'absolute inset-8 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
