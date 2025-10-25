@@ -12,6 +12,9 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel';
 import Autoplay from "embla-carousel-autoplay"
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
 
 export default function Home() {
 
@@ -81,6 +84,29 @@ export default function Home() {
                         <h3 className="text-xl font-semibold text-primary">Orientación Pediátrica</h3>
                         <p className="mt-2 text-muted-foreground">Consejos y cuidados para la salud de los niños.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" className="py-12 md:py-24 bg-background">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="text-3xl font-bold text-center text-primary mb-8">Contacto</h2>
+                <div className="max-w-2xl mx-auto">
+                    <form className="space-y-6">
+                        <div>
+                            <Label htmlFor="name">Nombre</Label>
+                            <Input id="name" type="text" placeholder="Tu nombre" />
+                        </div>
+                        <div>
+                            <Label htmlFor="email">Email</Label>
+                            <Input id="email" type="email" placeholder="Tu correo electrónico" />
+                        </div>
+                        <div>
+                            <Label htmlFor="message">Mensaje</Label>
+                            <Textarea id="message" placeholder="Escribe tu mensaje aquí" />
+                        </div>
+                        <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">Enviar Mensaje</Button>
+                    </form>
                 </div>
             </div>
         </section>
