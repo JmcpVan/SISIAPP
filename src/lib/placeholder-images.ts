@@ -17,6 +17,7 @@ export type FeaturedService = {
   imageUrl: string;
   imageHint: string;
   icon: string;
+  color: string;
 };
 
 export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages;

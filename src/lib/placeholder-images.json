@@ -29,7 +29,8 @@
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/mech1/400/300",
       "imageHint": "car repair",
-      "icon": "Wrench"
+      "icon": "Wrench",
+      "color": "blue-500"
     },
     {
       "id": "service-2",
@@ -40,7 +41,8 @@
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/care1/400/300",
       "imageHint": "caregiver senior",
-      "icon": "HeartHandshake"
+      "icon": "HeartHandshake",
+      "color": "pink-500"
     },
     {
       "id": "service-3",
@@ -51,7 +53,8 @@
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/tutor1/400/300",
       "imageHint": "private tutoring",
-      "icon": "BookUser"
+      "icon": "BookUser",
+      "color": "green-500"
     },
     {
       "id": "service-4",
@@ -62,7 +65,8 @@
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/handy1/400/300",
       "imageHint": "handyman tools",
-      "icon": "HardHat"
+      "icon": "HardHat",
+      "color": "yellow-500"
     },
     {
       "id": "service-5",
@@ -73,7 +77,8 @@
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/dog1/400/300",
       "imageHint": "dog walker",
-      "icon": "Dog"
+      "icon": "Dog",
+      "color": "purple-500"
     },
     {
       "id": "service-6",
@@ -84,7 +89,8 @@
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/law1/400/300",
       "imageHint": "legal advice",
-      "icon": "Scale"
+      "icon": "Scale",
+      "color": "indigo-500"
     }
   ]
 }
