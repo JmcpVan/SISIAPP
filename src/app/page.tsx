@@ -95,14 +95,14 @@ export default function Home() {
           </div>
           
           <div className="relative flex items-center justify-center p-8 md:p-12 lg:px-8 animate-slide-in-right">
-            <div className="relative w-full h-full max-w-lg mx-auto">
+            <div className="relative w-full h-full mx-auto">
               <div
                 className={cn(
                   'absolute inset-0 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
                   activeSlide.bgColor
                 )}
               ></div>
-              <div className="relative w-full h-[300px] md:h-[400px] rounded-[2rem] overflow-hidden">
+              <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-[2rem] overflow-hidden">
                 {HeroSlides.map((slide, index) => (
                   <Image
                     key={slide.id}
