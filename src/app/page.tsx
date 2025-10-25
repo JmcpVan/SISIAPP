@@ -105,6 +105,9 @@ export default function Home() {
             <Users className="h-8 w-8 text-google-blue" />
             <h2 className="text-3xl font-bold text-foreground">Servicios más solicitados</h2>
           </div>
+          <div className="text-muted-foreground mb-8">
+            <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {FeaturedServices.map((service: any) => {
               const IconComponent = iconComponents[service.icon];
@@ -129,9 +132,6 @@ export default function Home() {
                 </div>
               )
             })}
-          </div>
-          <div className="text-muted-foreground mt-8">
-            <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
           </div>
         </section>
 
