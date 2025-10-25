@@ -76,7 +76,7 @@ export default function Home() {
               </p>
             </div>
             <div className="max-w-md w-full mt-auto">
-               <p className="mt-4 text-muted-foreground">
+               <p className="mt-4 text-muted-foreground text-justify">
                 En SisiApp creemos que la confianza y la comodidad van de la mano. Por eso, reunimos a los mejores profesionales verificados para que encuentres soluciones rápidas y seguras, desde el mantenimiento del hogar hasta el cuidado personal, todo en un solo lugar.
               </p>
               <Button size="lg" className="mt-8">
