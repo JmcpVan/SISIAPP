@@ -3,8 +3,8 @@
     {
       "id": "doctor-hero",
       "description": "Aplicación de navegación GPS en un teléfono",
-      "imageUrl": "https://images.unsplash.com/photo-1593392931754-582575775b9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxncHMlMjBuYXZpZ2F0aW9ufGVufDB8fHx8MTc2MTQwOTE3NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "gps navigation"
+      "imageUrl": "https://images.unsplash.com/photo-1583542224773-1a7b4f5a343b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXAlMjBhcHAlMjBzbWFydHBob25lfGVufDB8fHx8MTc2MjI0NzU5Nnww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "map app smartphone"
     },
     {
       "id": "doctor-consultation",
