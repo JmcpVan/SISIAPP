@@ -11,7 +11,7 @@ const navLinks = [
   { href: '#servicios', label: 'Servicios' },
   { href: '#legal', label: 'Legal' },
   { href: '#contacto', label: 'Contacto' },
-  { href: '#privacy', label: 'Privacidad' },
+  { href: '/privacy', label: 'Privacidad' },
   { href: '#help', label: 'Ayuda' },
 ];
 

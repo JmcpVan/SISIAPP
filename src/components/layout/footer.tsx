@@ -48,7 +48,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#privacy" className="text-sm hover:text-white/80 transition-colors">
+                <Link href="/privacy" className="text-sm hover:text-white/80 transition-colors">
                   Aviso de Privacidad
                 </Link>
               </li>
