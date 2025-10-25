@@ -100,40 +100,38 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-16">
-          <div className="pt-24">
-            <div className="flex items-center gap-2 mb-4">
-              <Users className="h-8 w-8 text-google-blue" />
-              <h2 className="text-3xl font-bold text-foreground">Servicios más solicitados</h2>
-            </div>
-            <div className="text-muted-foreground mb-8">
-              <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {FeaturedServices.map((service: any) => {
-                const IconComponent = iconComponents[service.icon];
-                const iconColorClass = colorClasses[service.color] || 'text-primary';
-                return (
-                  <div key={service.id} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 bg-card">
-                    <div className={`absolute top-0 left-0 w-full h-2 bg-${service.color}`}></div>
-                    <div className="p-4 md:p-6">
-                        <div className="flex justify-center mb-4">
-                            {IconComponent && <IconComponent className={`h-16 w-16 ${iconColorClass}`} />}
+        <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12 md:pb-16">
+          <div className="flex items-center gap-2 mb-4">
+            <Users className="h-8 w-8 text-google-blue" />
+            <h2 className="text-3xl font-bold text-foreground">Servicios más solicitados</h2>
+          </div>
+          <div className="text-muted-foreground mb-8">
+            <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {FeaturedServices.map((service: any) => {
+              const IconComponent = iconComponents[service.icon];
+              const iconColorClass = colorClasses[service.color] || 'text-primary';
+              return (
+                <div key={service.id} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 bg-card">
+                  <div className={`absolute top-0 left-0 w-full h-2 bg-${service.color}`}></div>
+                  <div className="p-4 md:p-6">
+                      <div className="flex justify-center mb-4">
+                          {IconComponent && <IconComponent className={`h-16 w-16 ${iconColorClass}`} />}
+                      </div>
+                      <h3 className="text-xl font-semibold text-foreground text-center">{service.name}</h3>
+                      <p className="mt-2 text-sm text-muted-foreground text-center">{service.description}</p>
+                      <div className="flex items-center justify-between mt-4">
+                        <Rating rating={service.rating} />
+                        <div className="flex items-center">
+                          <User className="h-4 w-4 mr-2 text-primary" />
+                          <p className="text-sm font-medium text-foreground">{service.provider}</p>
                         </div>
-                        <h3 className="text-xl font-semibold text-foreground text-center">{service.name}</h3>
-                        <p className="mt-2 text-sm text-muted-foreground text-center">{service.description}</p>
-                        <div className="flex items-center justify-between mt-4">
-                          <Rating rating={service.rating} />
-                          <div className="flex items-center">
-                            <User className="h-4 w-4 mr-2 text-primary" />
-                            <p className="text-sm font-medium text-foreground">{service.provider}</p>
-                          </div>
-                        </div>
-                    </div>
+                      </div>
                   </div>
-                )
-              })}
-            </div>
+                </div>
+              )
+            })}
           </div>
         </section>
 
