@@ -26,6 +26,15 @@ const iconComponents: { [key: string]: React.ElementType } = {
   Scale,
 };
 
+const colorClasses: { [key: string]: string } = {
+  'blue-500': 'text-blue-500',
+  'pink-500': 'text-pink-500',
+  'green-500': 'text-green-500',
+  'yellow-500': 'text-yellow-500',
+  'purple-500': 'text-purple-500',
+  'indigo-500': 'text-indigo-500',
+};
+
 
 export default function Home() {
 
@@ -84,11 +93,12 @@ export default function Home() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   {FeaturedServices.map((service: FeaturedService) => {
                     const IconComponent = iconComponents[service.icon];
+                    const iconColorClass = colorClasses[service.color] || 'text-primary';
                     return (
                       <div key={service.id} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 bg-white">
                         <div className={`absolute top-0 left-0 w-full h-2 bg-${service.color}`}></div>
                         <div className="p-8 text-center">
-                            {IconComponent && <IconComponent className={`h-12 w-12 text-${service.color} mx-auto mb-6`} />}
+                            {IconComponent && <IconComponent className={`h-12 w-12 ${iconColorClass} mx-auto mb-6`} />}
                             <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
                             <p className="mt-2 text-muted-foreground h-12">{service.description}</p>
                             <div className="flex items-center justify-center mt-6">
