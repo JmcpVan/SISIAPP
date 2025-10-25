@@ -2,6 +2,12 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from '@/components/ui/carousel';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
   return (
@@ -10,13 +16,23 @@ export default function Home() {
       <main className="flex-1">
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
           <div className="relative w-full h-full bg-[#d8edea]">
-            <Image
-              src="https://picsum.photos/seed/gps/600/400"
-              alt="Mapa de GPS"
-              fill
-              className="object-cover"
-              data-ai-hint="gps route"
-            />
+            <Carousel className="w-full h-full" opts={{ loop: true }}>
+              <CarouselContent>
+                {PlaceHolderImages.map((img) => (
+                  <CarouselItem key={img.id}>
+                    <div className="relative w-full h-[calc(100vh-80px)]">
+                      <Image
+                        src={img.imageUrl}
+                        alt={img.description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={img.imageHint}
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
           <div className="flex items-center justify-center p-8 md:p-12 bg-[#d8edea]">
             <div className="max-w-md text-center md:text-left">

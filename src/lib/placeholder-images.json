@@ -3,8 +3,20 @@
     {
       "id": "doctor-hero",
       "description": "Stylized map route logo",
-      "imageUrl": "https://images.unsplash.com/photo-161999412-113824151722?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG1hcCUyMHJvdXRlfGVufDB8fHx8MTcyMDczMTg0NHww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1619635173638-f9243050fc10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXAlMjByb3V0ZXxlbnwwfHx8fDE3NjEzNTE1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "map route"
+    },
+    {
+      "id": "doctor-consultation",
+      "description": "Doctor talking to a patient",
+      "imageUrl": "https://images.unsplash.com/photo-1584516150909-c43483ee7932?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZG9jdG9yJTIwcGF0aWVudHxlbnwwfHx8fDE3NjEzMjQzMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor patient"
+    },
+    {
+      "id": "medical-equipment",
+      "description": "Stethoscope on a desk",
+      "imageUrl": "https://images.unsplash.com/photo-1641877492086-771bc14a8e5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc2MTMzNTk5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical equipment"
     }
   ],
   "featuredServices": [
