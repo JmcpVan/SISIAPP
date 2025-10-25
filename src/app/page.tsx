@@ -135,9 +135,20 @@ export default function Home() {
             </div>
         </section>
 
+        <section className="py-12 md:py-24 bg-gray-50">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl font-bold text-foreground mb-4">Comunidad de Confianza</h2>
+            <div className="max-w-3xl mx-auto text-muted-foreground space-y-4">
+              <p>En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites.</p>
+              <p>Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada.</p>
+              <p>Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
+            </div>
+          </div>
+        </section>
+
         <section id="contacto" className="py-12 md:py-24 bg-background">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl font-bold text-foreground mb-8">Contacto</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Contacto</h2>
                 <div className="max-w-2xl mx-auto">
                     <form className="space-y-6">
                         <div>
