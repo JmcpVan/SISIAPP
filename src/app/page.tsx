@@ -12,17 +12,6 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
-          <div className="relative h-full min-h-[400px] md:min-h-0">
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                fill
-                className="object-cover"
-                data-ai-hint={heroImage.imageHint}
-              />
-            )}
-          </div>
           <div className="flex items-center justify-center p-8 md:p-12 bg-[#d8edea]">
             <div className="max-w-md text-center md:text-left">
               <p className="text-primary/80">Confiable y accesible para todos</p>
@@ -36,6 +25,17 @@ export default function Home() {
                 Reservar una cita online
               </Button>
             </div>
+          </div>
+          <div className="relative h-full min-h-[400px] md:min-h-0">
+            {heroImage && (
+              <Image
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                fill
+                className="object-cover"
+                data-ai-hint={heroImage.imageHint}
+              />
+            )}
           </div>
         </section>
         
