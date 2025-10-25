@@ -94,10 +94,10 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="relative flex items-center justify-center p-8 md:p-12 lg:px-8 animate-slide-in-right overflow-hidden">
+            <div className="relative flex items-center justify-center p-8 md:p-12 lg:px-8 animate-slide-in-right">
               <div
                 className={cn(
-                  'absolute inset-0 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
+                  'absolute inset-8 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
                   activeSlide.bgColor
                 )}
               />
