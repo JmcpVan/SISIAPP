@@ -43,7 +43,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
-        <div className="relative w-full h-[calc(100vh-80px)] overflow-hidden">
+        <div className="relative w-full h-full">
             <Carousel
               className="w-full h-full"
               plugins={[
@@ -98,10 +98,12 @@ export default function Home() {
                     return (
                       <div key={service.id} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 bg-white">
                         <div className={`absolute top-0 left-0 w-full h-2 bg-${service.color}`}></div>
-                        <div className="p-6 text-center">
-                            {IconComponent && <IconComponent className={`h-16 w-16 mb-4 mx-auto ${iconColorClass}`} />}
-                            <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
-                            <p className="mt-1 text-sm text-muted-foreground">{service.description}</p>
+                        <div className="p-6">
+                            <div className="flex justify-center mb-4">
+                                {IconComponent && <IconComponent className={`h-16 w-16 ${iconColorClass}`} />}
+                            </div>
+                            <h3 className="text-xl font-semibold text-primary text-center">{service.name}</h3>
+                            <p className="mt-2 text-sm text-muted-foreground text-center">{service.description}</p>
                             <div className="flex items-center justify-end mt-4">
                               <User className="h-4 w-4 mr-2 text-primary" />
                               <p className="text-sm font-medium text-primary">{service.provider}</p>
