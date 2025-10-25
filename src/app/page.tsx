@@ -4,8 +4,8 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
-import { ShieldCheck } from 'lucide-react';
-import { PlaceHolderImages, FeaturedServices } from '@/lib/placeholder-images';
+import { ShieldCheck, Stethoscope, Repeat, Baby, Activity, BookOpen, BrainCircuit } from 'lucide-react';
+import { PlaceHolderImages, FeaturedServices, FeaturedService } from '@/lib/placeholder-images';
 import {
   Carousel,
   CarouselContent,
@@ -15,6 +15,16 @@ import Autoplay from "embla-carousel-autoplay"
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+
+const iconComponents: { [key: string]: React.ElementType } = {
+  Stethoscope,
+  Repeat,
+  Baby,
+  Activity,
+  BookOpen,
+  BrainCircuit,
+};
+
 
 export default function Home() {
 
@@ -71,13 +81,17 @@ export default function Home() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-center text-primary mb-8">Servicios más solicitados</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {FeaturedServices.map((service) => (
+                  {FeaturedServices.map((service: FeaturedService) => {
+                    const IconComponent = iconComponents[service.icon];
+                    return (
                       <div key={service.id} className="border rounded-lg p-6 text-center shadow-lg bg-background">
+                          {IconComponent && <IconComponent className="h-10 w-10 text-primary mx-auto mb-4" />}
                           <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
                           <p className="mt-2 text-muted-foreground">{service.description}</p>
                           <p className="mt-2 text-sm font-medium text-primary">{service.provider}</p>
                       </div>
-                  ))}
+                    )
+                  })}
                 </div>
             </div>
         </section>

@@ -28,7 +28,8 @@
       "price": "50.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/doc1/400/300",
-      "imageHint": "medical consultation"
+      "imageHint": "medical consultation",
+      "icon": "Stethoscope"
     },
     {
       "id": "service-2",
@@ -38,7 +39,8 @@
       "price": "75.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/doc2/400/300",
-      "imageHint": "chronic care"
+      "imageHint": "chronic care",
+      "icon": "Repeat"
     },
     {
       "id": "service-3",
@@ -48,7 +50,8 @@
       "price": "60.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/doc3/400/300",
-      "imageHint": "pediatric advice"
+      "imageHint": "pediatric advice",
+      "icon": "Baby"
     },
     {
       "id": "service-4",
@@ -58,7 +61,8 @@
       "price": "85.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/doc4/400/300",
-      "imageHint": "dermatology"
+      "imageHint": "dermatology",
+      "icon": "Activity"
     },
     {
       "id": "service-5",
@@ -68,7 +72,8 @@
       "price": "65.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/doc5/400/300",
-      "imageHint": "nutrition advice"
+      "imageHint": "nutrition advice",
+      "icon": "BookOpen"
     },
     {
       "id": "service-6",
@@ -78,7 +83,8 @@
       "price": "70.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/doc6/400/300",
-      "imageHint": "psychological support"
+      "imageHint": "psychological support",
+      "icon": "BrainCircuit"
     }
   ]
 }

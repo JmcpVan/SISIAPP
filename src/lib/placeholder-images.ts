@@ -16,6 +16,7 @@ export type FeaturedService = {
   rating: number;
   imageUrl: string;
   imageHint: string;
+  icon: string;
 };
 
 export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages;
