@@ -15,6 +15,7 @@ import Autoplay from "embla-carousel-autoplay"
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+import { Card } from '@/components/ui/card';
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Wrench,
@@ -84,14 +85,17 @@ export default function Home() {
                   {FeaturedServices.map((service: FeaturedService) => {
                     const IconComponent = iconComponents[service.icon];
                     return (
-                      <div key={service.id} className="border rounded-lg p-6 text-center shadow-lg bg-background">
-                          {IconComponent && <IconComponent className="h-10 w-10 text-primary mx-auto mb-4" />}
-                          <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
-                          <p className="mt-2 text-muted-foreground">{service.description}</p>
-                          <div className="flex items-center justify-center mt-2">
-                            <User className="h-4 w-4 mr-2 text-primary" />
-                            <p className="text-sm font-medium text-primary">{service.provider}</p>
-                          </div>
+                      <div key={service.id} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 bg-white">
+                        <div className="absolute top-0 left-0 w-full h-2 bg-primary"></div>
+                        <div className="p-8 text-center">
+                            {IconComponent && <IconComponent className="h-12 w-12 text-primary mx-auto mb-6" />}
+                            <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
+                            <p className="mt-2 text-muted-foreground h-12">{service.description}</p>
+                            <div className="flex items-center justify-center mt-6">
+                              <User className="h-4 w-4 mr-2 text-primary" />
+                              <p className="text-sm font-medium text-primary">{service.provider}</p>
+                            </div>
+                        </div>
                       </div>
                     )
                   })}
