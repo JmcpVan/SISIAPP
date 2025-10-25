@@ -120,11 +120,11 @@ export default function Home() {
                             <h3 className="text-xl font-semibold text-primary text-center">{service.name}</h3>
                             <p className="mt-2 text-sm text-muted-foreground text-center">{service.description}</p>
                             <div className="flex items-center justify-between mt-4">
+                              <Rating rating={service.rating} />
                               <div className="flex items-center">
                                 <User className="h-4 w-4 mr-2 text-primary" />
                                 <p className="text-sm font-medium text-primary">{service.provider}</p>
                               </div>
-                              <Rating rating={service.rating} />
                             </div>
                         </div>
                       </div>
