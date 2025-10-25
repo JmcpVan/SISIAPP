@@ -66,9 +66,9 @@ export default function Home() {
       <Header />
       <main className="flex-1">
       <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)] overflow-hidden">
-          <div className="flex flex-col justify-start pt-16 p-8 md:p-12 animate-slide-in-left">
-            <div className="max-w-md w-full">
-              <div>
+          <div className="flex flex-col justify-center p-8 md:p-12 animate-slide-in-left">
+            <div className="w-full">
+              <div className="max-w-md mx-auto">
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
                   SisiApp
                 </h1>
@@ -77,9 +77,9 @@ export default function Home() {
                 </p>
               </div>
               <div className="my-8">
-                <Image src="/img/logo-circular.svg" alt="Lulo" width={200} height={200} className="mx-auto" />
+                <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={200} height={200} className="mx-auto" />
               </div>
-              <div>
+              <div className="max-w-md mx-auto">
                 <p className="mt-4 text-muted-foreground text-justify">
                   En SisiApp creemos que la confianza y la comodidad van de la mano. Por eso, reunimos a los mejores profesionales verificados para que encuentres soluciones rápidas y seguras, desde el mantenimiento del hogar hasta el cuidado personal, todo en un solo lugar.
                 </p>
