@@ -97,7 +97,7 @@ export default function Home() {
                 Profesionales verificados, tranquilidad garantizada.
               </p>
               <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
-                Reservar un servicio online
+                Reservar tu servicio
               </Button>
             </div>
           </div>
