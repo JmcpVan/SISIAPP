@@ -54,7 +54,6 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const womanPayingImage = PlaceHolderImages.find(p => p.id === 'woman-paying');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -98,16 +97,14 @@ export default function Home() {
                 activeSlide.bgColor
               )}
             />
-            {womanPayingImage && (
-              <Image
-                src={womanPayingImage.imageUrl}
-                alt={womanPayingImage.description}
-                width={600}
-                height={400}
-                data-ai-hint={womanPayingImage.imageHint}
-                className="absolute w-5/6 transform -rotate-6 rounded-[2rem] shadow-2xl"
-              />
-            )}
+            <Image
+              src={activeSlide.imageUrl}
+              alt={activeSlide.description}
+              width={600}
+              height={400}
+              data-ai-hint={activeSlide.imageHint}
+              className="absolute w-5/6 transform -rotate-6 rounded-[2rem] shadow-2xl"
+            />
           </div>
         </section>
         
