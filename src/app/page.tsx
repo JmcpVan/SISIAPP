@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star } from 'lucide-react';
-import { FeaturedServices, FeaturedService, HeroSlides, type HeroSlide } from '@/lib/placeholder-images';
+import { FeaturedServices, FeaturedService, HeroSlides } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
@@ -100,7 +100,7 @@ export default function Home() {
                       index === currentSlide ? "opacity-100" : "opacity-0"
                     )}
                     data-ai-hint={slide.imageHint}
-                    priority={index === 0}
+                    priority
                   />
                 ))}
               </div>
