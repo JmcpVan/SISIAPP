@@ -94,7 +94,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="relative flex items-center justify-center p-8 animate-slide-in-right">
+          <div className="relative flex items-center justify-center p-8 md:p-12 animate-slide-in-right">
             <div className="relative w-full h-full max-w-lg mx-auto">
               <div
                 className={cn(
@@ -122,7 +122,7 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="servicios" className="py-12 md:py-24 px-8 md:px-12">
+        <section id="servicios" className="py-12 md:py-24 px-8 md:px-12 lg:px-24">
             <div>
                 <h2 className="text-3xl font-bold text-foreground mb-8">Servicios más solicitados</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
