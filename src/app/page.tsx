@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
-import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale } from 'lucide-react';
+import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star } from 'lucide-react';
 import { PlaceHolderImages, FeaturedServices, FeaturedService } from '@/lib/placeholder-images';
 import {
   Carousel,
@@ -35,6 +35,21 @@ const colorClasses: { [key: string]: string } = {
   'indigo-500': 'text-indigo-500',
 };
 
+
+const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number }) => {
+  return (
+    <div className="flex items-center gap-1">
+      {[...Array(maxRating)].map((_, i) => (
+        <Star
+          key={i}
+          className={`h-4 w-4 ${
+            i < rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'
+          }`}
+        />
+      ))}
+    </div>
+  );
+};
 
 export default function Home() {
 
@@ -104,9 +119,12 @@ export default function Home() {
                             </div>
                             <h3 className="text-xl font-semibold text-primary text-center">{service.name}</h3>
                             <p className="mt-2 text-sm text-muted-foreground text-center">{service.description}</p>
-                            <div className="flex items-center justify-end mt-4">
-                              <User className="h-4 w-4 mr-2 text-primary" />
-                              <p className="text-sm font-medium text-primary">{service.provider}</p>
+                            <div className="flex items-center justify-between mt-4">
+                              <div className="flex items-center">
+                                <User className="h-4 w-4 mr-2 text-primary" />
+                                <p className="text-sm font-medium text-primary">{service.provider}</p>
+                              </div>
+                              <Rating rating={service.rating} />
                             </div>
                         </div>
                       </div>
