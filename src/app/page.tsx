@@ -43,9 +43,9 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
-          <div className="relative w-full h-[calc(100vh-80px)]">
+        <div className="relative w-full h-[calc(100vh-80px)] overflow-hidden">
             <Carousel
-              className="relative w-full h-full"
+              className="w-full h-full"
               plugins={[
                 Autoplay({
                   delay: 5000,
