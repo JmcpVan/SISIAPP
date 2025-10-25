@@ -5,62 +5,15 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck } from 'lucide-react';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  type CarouselApi,
-} from '@/components/ui/carousel';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import React from 'react';
 
 export default function Home() {
-  const [api, setApi] = React.useState<CarouselApi>();
-
-  React.useEffect(() => {
-    if (!api) {
-      return;
-    }
-
-    const interval = setInterval(() => {
-      if (api.canScrollNext()) {
-        api.scrollNext();
-      } else {
-        api.scrollTo(0);
-      }
-    }, 5000); // Change image every 5 seconds
-
-    return () => clearInterval(interval);
-  }, [api]);
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <Header />
       <main className="flex-1">
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
-          <div className="relative w-full h-full bg-[#d8edea]">
-            <Carousel
-              className="w-full h-full"
-              opts={{ loop: true }}
-              setApi={setApi}
-            >
-              <CarouselContent>
-                {PlaceHolderImages.map((img) => (
-                  <CarouselItem key={img.id}>
-                    <div className="relative w-full h-[calc(100vh-80px)]">
-                      <Image
-                        src={img.imageUrl}
-                        alt={img.description}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={img.imageHint}
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-          </div>
           <div className="flex items-center justify-center p-8 md:p-12 bg-[#d8edea]">
             <div className="max-w-md text-center md:text-left">
               <p className="text-primary/80">Confiable y accesible para todos</p>
@@ -76,6 +29,17 @@ export default function Home() {
               <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
                 Reservar una cita online
               </Button>
+            </div>
+          </div>
+          <div className="relative w-full h-full bg-[#d8edea]">
+            <div className="relative w-full h-[calc(100vh-80px)]">
+              <Image
+                src="https://images.unsplash.com/photo-1619635173638-f9243050fc10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXAlMjByb3V0ZXxlbnwwfHx8fDE3NjEzNTE1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Stylized map route"
+                fill
+                className="object-cover"
+                data-ai-hint="map route"
+              />
             </div>
           </div>
         </section>
