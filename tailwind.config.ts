@@ -4,7 +4,6 @@ export default {
   darkMode: ['class'],
   // Safelist the classes that are dynamically generated
   safelist: [
-    'bg-blue-500',
     'bg-pink-500',
     'bg-green-500',
     'bg-yellow-500',

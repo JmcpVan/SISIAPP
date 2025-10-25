@@ -53,7 +53,7 @@
       "imageUrl": "https://picsum.photos/seed/mech1/400/300",
       "imageHint": "car repair",
       "icon": "Wrench",
-      "color": "blue-500"
+      "color": "google-blue"
     },
     {
       "id": "service-2",
