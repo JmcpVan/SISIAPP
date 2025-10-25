@@ -1,10 +1,22 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-services",
-      "description": "Una animada escena de una comunidad local con gente diversa",
-      "imageUrl": "https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsb2NhbCUyMGNvbW11bml0eXxlbnwwfHx8fDE3NjEzNDk5NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "comunidad local"
+      "id": "hero-1",
+      "description": "Una laptop mostrando una interfaz futurista sobre un escritorio limpio.",
+      "imageUrl": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsYXB0b3AlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2MTM1MTQxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laptop technology"
+    },
+    {
+      "id": "hero-2",
+      "description": "Unos modernos auriculares inalámbricos sobre una superficie de madera.",
+      "imageUrl": "https://images.unsplash.com/photo-1737885197886-9e34a03ad226?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGVhZHBob25lcyUyMGF1ZGlvfGVufDB8fHx8MTc2MTI4NTc2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "headphones audio"
+    },
+    {
+      "id": "hero-3",
+      "description": "Un smartphone con una pantalla vibrante mostrando aplicaciones.",
+      "imageUrl": "https://images.unsplash.com/photo-1697545806286-88490d083a5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzbWFydHBob25lJTIwbW9iaWxlfGVufDB8fHx8MTc2MTM1MTQxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smartphone mobile"
     }
   ]
 }

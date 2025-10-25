@@ -1,55 +1,64 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ServiceCard } from '@/components/services/service-card';
-import { services } from '@/lib/data';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-services');
+  const heroImages = PlaceHolderImages.filter(img => img.id.startsWith('hero-'));
 
   return (
-    <>
-      <section className="relative w-full h-[400px] md:h-[500px] flex items-center justify-center text-center text-white">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            data-ai-hint={heroImage.imageHint}
-            priority
-          />
-        )}
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 p-4 space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold font-headline drop-shadow-lg">
-            Descubre y Ofrece Servicios Locales
-          </h1>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-md">
-            SISIAPP te conecta con proveedores de servicios locales de confianza, validados por nuestro equipo para garantizar calidad y fiabilidad.
-          </p>
-          <Button asChild size="lg">
-            <Link href="/register">Registra Tu Servicio</Link>
-          </Button>
-        </div>
-      </section>
-
-      <section id="services" className="py-12 md:py-20 bg-secondary/50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline">
-              Servicios Destacados
-            </h2>
-            <p className="text-muted-foreground mt-2 text-lg">Explora los servicios ofrecidos en tu comunidad.</p>
+    <div className="flex flex-col min-h-screen">
+      <main className="flex-1">
+        <section className="relative w-full overflow-hidden">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-8 items-center py-12 md:py-24">
+              <div className="space-y-6 text-center lg:text-left">
+                <div className="inline-block bg-accent text-accent-foreground rounded-md px-3 py-1 text-sm font-medium">
+                  Mejores precios
+                </div>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
+                  Súper precios en tus artículos favoritos
+                </h1>
+                <p className="max-w-md mx-auto lg:mx-0 text-lg text-muted-foreground">
+                  Gana más por tu dinero
+                </p>
+                <div>
+                  <Button size="lg">Regístrate</Button>
+                </div>
+              </div>
+              <div className="relative mx-auto w-full max-w-2xl">
+                 <Carousel className="w-full"
+                  opts={{
+                    loop: true,
+                  }}
+                  >
+                  <CarouselContent>
+                    {heroImages.map((image, index) => (
+                      <CarouselItem key={index}>
+                        <Image
+                          src={image.imageUrl}
+                          alt={image.description}
+                          width={600}
+                          height={400}
+                          className="w-full rounded-xl object-cover aspect-video"
+                          data-ai-hint={image.imageHint}
+                        />
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
+                  <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
+                </Carousel>
+              </div>
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => (
-              <ServiceCard key={service.id} service={service} />
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
+        </section>
+        
+        <section className="w-full">
+            <div className="h-4 bg-accent" />
+            <div className="h-4 bg-primary" />
+        </section>
+      </main>
+    </div>
   );
 }

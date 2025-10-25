@@ -1,64 +1,78 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu } from 'lucide-react';
+import { Menu, Search } from 'lucide-react';
 import { Logo } from '@/components/icons/logo';
+
+const navLinks = [
+  { href: "#", label: "Comprar todo" },
+  { href: "#", label: "Computadoras" },
+  { href: "#", label: "Tabletas" },
+  { href: "#", label: "Drones y cámaras" },
+  { href: "#", label: "Audio" },
+  { href: "#", label: "Celulares" },
+  { href: "#", label: "T.V. y cine en casa" },
+  { href: "#", label: "Tecnología portátil" },
+  { href: "#", label: "Oferta" },
+];
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-7xl items-center mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mr-4 flex">
-          <Link href="/" className="flex items-center space-x-2">
-            <Logo className="h-8 w-8" />
-            <span className="font-bold text-lg">SISIAPP</span>
-          </Link>
-        </div>
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium ml-6">
-          <Link
-            href="/#services"
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
-          >
-            Servicios
-          </Link>
-        </nav>
-        <div className="flex flex-1 items-center justify-end space-x-4">
-          <nav className="hidden md:flex items-center">
-            <Button asChild>
-              <Link href="/register">Registrar Servicio</Link>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          <div className="flex items-center gap-6">
+            <Link href="/" className="flex items-center">
+              <Logo />
+            </Link>
+          </div>
+
+          <div className="flex items-center gap-4">
+             <Button variant="ghost" size="icon" className="hidden md:flex">
+              <Search className="h-5 w-5" />
+              <span className="sr-only">Buscar</span>
             </Button>
-          </nav>
-          
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Abrir Menú</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left">
-              <div className="p-4">
-                <Link href="/" className="flex items-center space-x-2 mb-8">
-                  <Logo className="h-8 w-8" />
-                  <span className="font-bold text-lg">SISIAPP</span>
-                </Link>
-                <nav className="grid gap-4">
-                  <Link
-                    href="/#services"
-                    className="flex w-full items-center py-2 text-lg font-semibold"
-                  >
-                    Servicios
+            
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="md:hidden">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Abrir Menú</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left">
+                <div className="p-4">
+                  <Link href="/" className="flex items-center space-x-2 mb-8">
+                    <Logo />
                   </Link>
-                  <Link
-                    href="/register"
-                    className="flex w-full items-center py-2 text-lg font-semibold"
-                  >
-                    Registrar Servicio
-                  </Link>
-                </nav>
-              </div>
-            </SheetContent>
-          </Sheet>
+                  <nav className="grid gap-4">
+                    {navLinks.map((link) => (
+                      <Link
+                        key={link.label}
+                        href={link.href}
+                        className="flex w-full items-center py-2 text-lg font-semibold"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </nav>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+        </div>
+        <div className="hidden md:flex h-12 items-center justify-center border-t">
+            <nav className="flex items-center space-x-6 text-sm font-medium">
+                {navLinks.slice(0, 3).map((link) => (
+                     <Link
+                        key={link.label}
+                        href={link.href}
+                        className="transition-colors hover:text-foreground/80 text-foreground/60"
+                    >
+                        {link.label}
+                    </Link>
+                ))}
+            </nav>
         </div>
       </div>
     </header>

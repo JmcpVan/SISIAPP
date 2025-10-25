@@ -4,8 +4,8 @@ import { Header } from '@/components/layout/header';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'SISIAPP - Encuentra Servicios Locales de Confianza',
-  description: 'SISIAPP te conecta con proveedores de servicios locales de confianza, validados por nuestro equipo para garantizar calidad y fiabilidad.',
+  title: 'SisiApp - Super precios en tus artículos favoritos',
+  description: 'Gana más por tu dinero con SisiApp. Encuentra las mejores ofertas en tecnología y más.',
 };
 
 export default function RootLayout({
@@ -19,11 +19,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="font-body antialiased">
+      <body className="font-sans antialiased">
         <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-1">{children}</main>
