@@ -16,6 +16,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
+import { Footer } from '@/components/layout/footer';
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Wrench,
@@ -168,6 +169,7 @@ export default function Home() {
         </section>
 
       </main>
+      <Footer />
     </div>
   );
 }
