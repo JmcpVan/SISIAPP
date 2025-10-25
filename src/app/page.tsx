@@ -5,7 +5,13 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck } from 'lucide-react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { PlaceHolderImages, FeaturedServices } from '@/lib/placeholder-images';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from '@/components/ui/carousel';
+import Autoplay from "embla-carousel-autoplay"
 
 export default function Home() {
 
@@ -15,19 +21,36 @@ export default function Home() {
       <main className="flex-1">
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
           <div className="relative w-full h-full">
-            <div className="relative w-full h-[calc(100vh-80px)]">
-              <Image
-                src="https://images.unsplash.com/photo-1619635173638-f9243050fc10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXAlMjByb3V0ZXxlbnwwfHx8fDE3NjEzNTE1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Stylized map route"
-                fill
-                className="object-cover"
-                data-ai-hint="map route"
-              />
-            </div>
+            <Carousel 
+              className="w-full h-full"
+              plugins={[
+                Autoplay({
+                  delay: 5000,
+                }),
+              ]}
+              opts={{
+                loop: true,
+              }}
+            >
+              <CarouselContent className="h-[calc(100vh-80px)]">
+                {PlaceHolderImages.map((image) => (
+                  <CarouselItem key={image.id}>
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={image.imageUrl}
+                        alt={image.description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={image.imageHint}
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
           <div className="flex items-center justify-center p-8 md:p-12">
             <div className="max-w-md text-center md:text-left">
-              <p className="text-primary/80">Confiable y accesible para todos</p>
               <h1 className="mt-2 text-4xl md:text-5xl font-bold text-primary tracking-tight">
                 SisiApp
               </h1>
