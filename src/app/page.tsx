@@ -68,38 +68,40 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-      <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
-          <div className="flex flex-col justify-start md:pt-16 p-8 md:p-12 lg:px-8 animate-slide-in-left">
-            <div className="w-full">
-              <div>
-                <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
-                  SisiApp
-                </h1>
-                <p className="mt-2 text-lg text-muted-foreground">
-                  Profesionales verificados, tranquilidad garantizada.
-                </p>
-              </div>
-              <div className="my-8">
-                <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={320} height={320} className="mx-auto w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80" />
-              </div>
-              <div>
-                <p className="mt-4 text-muted-foreground text-justify">
-                  En SisiApp creemos que la confianza y la comodidad van de la mano. Por eso, reunimos a los mejores profesionales verificados para que encuentres soluciones rápidas y seguras, desde el mantenimiento del hogar hasta el cuidado personal, todo en un solo lugar.
-                </p>
-                <Button size="lg" className="mt-8">
-                  Reservar tu servicio
-                </Button>
+      <section className="min-h-[calc(100vh-80px)] w-full">
+          <div className="container mx-auto grid md:grid-cols-2 h-full">
+            <div className="flex flex-col justify-start md:pt-16 p-8 md:p-12 lg:px-8 animate-slide-in-left">
+              <div className="w-full">
+                <div>
+                  <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
+                    SisiApp
+                  </h1>
+                  <p className="mt-2 text-lg text-muted-foreground">
+                    Profesionales verificados, tranquilidad garantizada.
+                  </p>
+                </div>
+                <div className="my-8">
+                  <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={320} height={320} className="mx-auto w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80" />
+                </div>
+                <div>
+                  <p className="mt-4 text-muted-foreground text-justify">
+                    En SisiApp creemos que la confianza y la comodidad van de la mano. Por eso, reunimos a los mejores profesionales verificados para que encuentres soluciones rápidas y seguras, desde el mantenimiento del hogar hasta el cuidado personal, todo en un solo lugar.
+                  </p>
+                  <Button size="lg" className="mt-8">
+                    Reservar tu servicio
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
-          
-          <div className="relative flex items-center justify-center p-8 md:p-12 lg:px-8 animate-slide-in-right">
-            <div
-              className={cn(
-                'absolute inset-0 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
-                activeSlide.bgColor
-              )}
-            />
+            
+            <div className="relative flex items-center justify-center p-8 md:p-12 lg:px-8 animate-slide-in-right">
+              <div
+                className={cn(
+                  'absolute inset-0 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
+                  activeSlide.bgColor
+                )}
+              />
+            </div>
           </div>
         </section>
         
@@ -217,3 +219,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
