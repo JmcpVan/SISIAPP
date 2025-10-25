@@ -22,69 +22,69 @@
   "featuredServices": [
     {
       "id": "service-1",
-      "name": "Consulta General",
-      "description": "Atención médica primaria para toda la familia.",
-      "provider": "Dr. Juan Pérez",
+      "name": "Mecánico a Domicilio",
+      "description": "Soluciones rápidas para tu vehículo en la comodidad de tu hogar.",
+      "provider": "Carlos Herrera",
       "price": "50.00",
       "rating": 5,
-      "imageUrl": "https://picsum.photos/seed/doc1/400/300",
-      "imageHint": "medical consultation",
-      "icon": "Stethoscope"
+      "imageUrl": "https://picsum.photos/seed/mech1/400/300",
+      "imageHint": "car repair",
+      "icon": "Wrench"
     },
     {
       "id": "service-2",
-      "name": "Seguimiento de Crónicos",
-      "description": "Control y manejo de condiciones crónicas.",
-      "provider": "Dra. Ana Gómez",
+      "name": "Servicio de Cuidadores",
+      "description": "Asistencia y compañía para adultos mayores y niños.",
+      "provider": "Ana Rodriguez",
       "price": "75.00",
       "rating": 5,
-      "imageUrl": "https://picsum.photos/seed/doc2/400/300",
-      "imageHint": "chronic care",
-      "icon": "Repeat"
+      "imageUrl": "https://picsum.photos/seed/care1/400/300",
+      "imageHint": "caregiver senior",
+      "icon": "HeartHandshake"
     },
     {
       "id": "service-3",
-      "name": "Orientación Pediátrica",
-      "description": "Consejos y cuidados para la salud de los niños.",
-      "provider": "Dr. Carlos Ruiz",
+      "name": "Tutorías y Clases",
+      "description": "Refuerzo escolar y clases particulares en diversas materias.",
+      "provider": "Sofia Vargas",
       "price": "60.00",
       "rating": 5,
-      "imageUrl": "https://picsum.photos/seed/doc3/400/300",
-      "imageHint": "pediatric advice",
-      "icon": "Baby"
+      "imageUrl": "https://picsum.photos/seed/tutor1/400/300",
+      "imageHint": "private tutoring",
+      "icon": "BookUser"
     },
     {
       "id": "service-4",
-      "name": "Consulta Dermatológica",
-      "description": "Atención especializada para problemas de la piel.",
-      "provider": "Dra. Laura Méndez",
+      "name": "Manitas a Domicilio",
+      "description": "Reparaciones y mantenimiento general para tu hogar.",
+      "provider": "Luis Garcia",
       "price": "85.00",
       "rating": 5,
-      "imageUrl": "https://picsum.photos/seed/doc4/400/300",
-      "imageHint": "dermatology",
-      "icon": "Activity"
+      "imageUrl": "https://picsum.photos/seed/handy1/400/300",
+      "imageHint": "handyman tools",
+      "icon": "HardHat"
     },
     {
       "id": "service-5",
-      "name": "Asesoría Nutricional",
-      "description": "Planes de alimentación personalizados.",
-      "provider": "Lic. Sofía Castillo",
+      "name": "Paseador de Perros",
+      "description": "Paseos y cuidado para tu mascota cuando no estás.",
+      "provider": "Laura Martinez",
       "price": "65.00",
       "rating": 5,
-      "imageUrl": "https://picsum.photos/seed/doc5/400/300",
-      "imageHint": "nutrition advice",
-      "icon": "BookOpen"
+      "imageUrl": "https://picsum.photos/seed/dog1/400/300",
+      "imageHint": "dog walker",
+      "icon": "Dog"
     },
     {
       "id": "service-6",
-      "name": "Apoyo Psicológico",
-      "description": "Terapia y apoyo para la salud mental.",
-      "provider": "Psic. Roberto Diaz",
-      "price": "70.00",
+      "name": "Asesoría Legal",
+      "description": "Orientación y consejos legales de expertos.",
+      "provider": "Roberto Diaz",
+      "price": "100.00",
       "rating": 5,
-      "imageUrl": "https://picsum.photos/seed/doc6/400/300",
-      "imageHint": "psychological support",
-      "icon": "BrainCircuit"
+      "imageUrl": "https://picsum.photos/seed/law1/400/300",
+      "imageHint": "legal advice",
+      "icon": "Scale"
     }
   ]
 }

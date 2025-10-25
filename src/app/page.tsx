@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
-import { ShieldCheck, Stethoscope, Repeat, Baby, Activity, BookOpen, BrainCircuit, User } from 'lucide-react';
+import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale } from 'lucide-react';
 import { PlaceHolderImages, FeaturedServices, FeaturedService } from '@/lib/placeholder-images';
 import {
   Carousel,
@@ -17,12 +17,12 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 
 const iconComponents: { [key: string]: React.ElementType } = {
-  Stethoscope,
-  Repeat,
-  Baby,
-  Activity,
-  BookOpen,
-  BrainCircuit,
+  Wrench,
+  HeartHandshake,
+  BookUser,
+  HardHat,
+  Dog,
+  Scale,
 };
 
 
@@ -71,7 +71,7 @@ export default function Home() {
                 Profesionales verificados, tranquilidad garantizada.
               </p>
               <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
-                Reservar una cita online
+                Reservar un servicio online
               </Button>
             </div>
           </div>
