@@ -7,7 +7,7 @@ export type ImagePlaceholder = {
   imageHint: string;
 };
 
-export type FeaturedProduct = {
+export type FeaturedService = {
   id: string;
   name: string;
   price: string;
@@ -17,4 +17,4 @@ export type FeaturedProduct = {
 };
 
 export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages;
-export const FeaturedProducts: FeaturedProduct[] = data.featuredProducts;
+export const FeaturedServices: FeaturedService[] = (data as any).featuredServices;

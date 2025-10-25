@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'NovoTec - Súper precios en tus artículos favoritos',
+  title: 'NovoTec - Súper precios en tus servicios favoritos',
   description: 'Gana más por tu dinero con NovoTec. Encuentra las mejores ofertas en tecnología y más.',
 };
 

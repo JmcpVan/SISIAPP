@@ -20,14 +20,12 @@ import {
 
 
 const categoryLinks = [
-  { href: '#', label: 'Comprar todo' },
-  { href: '#', label: 'Computadoras' },
-  { href: '#', label: 'Tabletas' },
-  { href: '#', label: 'Drones y cámaras' },
-  { href: '#', label: 'Audio' },
-  { href: '#', label: 'Celulares' },
-  { href: '#', label: 'T.V. y cine en casa' },
-  { href: '#', label: 'Tecnología portátil' },
+  { href: '#', label: 'Todos los servicios' },
+  { href: '#', label: 'Consultoría' },
+  { href: '#', label: 'Diseño' },
+  { href: '#', label: 'Desarrollo' },
+  { href: '#', label: 'Marketing' },
+  { href: '#', label: 'Soporte' },
 ];
 
 export function Header() {
@@ -42,7 +40,7 @@ export function Header() {
           </div>
           <div className="hidden md:flex flex-1 justify-center px-8 lg:px-16">
             <div className="relative w-full max-w-md">
-              <Input type="search" placeholder="Buscar productos..." className="pr-10" />
+              <Input type="search" placeholder="Buscar servicios..." className="pr-10" />
               <Button variant="ghost" size="icon" className="absolute right-1 top-1/2 -translate-y-1/2 h-8 w-8">
                   <Search className="h-4 w-4" />
               </Button>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages, FeaturedProducts } from '@/lib/placeholder-images';
+import { PlaceHolderImages, FeaturedServices } from '@/lib/placeholder-images';
 import { Star } from 'lucide-react';
 import { Header } from '@/components/layout/header';
 import { Card, CardContent } from '@/components/ui/card';
@@ -20,7 +20,7 @@ export default function Home() {
                   Mejores precios
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
-                  Súper precios en tus artículos favoritos
+                  Súper precios en tus servicios favoritos
                 </h1>
                 <p className="max-w-md mx-auto lg:mx-0 text-lg text-muted-foreground">
                   Gana más por tu dinero
@@ -47,39 +47,39 @@ export default function Home() {
         <section className="w-full py-12 md:py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Artículos Destacados</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Servicios Destacados</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Descubre nuestros artículos mejor valorados por la comunidad.
+                Descubre nuestros servicios mejor valorados por la comunidad.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {FeaturedProducts.map((product) => (
-                <Card key={product.id} className="overflow-hidden group">
+              {FeaturedServices.map((service) => (
+                <Card key={service.id} className="overflow-hidden group">
                   <CardContent className="p-0">
                     <div className="overflow-hidden">
                       <Image
-                        src={product.imageUrl}
-                        alt={product.name}
+                        src={service.imageUrl}
+                        alt={service.name}
                         width={400}
                         height={300}
                         className="w-full object-cover aspect-video transition-transform duration-300 group-hover:scale-105"
-                        data-ai-hint={product.imageHint}
+                        data-ai-hint={service.imageHint}
                       />
                     </div>
                     <div className="p-4 space-y-2">
-                      <h3 className="text-lg font-bold">{product.name}</h3>
+                      <h3 className="text-lg font-bold">{service.name}</h3>
                       <div className="flex items-center">
                         {[...Array(5)].map((_, i) => (
                           <Star
                             key={i}
                             className={`h-5 w-5 ${
-                              i < product.rating ? 'text-yellow-400 fill-yellow-400' : 'text-muted-foreground/30'
+                              i < service.rating ? 'text-yellow-400 fill-yellow-400' : 'text-muted-foreground/30'
                             }`}
                           />
                         ))}
                       </div>
-                      <p className="text-xl font-semibold">${product.price}</p>
-                      <Button className="w-full">Añadir al carrito</Button>
+                      <p className="text-xl font-semibold">${service.price}</p>
+                      <Button className="w-full">Contratar</Button>
                     </div>
                   </CardContent>
                 </Card>

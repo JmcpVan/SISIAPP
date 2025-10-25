@@ -7,38 +7,38 @@
       "imageHint": "smartphone user"
     }
   ],
-  "featuredProducts": [
+  "featuredServices": [
     {
-      "id": "product-1",
-      "name": "Laptop Pro X",
+      "id": "service-1",
+      "name": "Consultoría Web",
       "price": "25,999.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/4/400/300",
-      "imageHint": "modern laptop"
+      "imageHint": "web consulting"
     },
     {
-      "id": "product-2",
-      "name": "Audífonos Inalámbricos",
+      "id": "service-2",
+      "name": "Diseño de Marca",
       "price": "1,899.00",
       "rating": 4,
       "imageUrl": "https://picsum.photos/seed/5/400/300",
-      "imageHint": "wireless headphones"
+      "imageHint": "brand design"
     },
     {
-      "id": "product-3",
-      "name": "Cámara 4K",
+      "id": "service-3",
+      "name": "Marketing Digital",
       "price": "12,500.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/6/400/300",
-      "imageHint": "4k camera"
+      "imageHint": "digital marketing"
     },
     {
-      "id": "product-4",
-      "name": "Smartwatch 2",
+      "id": "service-4",
+      "name": "Soporte Técnico",
       "price": "4,750.00",
       "rating": 4,
       "imageUrl": "https://picsum.photos/seed/7/400/300",
-      "imageHint": "smartwatch"
+      "imageHint": "tech support"
     }
   ]
 }
