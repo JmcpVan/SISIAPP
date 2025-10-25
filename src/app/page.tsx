@@ -90,22 +90,20 @@ export default function Home() {
         <section id="servicios" className="py-12 md:py-24">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-center text-primary mb-8">Servicios más solicitados</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {FeaturedServices.map((service: FeaturedService) => {
                     const IconComponent = iconComponents[service.icon];
                     const iconColorClass = colorClasses[service.color] || 'text-primary';
                     return (
                       <div key={service.id} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 bg-white">
                         <div className={`absolute top-0 left-0 w-full h-2 bg-${service.color}`}></div>
-                        <div className="p-6 flex items-center gap-6">
-                            {IconComponent && <IconComponent className={`h-16 w-16 flex-shrink-0 ${iconColorClass}`} />}
-                            <div className="flex-grow">
-                                <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
-                                <p className="mt-1 text-sm text-muted-foreground">{service.description}</p>
-                                <div className="flex items-center justify-end mt-3">
-                                  <User className="h-4 w-4 mr-2 text-primary" />
-                                  <p className="text-sm font-medium text-primary">{service.provider}</p>
-                                </div>
+                        <div className="p-6">
+                            {IconComponent && <IconComponent className={`h-16 w-16 mb-4 ${iconColorClass}`} />}
+                            <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
+                            <p className="mt-1 text-sm text-muted-foreground">{service.description}</p>
+                            <div className="flex items-center justify-end mt-4">
+                              <User className="h-4 w-4 mr-2 text-primary" />
+                              <p className="text-sm font-medium text-primary">{service.provider}</p>
                             </div>
                         </div>
                       </div>
