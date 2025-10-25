@@ -10,7 +10,8 @@ export default {
     'bg-indigo-500',
     'bg-google-blue',
     'bg-google-red',
-    'bg-google-yellow',
+    'bg-orange-400',
+    'bg-orange-500'
   ],
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -25,7 +26,6 @@ export default {
       colors: {
         'google-blue': '#4285F4',
         'google-red': '#DB4437',
-        'google-yellow': '#FFBB00',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

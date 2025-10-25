@@ -28,7 +28,7 @@ const colorClasses: { [key: string]: string } = {
   'purple-500': 'text-purple-500',
   'indigo-500': 'text-indigo-500',
   'google-blue': 'text-google-blue',
-  'google-yellow': 'text-google-yellow'
+  'orange-500': 'text-orange-500'
 };
 
 
