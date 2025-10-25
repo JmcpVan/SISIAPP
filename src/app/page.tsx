@@ -69,7 +69,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
       <section className="w-full grid md:grid-cols-2 gap-8 md:min-h-[calc(100vh-5rem)]">
-          <div className="flex flex-col justify-center animate-slide-in-left px-8 md:px-12 lg:px-24 py-8 md:py-0">
+          <div className="flex flex-col justify-center animate-slide-in-left px-8 md:px-12 lg:px-24 py-8 md:py-0 mb-16 md:mb-0">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
                   SisiApp
