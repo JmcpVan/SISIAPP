@@ -19,7 +19,7 @@ export default function Home() {
                   Mejores precios
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
-                  Súper precios en tus artículos favoritos
+                  Súper precios en tus servicios favoritos
                 </h1>
                 <p className="max-w-md mx-auto lg:mx-0 text-lg text-muted-foreground">
                   Gana más por tu dinero
@@ -61,7 +61,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Servicios Destacados</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Descubre nuestros productos mejor valorados por la comunidad.
+                Descubre nuestros servicios mejor valorados por la comunidad.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -89,7 +89,7 @@ export default function Home() {
                         ))}
                       </div>
                       <p className="text-xl font-semibold">${product.price}</p>
-                      <Button className="w-full">Añadir al carrito</Button>
+                      <Button className="w-full">Contratar servicio</Button>
                     </div>
                   </CardContent>
                 </Card>

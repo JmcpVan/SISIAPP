@@ -5,15 +5,13 @@ import { Menu, Search } from 'lucide-react';
 import { Logo } from '@/components/icons/logo';
 
 const navLinks = [
-  { href: "#", label: "Comprar todo" },
-  { href: "#", label: "Computadoras" },
-  { href: "#", label: "Tabletas" },
-  { href: "#", label: "Drones y cámaras" },
-  { href: "#", label: "Audio" },
-  { href: "#", label: "Celulares" },
-  { href: "#", label: "T.V. y cine en casa" },
-  { href: "#", label: "Tecnología portátil" },
-  { href: "#", label: "Oferta" },
+  { href: "#", label: "Todos los servicios" },
+  { href: "#", label: "Consultoría" },
+  { href: "#", label: "Desarrollo" },
+  { href: "#", label: "Marketing" },
+  { href: "#", label: "Diseño" },
+  { href: "#", label: "Soporte" },
+  { href: "#", label: "Ofertas" },
 ];
 
 export function Header() {

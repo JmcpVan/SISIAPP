@@ -8,49 +8,49 @@
     },
     {
       "id": "hero-2",
-      "description": "Unos modernos auriculares inalámbricos sobre una superficie de madera.",
-      "imageUrl": "https://images.unsplash.com/photo-1737885197886-9e34a03ad226?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGVhZHBob25lcyUyMGF1ZGlvfGVufDB8fHx8MTc2MTI4NTc2NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "headphones audio"
+      "description": "Un equipo de profesionales colaborando en un proyecto.",
+      "imageUrl": "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjEzMDQ5Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team collaboration"
     },
     {
       "id": "hero-3",
-      "description": "Un smartphone con una pantalla vibrante mostrando aplicaciones.",
-      "imageUrl": "https://images.unsplash.com/photo-1697545806286-88490d083a5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzbWFydHBob25lJTIwbW9iaWxlfGVufDB8fHx8MTc2MTM1MTQxNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "smartphone mobile"
+      "description": "Un escritorio moderno con herramientas de diseño y tecnología.",
+      "imageUrl": "https://images.unsplash.com/photo-1657524432821-284b2f5638ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MHx8fHwxNzYxMzUxNTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "design workspace"
     }
   ],
   "featuredProducts": [
     {
-      "id": "product-1",
-      "name": "Laptop Pro X",
+      "id": "service-1",
+      "name": "Consultoría Tech",
       "price": "1,200.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/4/400/300",
       "imageHint": "modern laptop"
     },
     {
-      "id": "product-2",
-      "name": "Auriculares SoundMax",
+      "id": "service-2",
+      "name": "Soporte Remoto",
       "price": "150.00",
       "rating": 4,
       "imageUrl": "https://picsum.photos/seed/5/400/300",
-      "imageHint": "wireless headphones"
+      "imageHint": "remote support"
     },
     {
-      "id": "product-3",
-      "name": "Smartphone G-Plus",
+      "id": "service-3",
+      "name": "Desarrollo Web",
       "price": "800.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/6/400/300",
-      "imageHint": "sleek smartphone"
+      "imageHint": "web development"
     },
     {
-      "id": "product-4",
-      "name": "Cámara D-Zoom",
+      "id": "service-4",
+      "name": "Marketing Digital",
       "price": "650.00",
       "rating": 4,
       "imageUrl": "https://picsum.photos/seed/7/400/300",
-      "imageHint": "digital camera"
+      "imageHint": "digital marketing"
     }
   ]
 }

@@ -4,8 +4,8 @@ import { Header } from '@/components/layout/header';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'SisiApp - Super precios en tus artículos favoritos',
-  description: 'Gana más por tu dinero con SisiApp. Encuentra las mejores ofertas en tecnología y más.',
+  title: 'SisiApp - Super precios en tus servicios favoritos',
+  description: 'Gana más por tu dinero con SisiApp. Encuentra las mejores ofertas en servicios y más.',
 };
 
 export default function RootLayout({
