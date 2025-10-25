@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
-import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail, HelpCircle } from 'lucide-react';
+import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail, HelpCircle, Users } from 'lucide-react';
 import { FeaturedServices, FeaturedService, HeroSlides } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -156,7 +156,10 @@ export default function Home() {
 
         <section className="bg-gray-50 dark:bg-gray-800/20 py-12 md:py-24 px-8 md:px-12 lg:px-24">
           <div>
-            <h2 className="text-3xl font-bold text-foreground mb-4">Comunidad de Confianza</h2>
+            <div className="flex items-center gap-2 mb-4">
+              <Users className="h-8 w-8 text-google-blue" />
+              <h2 className="text-3xl font-bold text-foreground">Comunidad de Confianza</h2>
+            </div>
             <div className="text-muted-foreground">
               <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
             </div>
