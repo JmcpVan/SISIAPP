@@ -100,7 +100,7 @@ export default function Home() {
                         <div className="p-8 text-center">
                             {IconComponent && <IconComponent className={`h-12 w-12 ${iconColorClass} mx-auto mb-6`} />}
                             <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
-                            <p className="mt-2 text-muted-foreground h-12">{service.description}</p>
+                            <p className="mt-2 text-muted-foreground">{service.description}</p>
                             <div className="flex items-center justify-center mt-6">
                               <User className="h-4 w-4 mr-2 text-primary" />
                               <p className="text-sm font-medium text-primary">{service.provider}</p>
