@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
-import { ShieldCheck, Stethoscope, Repeat, Baby, Activity, BookOpen, BrainCircuit } from 'lucide-react';
+import { ShieldCheck, Stethoscope, Repeat, Baby, Activity, BookOpen, BrainCircuit, User } from 'lucide-react';
 import { PlaceHolderImages, FeaturedServices, FeaturedService } from '@/lib/placeholder-images';
 import {
   Carousel,
@@ -88,7 +88,10 @@ export default function Home() {
                           {IconComponent && <IconComponent className="h-10 w-10 text-primary mx-auto mb-4" />}
                           <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
                           <p className="mt-2 text-muted-foreground">{service.description}</p>
-                          <p className="mt-2 text-sm font-medium text-primary">{service.provider}</p>
+                          <div className="flex items-center justify-center mt-2">
+                            <User className="h-4 w-4 mr-2 text-primary" />
+                            <p className="text-sm font-medium text-primary">{service.provider}</p>
+                          </div>
                       </div>
                     )
                   })}
