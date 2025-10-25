@@ -135,13 +135,11 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="py-12 bg-gray-50">
+        <section className="bg-gray-50 py-12">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-foreground mb-4">Comunidad de Confianza</h2>
-            <div className="text-muted-foreground space-y-4">
-              <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites.</p>
-              <p className="text-justify">Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada.</p>
-              <p className="text-justify">Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
+            <div className="text-muted-foreground">
+              <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
             </div>
           </div>
         </section>
