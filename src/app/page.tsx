@@ -5,17 +5,10 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star } from 'lucide-react';
-import { PlaceHolderImages, FeaturedServices, FeaturedService } from '@/lib/placeholder-images';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from '@/components/ui/carousel';
-import Autoplay from "embla-carousel-autoplay"
+import { FeaturedServices, FeaturedService } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Card } from '@/components/ui/card';
 import { Footer } from '@/components/layout/footer';
 
 const iconComponents: { [key: string]: React.ElementType } = {
@@ -58,48 +51,34 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-1">
-        <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
-        <div className="relative w-full h-full">
-            <Carousel
-              className="w-full h-full"
-              plugins={[
-                Autoplay({
-                  delay: 5000,
-                }),
-              ]}
-              opts={{
-                loop: true,
-              }}
-            >
-              <CarouselContent className="h-full">
-                {PlaceHolderImages.map((image) => (
-                  <CarouselItem key={image.id} className="h-full">
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={image.imageUrl}
-                        alt={image.description}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={image.imageHint}
-                        priority={image.id === 'doctor-hero'}
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-          </div>
-          <div className="flex items-center justify-center p-8 md:p-12">
+      <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)] overflow-hidden">
+          {/* Left side content with animation */}
+          <div className="flex items-center justify-center p-8 md:p-12 animate-slide-in-left">
             <div className="max-w-md text-center md:text-left">
-              <h1 className="mt-2 text-4xl md:text-5xl font-bold text-foreground tracking-tight">
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
                 SisiApp
               </h1>
-              <p className="mt-2 text-base text-foreground/90">
+              <p className="mt-4 text-lg text-muted-foreground">
                 Profesionales verificados, tranquilidad garantizada.
               </p>
-              <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Button size="lg" className="mt-8">
                 Reservar tu servicio
               </Button>
+            </div>
+          </div>
+          {/* Right side image with animation */}
+          <div className="relative flex items-center justify-center p-8 animate-slide-in-right">
+            <div className="relative w-full h-full max-w-lg mx-auto">
+              <div className="absolute inset-0 bg-gradient-to-tr from-yellow-400 to-orange-500 rounded-[2rem] transform -rotate-6"></div>
+              <div className="relative w-full h-[300px] md:h-[400px] rounded-[2rem] overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Persona usando un servicio en su smartphone"
+                  fill
+                  className="object-cover"
+                  data-ai-hint="person using app"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -112,7 +91,7 @@ export default function Home() {
                     const IconComponent = iconComponents[service.icon];
                     const iconColorClass = colorClasses[service.color] || 'text-primary';
                     return (
-                      <div key={service.id} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 bg-white">
+                      <div key={service.id} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 bg-card">
                         <div className={`absolute top-0 left-0 w-full h-2 bg-${service.color}`}></div>
                         <div className="p-6">
                             <div className="flex justify-center mb-4">
@@ -135,8 +114,8 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="bg-gray-50 py-12">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="bg-gray-50 dark:bg-gray-800/20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">Comunidad de Confianza</h2>
             <div className="text-muted-foreground">
               <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
@@ -161,7 +140,7 @@ export default function Home() {
                             <Label htmlFor="message">Mensaje</Label>
                             <Textarea id="message" placeholder="Escribe tu mensaje aquí" />
                         </div>
-                        <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">Enviar Mensaje</Button>
+                        <Button type="submit" className="w-full">Enviar Mensaje</Button>
                     </form>
                 </div>
             </div>
