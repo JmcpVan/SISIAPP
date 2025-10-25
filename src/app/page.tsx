@@ -5,11 +5,13 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star } from 'lucide-react';
-import { FeaturedServices, FeaturedService } from '@/lib/placeholder-images';
+import { FeaturedServices, FeaturedService, HeroSlides, type HeroSlide } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Footer } from '@/components/layout/footer';
+import { useEffect, useState } from 'react';
+import { cn } from '@/lib/utils';
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Wrench,
@@ -46,14 +48,25 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 };
 
 export default function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % HeroSlides.length);
+    }, 5000); 
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const activeSlide = HeroSlides[currentSlide];
+
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-1">
       <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)] overflow-hidden">
-          {/* Left side content with animation */}
-          <div className="flex items-center justify-center p-8 md:p-12 animate-slide-in-left-loop">
+          <div className="flex items-center justify-center p-8 md:p-12 animate-slide-in-left">
             <div className="max-w-md text-center md:text-left">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
                 SisiApp
@@ -66,18 +79,30 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          {/* Right side image with animation */}
-          <div className="relative flex items-center justify-center p-8 animate-slide-in-right-loop">
+          
+          <div className="relative flex items-center justify-center p-8 animate-slide-in-right">
             <div className="relative w-full h-full max-w-lg mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-tr from-yellow-400 to-orange-500 rounded-[2rem] transform -rotate-6"></div>
+              <div
+                className={cn(
+                  'absolute inset-0 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
+                  activeSlide.bgColor
+                )}
+              ></div>
               <div className="relative w-full h-[300px] md:h-[400px] rounded-[2rem] overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Persona usando un servicio en su smartphone"
-                  fill
-                  className="object-cover"
-                  data-ai-hint="person using app"
-                />
+                {HeroSlides.map((slide, index) => (
+                  <Image
+                    key={slide.id}
+                    src={slide.imageUrl}
+                    alt={slide.description}
+                    fill
+                    className={cn(
+                      "object-cover transition-opacity duration-1000",
+                      index === currentSlide ? "opacity-100" : "opacity-0"
+                    )}
+                    data-ai-hint={slide.imageHint}
+                    priority={index === 0}
+                  />
+                ))}
               </div>
             </div>
           </div>

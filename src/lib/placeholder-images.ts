@@ -7,6 +7,14 @@ export type ImagePlaceholder = {
   imageHint: string;
 };
 
+export type HeroSlide = {
+  id: string;
+  description: string;
+  imageUrl: string;
+  imageHint: string;
+  bgColor: string;
+};
+
 export type FeaturedService = {
   id: string;
   name: string;
@@ -20,5 +28,6 @@ export type FeaturedService = {
   color: string;
 };
 
+export const HeroSlides: HeroSlide[] = data.heroSlides;
 export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages;
 export const FeaturedServices: FeaturedService[] = (data as any).featuredServices;

@@ -1,4 +1,27 @@
 {
+  "heroSlides": [
+    {
+      "id": "slide-1",
+      "description": "Una persona usando una aplicación en su teléfono para pedir un servicio.",
+      "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "person using app",
+      "bgColor": "bg-google-blue"
+    },
+    {
+      "id": "slide-2",
+      "description": "Un manitas profesional trabajando en una casa.",
+      "imageUrl": "https://images.unsplash.com/photo-1577979313248-0f31a2f6f5d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "professional handyman",
+      "bgColor": "bg-google-red"
+    },
+    {
+      "id": "slide-3",
+      "description": "Una cuidadora asistiendo a una persona mayor.",
+      "imageUrl": "https://images.unsplash.com/photo-1584433144853-1ffae321a52b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "caregiver senior",
+      "bgColor": "bg-google-yellow"
+    }
+  ],
   "placeholderImages": [
     {
       "id": "doctor-hero",
