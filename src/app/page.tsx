@@ -14,6 +14,17 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
+          <div className="relative w-full h-full">
+            <div className="relative w-full h-[calc(100vh-80px)]">
+              <Image
+                src="https://images.unsplash.com/photo-1619635173638-f9243050fc10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXAlMjByb3V0ZXxlbnwwfHx8fDE3NjEzNTE1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Stylized map route"
+                fill
+                className="object-cover"
+                data-ai-hint="map route"
+              />
+            </div>
+          </div>
           <div className="flex items-center justify-center p-8 md:p-12">
             <div className="max-w-md text-center md:text-left">
               <p className="text-primary/80">Confiable y accesible para todos</p>
@@ -29,17 +40,6 @@ export default function Home() {
               <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground">
                 Reservar una cita online
               </Button>
-            </div>
-          </div>
-          <div className="relative w-full h-full">
-            <div className="relative w-full h-[calc(100vh-80px)]">
-              <Image
-                src="https://images.unsplash.com/photo-1619635173638-f9243050fc10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXAlMjByb3V0ZXxlbnwwfHx8fDE3NjEzNTE1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Stylized map route"
-                fill
-                className="object-cover"
-                data-ai-hint="map route"
-              />
             </div>
           </div>
         </section>
