@@ -100,10 +100,10 @@ export default function Home() {
             <Image
               src={activeSlide.imageUrl}
               alt={activeSlide.description}
-              width={600}
-              height={400}
+              width={550}
+              height={367}
               data-ai-hint={activeSlide.imageHint}
-              className="relative w-full rounded-[2rem] shadow-2xl transform -translate-y-24"
+              className="relative w-11/12 rounded-[2rem] shadow-2xl transform -translate-y-24"
             />
           </div>
         </section>
@@ -221,7 +221,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
-
-    
