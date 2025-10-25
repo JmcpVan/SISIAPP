@@ -93,7 +93,7 @@ export default function Home() {
           <div className="relative flex items-center justify-center p-8 overflow-hidden">
             <div
               className={cn(
-                'absolute inset-8 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
+                'absolute inset-16 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
                 activeSlide.bgColor
               )}
             />
