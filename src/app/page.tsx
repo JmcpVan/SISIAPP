@@ -53,7 +53,7 @@ export default function Home() {
       <main className="flex-1">
       <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)] overflow-hidden">
           {/* Left side content with animation */}
-          <div className="flex items-center justify-center p-8 md:p-12 animate-slide-in-left">
+          <div className="flex items-center justify-center p-8 md:p-12 animate-slide-in-left-loop">
             <div className="max-w-md text-center md:text-left">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
                 SisiApp
@@ -67,7 +67,7 @@ export default function Home() {
             </div>
           </div>
           {/* Right side image with animation */}
-          <div className="relative flex items-center justify-center p-8 animate-slide-in-right">
+          <div className="relative flex items-center justify-center p-8 animate-slide-in-right-loop">
             <div className="relative w-full h-full max-w-lg mx-auto">
               <div className="absolute inset-0 bg-gradient-to-tr from-yellow-400 to-orange-500 rounded-[2rem] transform -rotate-6"></div>
               <div className="relative w-full h-[300px] md:h-[400px] rounded-[2rem] overflow-hidden">
