@@ -1,11 +1,10 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Header } from '@/components/layout/header';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'SisiApp - Super precios en tus servicios favoritos',
-  description: 'Gana más por tu dinero con SisiApp. Encuentra las mejores ofertas en servicios y más.',
+  title: 'NovoTec - Súper precios en tus artículos favoritos',
+  description: 'Gana más por tu dinero con NovoTec. Encuentra las mejores ofertas en tecnología y más.',
 };
 
 export default function RootLayout({
@@ -24,10 +23,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased">
-        <div className="flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-        </div>
+        {children}
         <Toaster />
       </body>
     </html>

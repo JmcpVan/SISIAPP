@@ -5,52 +5,40 @@
       "description": "Una laptop mostrando una interfaz futurista sobre un escritorio limpio.",
       "imageUrl": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsYXB0b3AlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2MTM1MTQxNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "laptop technology"
-    },
-    {
-      "id": "hero-2",
-      "description": "Un equipo de profesionales colaborando en un proyecto.",
-      "imageUrl": "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjEzMDQ5Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "team collaboration"
-    },
-    {
-      "id": "hero-3",
-      "description": "Un escritorio moderno con herramientas de diseño y tecnología.",
-      "imageUrl": "https://images.unsplash.com/photo-1657524432821-284b2f5638ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkZXNpZ24lMjB3b3Jrc3BhY2V8ZW58MHx8fHwxNzYxMzUxNTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "design workspace"
     }
   ],
   "featuredProducts": [
     {
-      "id": "service-1",
-      "name": "Consultoría Tech",
-      "price": "1,200.00",
+      "id": "product-1",
+      "name": "Laptop Pro X",
+      "price": "25,999.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/4/400/300",
       "imageHint": "modern laptop"
     },
     {
-      "id": "service-2",
-      "name": "Soporte Remoto",
-      "price": "150.00",
+      "id": "product-2",
+      "name": "Audífonos Inalámbricos",
+      "price": "1,899.00",
       "rating": 4,
       "imageUrl": "https://picsum.photos/seed/5/400/300",
-      "imageHint": "remote support"
+      "imageHint": "wireless headphones"
     },
     {
-      "id": "service-3",
-      "name": "Desarrollo Web",
-      "price": "800.00",
+      "id": "product-3",
+      "name": "Cámara 4K",
+      "price": "12,500.00",
       "rating": 5,
       "imageUrl": "https://picsum.photos/seed/6/400/300",
-      "imageHint": "web development"
+      "imageHint": "4k camera"
     },
     {
-      "id": "service-4",
-      "name": "Marketing Digital",
-      "price": "650.00",
+      "id": "product-4",
+      "name": "Smartwatch 2",
+      "price": "4,750.00",
       "rating": 4,
       "imageUrl": "https://picsum.photos/seed/7/400/300",
-      "imageHint": "digital marketing"
+      "imageHint": "smartwatch"
     }
   ]
 }
