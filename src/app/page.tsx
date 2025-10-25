@@ -10,11 +10,11 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 export default function Home() {
 
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-[#d8edea]">
       <Header />
       <main className="flex-1">
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
-          <div className="flex items-center justify-center p-8 md:p-12 bg-[#d8edea]">
+          <div className="flex items-center justify-center p-8 md:p-12">
             <div className="max-w-md text-center md:text-left">
               <p className="text-primary/80">Confiable y accesible para todos</p>
               <h1 className="mt-2 text-4xl md:text-5xl font-bold text-primary tracking-tight">
@@ -31,7 +31,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="relative w-full h-full bg-[#d8edea]">
+          <div className="relative w-full h-full">
             <div className="relative w-full h-[calc(100vh-80px)]">
               <Image
                 src="https://images.unsplash.com/photo-1619635173638-f9243050fc10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXAlMjByb3V0ZXxlbnwwfHx8fDE3NjEzNTE1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080"
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="servicios" className="py-12 md:py-24">
+        <section id="servicios" className="py-12 md:py-24 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-center text-primary mb-8">Servicios más solicitados</h2>
                 {/* Placeholder for featured services */}
