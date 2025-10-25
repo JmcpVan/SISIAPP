@@ -3,8 +3,8 @@ export function Logo() {
     <div className="flex items-center gap-2 px-4 py-2 rounded-md">
       <svg
         width="24"
-        height="24"
-        viewBox="0 0 24 24"
+        height="25"
+        viewBox="0 0 24 25"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6"
@@ -17,7 +17,7 @@ export function Logo() {
           strokeLinejoin="round"
         />
         <circle cx="12" cy="10" r="3" stroke="#FBBC05" strokeWidth="2" />
-        <circle cx="12" cy="23" r="1" fill="#34A853" />
+        <circle cx="12" cy="23.5" r="1.5" fill="#34A853" />
       </svg>
       <span className="font-bold text-xl text-white">SisiApp</span>
     </div>
