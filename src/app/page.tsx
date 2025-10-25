@@ -68,7 +68,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-        <section className="w-full py-12 md:py-16 min-h-[85vh] flex items-center px-8 md:px-12 lg:px-24 mx-auto grid md:grid-cols-2 gap-8 h-full">
+      <section className="w-full py-12 md:py-16 min-h-[85vh] grid md:grid-cols-2 gap-8 h-full px-8 md:px-12 lg:px-24">
           <div className="flex flex-col justify-center animate-slide-in-left">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
@@ -110,7 +110,7 @@ export default function Home() {
                 <p className="text-justify">En nuestra comunidad encontrarás profesionales verificados listos para ayudarte en lo que necesites. Desde mecánicos y cuidadores hasta tutores, paseadores y asesores legales, todos nuestros colaboradores han sido evaluados para garantizarte confianza, calidad y atención personalizada. Explora los servicios más solicitados y elige con tranquilidad, sabiendo que cada profesional ha sido validado por nuestro equipo.</p>
               </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                  {FeaturedServices.map((service: FeaturedService) => {
+                  {FeaturedServices.map((service: any) => {
                     const IconComponent = iconComponents[service.icon];
                     const iconColorClass = colorClasses[service.color] || 'text-primary';
                     return (
@@ -213,5 +213,4 @@ export default function Home() {
       <Footer />
     </div>
   );
-
-    
+}
