@@ -1,10 +1,25 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Search, User, Heart, ShoppingCart } from 'lucide-react';
+import { Search, User, Heart, ShoppingCart, ChevronDown } from 'lucide-react';
 import { Logo } from '@/components/icons/logo';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  DropdownMenuSeparator
+} from "@/components/ui/dropdown-menu"
+import {
+    Menubar,
+    MenubarContent,
+    MenubarMenu,
+    MenubarTrigger,
+    MenubarItem
+} from '@/components/ui/menubar';
 
-const navLinks = [
+
+const categoryLinks = [
   { href: '#', label: 'Comprar todo' },
   { href: '#', label: 'Computadoras' },
   { href: '#', label: 'Tabletas' },
@@ -13,7 +28,6 @@ const navLinks = [
   { href: '#', label: 'Celulares' },
   { href: '#', label: 'T.V. y cine en casa' },
   { href: '#', label: 'Tecnología portátil' },
-  { href: '#', label: 'Oferta' },
 ];
 
 export function Header() {
@@ -35,19 +49,24 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <Button variant="ghost" className="hidden md:flex items-center gap-2">
-              <User className="h-5 w-5" />
-              <span>Entrar</span>
-            </Button>
-            <Button variant="ghost" className="hidden md:flex items-center gap-2">
-              <Heart className="h-5 w-5" />
-              <span>Favoritos</span>
-            </Button>
-            <Button variant="ghost" className="flex items-center gap-2">
-              <ShoppingCart className="h-5 w-5" />
-              <span className="hidden md:inline">Carrito</span>
-              <span className="bg-primary text-primary-foreground rounded-full px-2 text-xs">0</span>
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" className="flex items-center gap-2">
+                  <User className="h-5 w-5" />
+                  <span className="hidden md:inline">Entrar</span>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56">
+                <DropdownMenuItem>
+                  <Heart className="mr-2 h-4 w-4" />
+                  <span>Favoritos</span>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <ShoppingCart className="mr-2 h-4 w-4" />
+                  <span>Carrito</span>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
              <Button variant="ghost" size="icon" className="md:hidden">
               <Search className="h-5 w-5" />
             </Button>
@@ -56,17 +75,36 @@ export function Header() {
       </div>
       
       <div className="hidden md:flex h-12 items-center justify-center border-t bg-gray-50">
-        <nav className="flex items-center space-x-6 text-sm font-medium">
-          {navLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              className="transition-colors text-gray-600 hover:text-gray-900"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        <Menubar className="border-none bg-transparent p-0">
+          <MenubarMenu>
+              <Link
+                href="#"
+                className="px-3 py-1.5 text-sm font-medium transition-colors text-gray-600 hover:text-gray-900"
+              >
+                Inicio
+              </Link>
+          </MenubarMenu>
+          <MenubarMenu>
+            <MenubarTrigger className="cursor-pointer">
+              Categorías <ChevronDown className="ml-1 h-4 w-4" />
+            </MenubarTrigger>
+            <MenubarContent>
+                {categoryLinks.map(link => (
+                    <MenubarItem key={link.label}>
+                         <Link href={link.href}>{link.label}</Link>
+                    </MenubarItem>
+                ))}
+            </MenubarContent>
+          </MenubarMenu>
+          <MenubarMenu>
+          <Link
+                href="#"
+                className="px-3 py-1.5 text-sm font-medium transition-colors text-gray-600 hover:text-gray-900"
+              >
+                Oferta
+              </Link>
+          </MenubarMenu>
+        </Menubar>
       </div>
     </header>
   );
