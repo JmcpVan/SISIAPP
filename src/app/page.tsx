@@ -10,9 +10,10 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Footer } from '@/components/layout/footer';
-import { useEffect, useState } from 'react';
-import { cn } from '@/lib/utils';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
+import Autoplay from "embla-carousel-autoplay";
+import { cn } from '@/lib/utils';
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Wrench,
@@ -53,19 +54,6 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 };
 
 export default function Home() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % HeroSlides.length);
-    }, 5000); 
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const activeSlide = HeroSlides[currentSlide];
-
-
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
@@ -96,33 +84,40 @@ export default function Home() {
           </div>
           
           <div className="relative flex items-center justify-center p-8 md:p-12 lg:px-8">
-            <div className="relative w-full h-full mx-auto">
-              <div
-                className={cn(
-                  'absolute inset-0 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
-                  activeSlide.bgColor
-                )}
-              ></div>
-              <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-[2rem] overflow-hidden">
-                {HeroSlides.map((slide, index) => (
-                  <div
-                    key={slide.id}
-                    className={cn(
-                      "absolute inset-0 transition-opacity duration-1000",
-                      index === currentSlide ? "opacity-100" : "opacity-0"
-                    )}
-                  >
-                    <Image
-                      src={slide.imageUrl}
-                      alt={slide.description}
-                      fill
-                      className="object-cover"
-                      data-ai-hint={slide.imageHint}
+            <Carousel
+              className="w-full h-full"
+              plugins={[
+                Autoplay({
+                  delay: 5000,
+                  stopOnInteraction: false,
+                }),
+              ]}
+              opts={{
+                loop: true,
+              }}
+            >
+              <CarouselContent>
+                {HeroSlides.map((slide) => (
+                  <CarouselItem key={slide.id} className="relative">
+                    <div
+                      className={cn(
+                        'absolute inset-0 rounded-[2rem] transform -rotate-6',
+                        slide.bgColor
+                      )}
                     />
-                  </div>
+                    <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-[2rem] overflow-hidden">
+                      <Image
+                        src={slide.imageUrl}
+                        alt={slide.description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={slide.imageHint}
+                      />
+                    </div>
+                  </CarouselItem>
                 ))}
-              </div>
-            </div>
+              </CarouselContent>
+            </Carousel>
           </div>
         </section>
         
@@ -240,9 +235,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
-
-    
-
-    
