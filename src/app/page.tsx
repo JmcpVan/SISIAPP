@@ -88,7 +88,7 @@ export default function Home() {
                       <div key={service.id} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 bg-white">
                         <div className={`absolute top-0 left-0 w-full h-2 bg-${service.color}`}></div>
                         <div className="p-8 text-center">
-                            {IconComponent && <IconComponent className={`h-12 w-12 text-${service.color} mx-auto mb-6`} />}
+                            {IconComponent && <IconComponent className={`h-12 w-12 text-primary mx-auto mb-6`} />}
                             <h3 className="text-xl font-semibold text-primary">{service.name}</h3>
                             <p className="mt-2 text-muted-foreground h-12">{service.description}</p>
                             <div className="flex items-center justify-center mt-6">
