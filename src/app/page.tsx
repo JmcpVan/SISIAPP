@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
-import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail } from 'lucide-react';
+import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail, HelpCircle } from 'lucide-react';
 import { FeaturedServices, FeaturedService, HeroSlides } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -201,7 +201,10 @@ export default function Home() {
         
         <section id="help" className="py-12 md:py-24 bg-gray-50 dark:bg-gray-800/20 px-8 md:px-12 lg:px-24">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-foreground mb-8">Preguntas Frecuentes (Ayuda)</h2>
+            <div className="flex items-center gap-2 mb-8">
+              <HelpCircle className="h-8 w-8 text-google-blue" />
+              <h2 className="text-3xl font-bold text-foreground">Preguntas Frecuentes (Ayuda)</h2>
+            </div>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>¿Cómo funciona la verificación de profesionales?</AccordionTrigger>
