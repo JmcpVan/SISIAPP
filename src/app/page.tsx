@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-1">
-        <section className="relative w-full bg-gray-50 overflow-hidden">
+        <section className="relative w-full bg-background overflow-hidden">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-8 items-center py-12 md:py-24">
               <div className="space-y-6 text-center lg:text-left">
@@ -26,7 +26,7 @@ export default function Home() {
                   Gana más por tu dinero
                 </p>
                 <div>
-                  <Button size="lg">Comprar ahora</Button>
+                  <Button size="lg">regístrate</Button>
                 </div>
               </div>
               <div className="relative mx-auto w-full max-w-2xl">
