@@ -6,7 +6,6 @@ export default {
   safelist: [
     'bg-pink-500',
     'bg-green-500',
-    'bg-yellow-500',
     'bg-purple-500',
     'bg-indigo-500',
     'bg-google-blue',
@@ -26,7 +25,7 @@ export default {
       colors: {
         'google-blue': '#4285F4',
         'google-red': '#DB4437',
-        'google-yellow': '#F4B400',
+        'google-yellow': '#FFBB00',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

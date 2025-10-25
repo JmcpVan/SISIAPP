@@ -25,10 +25,10 @@ const iconComponents: { [key: string]: React.ElementType } = {
 const colorClasses: { [key: string]: string } = {
   'pink-500': 'text-pink-500',
   'green-500': 'text-green-500',
-  'yellow-500': 'text-yellow-500',
   'purple-500': 'text-purple-500',
   'indigo-500': 'text-indigo-500',
-  'google-blue': 'text-google-blue'
+  'google-blue': 'text-google-blue',
+  'google-yellow': 'text-google-yellow'
 };
 
 
