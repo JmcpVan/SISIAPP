@@ -27,7 +27,7 @@ export default function Home() {
             <div className="max-w-md text-center md:text-left">
               <p className="text-primary/80">Confiable y accesible para todos</p>
               <h1 className="mt-2 text-4xl md:text-5xl font-bold text-primary tracking-tight">
-                Dra. Alicia Haz
+                SisiApp
               </h1>
               <p className="mt-2 text-3xl md:text-4xl text-primary/90">
                 Servicio médico en línea
@@ -65,8 +65,7 @@ export default function Home() {
                 <div className="flex justify-center mb-4">
                     <ShieldCheck className="h-12 w-12 text-primary" />
                 </div>
-                <h2 className="text-3xl font-bold text-primary">Profesionales verificados, tranquilidad garantizada</h2>
-                <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">Enfocado en la validación y tu seguridad.</p>
+                <h2 className="text-3xl font-bold text-primary">SisiApp, tu seguridad garantizada</h2>
             </div>
         </section>
 

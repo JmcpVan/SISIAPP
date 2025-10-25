@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Dra. Alicia Haz - Servicio Médico en Línea',
+  title: 'SisiApp - Servicio Médico en Línea',
   description: 'Atención médica confiable y accesible para toda la familia.',
 };
 
