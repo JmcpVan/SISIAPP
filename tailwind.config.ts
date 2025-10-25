@@ -10,7 +10,7 @@ export default {
     'bg-indigo-500',
     'bg-google-blue',
     'bg-google-red',
-    'bg-orange-400',
+    'bg-primary',
     'bg-orange-500'
   ],
   content: [
