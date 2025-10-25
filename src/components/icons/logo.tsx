@@ -3,11 +3,11 @@ export function Logo() {
     <div className="flex items-center gap-2 px-4 py-2 rounded-md">
       <svg
         width="24"
-        height="29"
-        viewBox="0 0 24 29"
+        height="33"
+        viewBox="0 0 24 33"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="h-7 w-6"
+        className="h-8 w-6"
       >
         <path
           d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
@@ -17,7 +17,7 @@ export function Logo() {
           strokeLinejoin="round"
         />
         <circle cx="12" cy="10" r="3" stroke="#FBBC05" strokeWidth="2" />
-        <circle cx="12" cy="26" r="2.5" fill="#34A853" />
+        <circle cx="12" cy="30" r="2.5" fill="#34A853" />
       </svg>
       <span className="font-bold text-xl text-white">SisiApp</span>
     </div>
