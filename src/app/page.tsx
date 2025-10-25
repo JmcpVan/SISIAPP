@@ -45,7 +45,7 @@ export default function Home() {
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
           <div className="relative w-full h-[calc(100vh-80px)]">
             <Carousel
-              className="w-full h-full"
+              className="relative w-full h-full"
               plugins={[
                 Autoplay({
                   delay: 5000,
@@ -55,9 +55,9 @@ export default function Home() {
                 loop: true,
               }}
             >
-              <CarouselContent>
+              <CarouselContent className="h-full">
                 {PlaceHolderImages.map((image) => (
-                  <CarouselItem key={image.id}>
+                  <CarouselItem key={image.id} className="h-full">
                     <div className="relative w-full h-full">
                       <Image
                         src={image.imageUrl}
@@ -65,6 +65,7 @@ export default function Home() {
                         fill
                         className="object-cover"
                         data-ai-hint={image.imageHint}
+                        priority={image.id === 'doctor-hero'}
                       />
                     </div>
                   </CarouselItem>
