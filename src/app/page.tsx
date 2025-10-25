@@ -68,7 +68,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-      <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)] overflow-hidden">
+      <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
           <div className="flex flex-col justify-start md:pt-16 p-8 md:p-12 lg:px-8 animate-slide-in-left">
             <div className="w-full">
               <div>
@@ -217,5 +217,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
