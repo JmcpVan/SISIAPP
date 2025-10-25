@@ -11,7 +11,7 @@ export function SisiLogoHero(props: SVGProps<SVGSVGElement>) {
       <circle cx="25" cy="70" r="5" fill="#EA4335" />
       <path
         d="M 28 65 C 20 45, 45 45, 65 25"
-        stroke="#4285F4"
+        stroke="white"
         strokeWidth="6"
         fill="none"
         strokeLinecap="round"
