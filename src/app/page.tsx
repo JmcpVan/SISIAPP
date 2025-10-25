@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { PlaceHolderImages, FeaturedProducts } from '@/lib/placeholder-images';
+import { Star } from 'lucide-react';
 
 export default function Home() {
   const heroImages = PlaceHolderImages.filter(img => img.id.startsWith('hero-'));
@@ -54,6 +56,48 @@ export default function Home() {
           </div>
         </section>
         
+        <section className="w-full py-12 md:py-24 bg-muted/40">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Servicios Destacados</h2>
+              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Descubre nuestros productos mejor valorados por la comunidad.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {FeaturedProducts.map((product) => (
+                <Card key={product.id} className="overflow-hidden">
+                  <CardContent className="p-0">
+                    <Image
+                      src={product.imageUrl}
+                      alt={product.name}
+                      width={400}
+                      height={300}
+                      className="w-full object-cover aspect-video"
+                      data-ai-hint={product.imageHint}
+                    />
+                    <div className="p-4 space-y-2">
+                      <h3 className="text-lg font-bold">{product.name}</h3>
+                      <div className="flex items-center">
+                        {[...Array(5)].map((_, i) => (
+                          <Star
+                            key={i}
+                            className={`h-5 w-5 ${
+                              i < product.rating ? 'text-yellow-400 fill-yellow-400' : 'text-muted-foreground'
+                            }`}
+                          />
+                        ))}
+                      </div>
+                      <p className="text-xl font-semibold">${product.price}</p>
+                      <Button className="w-full">Añadir al carrito</Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="w-full">
             <div className="h-4 bg-accent" />
             <div className="h-4 bg-primary" />

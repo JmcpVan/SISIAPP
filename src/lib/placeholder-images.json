@@ -18,5 +18,39 @@
       "imageUrl": "https://images.unsplash.com/photo-1697545806286-88490d083a5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzbWFydHBob25lJTIwbW9iaWxlfGVufDB8fHx8MTc2MTM1MTQxNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "smartphone mobile"
     }
+  ],
+  "featuredProducts": [
+    {
+      "id": "product-1",
+      "name": "Laptop Pro X",
+      "price": "1,200.00",
+      "rating": 5,
+      "imageUrl": "https://picsum.photos/seed/4/400/300",
+      "imageHint": "modern laptop"
+    },
+    {
+      "id": "product-2",
+      "name": "Auriculares SoundMax",
+      "price": "150.00",
+      "rating": 4,
+      "imageUrl": "https://picsum.photos/seed/5/400/300",
+      "imageHint": "wireless headphones"
+    },
+    {
+      "id": "product-3",
+      "name": "Smartphone G-Plus",
+      "price": "800.00",
+      "rating": 5,
+      "imageUrl": "https://picsum.photos/seed/6/400/300",
+      "imageHint": "sleek smartphone"
+    },
+    {
+      "id": "product-4",
+      "name": "Cámara D-Zoom",
+      "price": "650.00",
+      "rating": 4,
+      "imageUrl": "https://picsum.photos/seed/7/400/300",
+      "imageHint": "digital camera"
+    }
   ]
 }
