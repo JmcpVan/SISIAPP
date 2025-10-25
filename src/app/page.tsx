@@ -103,7 +103,7 @@ export default function Home() {
               width={600}
               height={400}
               data-ai-hint={activeSlide.imageHint}
-              className="relative w-5/6 rounded-[2rem] shadow-2xl transform -translate-y-12"
+              className="relative w-full rounded-[2rem] shadow-2xl transform -translate-y-12"
             />
           </div>
         </section>
@@ -221,5 +221,7 @@ export default function Home() {
     </div>
   );
 }
+
+    
 
     
