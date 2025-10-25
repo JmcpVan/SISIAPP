@@ -76,7 +76,7 @@ export default function Home() {
               </p>
             </div>
              <div className="max-w-md w-full my-8">
-               <Image src="/img/lulo-placeholder.svg" alt="Lulo" width={300} height={100} className="mx-auto" />
+               <Image src="/img/logo.svg" alt="Lulo" width={200} height={200} className="mx-auto" />
             </div>
             <div className="max-w-md w-full mt-auto">
                <p className="mt-4 text-muted-foreground text-justify">
@@ -194,5 +194,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
