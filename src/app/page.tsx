@@ -66,7 +66,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
       <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)] overflow-hidden">
-          <div className="flex flex-col justify-center p-8 md:p-12 animate-slide-in-left">
+          <div className="flex flex-col justify-start md:pt-16 p-8 md:p-12 animate-slide-in-left">
             <div className="w-full">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
@@ -77,7 +77,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="my-8">
-                <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={200} height={200} className="mx-auto" />
+                <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={256} height={256} className="mx-auto w-48 h-48 md:w-64 md:h-64" />
               </div>
               <div>
                 <p className="mt-4 text-muted-foreground text-justify">
