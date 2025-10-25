@@ -10,16 +10,25 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
       {...props}
       className={cn(props.className)}
     >
+      <circle cx="50" cy="50" r="50" fill="#1E293B" />
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M49.999 0C22.385 0 0 22.385 0 50C0 77.615 22.385 100 49.999 100C77.615 100 100 77.615 100 50C100 22.385 77.615 0 49.999 0ZM34.52 64.928C42.84 64.928 49.563 58.205 49.563 49.885C49.563 41.565 42.84 34.842 34.52 34.842C26.2 34.842 19.477 41.565 19.477 49.885C19.477 58.205 26.2 64.928 34.52 64.928Z"
-        fill="hsl(var(--primary))"
+        d="M34.5 70.5C34.5 70.5 30.5 58.5 45.5 57.5C60.5 56.5 56 46 56 46"
+        stroke="#3B82F6"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
       />
       <path
-        d="M65.48 35.072C57.16 35.072 50.437 41.795 50.437 50.115C50.437 58.435 57.16 65.158 65.48 65.158C73.8 65.158 80.523 58.435 80.523 50.115C80.523 41.795 73.8 35.072 65.48 35.072Z"
-        fill="hsl(var(--background))"
+        d="M62.5 32C59.1863 32 56.5 35.134 56.5 39C56.5 44.5 62.5 50 62.5 50C62.5 50 68.5 44.5 68.5 39C68.5 35.134 65.8137 32 62.5 32Z"
+        stroke="#FBBF24"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
       />
+      <circle cx="65.5" cy="53.5" r="3.5" fill="#4ADE80" />
+      <circle cx="31" cy="62" r="5" fill="#EF4444" />
     </svg>
   );
 }
