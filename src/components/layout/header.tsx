@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Search, User, Heart, ShoppingCart, Truck, Phone } from 'lucide-react';
+import { Search, User, Heart, ShoppingCart } from 'lucide-react';
 import { Logo } from '@/components/icons/logo';
 
 const navLinks = [
@@ -19,24 +19,6 @@ const navLinks = [
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-background shadow-sm">
-      <div className="bg-gray-900 text-white text-xs">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-8">
-            <div className="flex items-center gap-2">
-                <Truck className="h-4 w-4" />
-                <span>Envío gratis en compras de más de $499</span>
-            </div>
-            <div className="hidden md:flex items-center gap-6">
-                <Link href="#" className="hover:underline">Acerca de</Link>
-                <Link href="#" className="hover:underline">Contacto</Link>
-                <Link href="#" className="hover:underline">Asistencia</Link>
-                <div className="flex items-center gap-2">
-                    <Phone className="h-4 w-4" />
-                    <span>Llama +52-1-33-12345678</span>
-                </div>
-            </div>
-        </div>
-      </div>
-
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center">
