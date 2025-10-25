@@ -17,7 +17,7 @@ export function Logo() {
           strokeLinejoin="round"
         />
         <circle cx="12" cy="10" r="3" stroke="#FBBC05" strokeWidth="2" />
-        <circle cx="12" cy="4" r="2" fill="#34A853" />
+        <circle cx="12" cy="4.5" r="2" fill="#34A853" />
       </svg>
       <span className="font-bold text-xl text-white">SisiApp</span>
     </div>
