@@ -9,6 +9,15 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
+          <div className="relative w-full h-full bg-[#d8edea]">
+            <Image
+              src="https://picsum.photos/seed/gps/600/400"
+              alt="Mapa de GPS"
+              fill
+              className="object-cover"
+              data-ai-hint="gps route"
+            />
+          </div>
           <div className="flex items-center justify-center p-8 md:p-12 bg-[#d8edea]">
             <div className="max-w-md text-center md:text-left">
               <p className="text-primary/80">Confiable y accesible para todos</p>
@@ -25,16 +34,6 @@ export default function Home() {
                 Reservar una cita online
               </Button>
             </div>
-          </div>
-          <div className="relative h-full min-h-[400px] md:min-h-0 flex items-center justify-center bg-[#d8edea] p-8">
-            <Image
-              src="https://picsum.photos/seed/gps/600/400"
-              alt="Mapa de GPS"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg"
-              data-ai-hint="gps route"
-            />
           </div>
         </section>
         
