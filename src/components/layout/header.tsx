@@ -33,10 +33,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Button variant="outline" className="text-primary border-primary hover:bg-primary/10">
-            <LogIn className="mr-2 h-5 w-5" />
-            <span>Entrar</span>
-          </Button>
+          {/* The "Entrar" button has been removed */}
         </div>
       </div>
     </header>
