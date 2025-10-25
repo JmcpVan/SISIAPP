@@ -43,8 +43,8 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <section className="grid md:grid-cols-2 min-h-[calc(100vh-80px)]">
-          <div className="relative w-full h-full">
-            <Carousel 
+          <div className="relative w-full h-[calc(100vh-80px)]">
+            <Carousel
               className="w-full h-full"
               plugins={[
                 Autoplay({
@@ -55,7 +55,7 @@ export default function Home() {
                 loop: true,
               }}
             >
-              <CarouselContent className="h-[calc(100vh-80px)]">
+              <CarouselContent>
                 {PlaceHolderImages.map((image) => (
                   <CarouselItem key={image.id} className="h-full">
                     <div className="relative w-full h-full">
