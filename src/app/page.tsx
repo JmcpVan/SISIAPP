@@ -12,6 +12,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Footer } from '@/components/layout/footer';
 import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Wrench,
@@ -183,13 +184,13 @@ export default function Home() {
             </div>
         </section>
 
-        <section id="seguridad" className="py-12 md:py-24 px-8 md:px-12">
-            <div>
-                <div className="flex mb-4">
-                    <ShieldCheck className="h-12 w-12 text-primary" />
-                </div>
-                <h2 className="text-3xl font-bold text-foreground">SisiApp, tu seguridad garantizada</h2>
-                <p className="mt-4 text-lg text-muted-foreground">Profesionales verificados, tranquilidad garantizada, enfocado en la validación y tu seguridad.</p>
+        <section id="legal" className="py-12 md:py-24 px-8 md:px-12">
+            <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl font-bold text-foreground mb-4">Aviso Legal</h2>
+                <div className="text-muted-foreground space-y-4 text-justify">
+              <p>El uso de SisiApp está sujeto a los términos y condiciones descritos en este aviso. Al utilizar la aplicación, aceptas cumplir con todas las políticas y regulaciones aplicables. La información proporcionada en esta plataforma no constituye asesoramiento profesional y debe ser utilizada únicamente con fines informativos.</p>
+              <p>SisiApp no se hace responsable de los acuerdos o transacciones realizadas entre usuarios y proveedores de servicios. Recomendamos a los usuarios verificar las credenciales y la idoneidad de los profesionales antes de contratar cualquier servicio. Todos los profesionales registrados en la plataforma han pasado por un proceso de verificación, pero la responsabilidad final recae en el usuario.</p>
+            </div>
             </div>
         </section>
 
@@ -205,6 +206,38 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-foreground pt-4">3. Seguridad de los Datos</h3>
               <p>Implementamos medidas de seguridad técnicas y organizativas para proteger tu información personal contra el acceso no autorizado, la alteración, la divulgación o la destrucción. Sin embargo, ningún método de transmisión por Internet o de almacenamiento electrónico es 100% seguro.</p>
             </div>
+          </div>
+        </section>
+        
+        <section id="help" className="py-12 md:py-24 bg-background px-8 md:px-12">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-foreground mb-8">Preguntas Frecuentes (Ayuda)</h2>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>¿Cómo funciona la verificación de profesionales?</AccordionTrigger>
+                <AccordionContent>
+                  Todos nuestros profesionales pasan por un riguroso proceso de verificación que incluye la validación de su identidad, antecedentes y credenciales profesionales para garantizar tu seguridad y confianza.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger>¿Cómo se procesan los pagos?</AccordionTrigger>
+                <AccordionContent>
+                  Los pagos se procesan de forma segura a través de nuestra plataforma. Puedes añadir tu tarjeta de crédito o débito y todos los pagos se realizarán una vez que confirmes que el servicio ha sido completado a tu satisfacción.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger>¿Qué hago si tengo un problema con un servicio?</AccordionTrigger>
+                <AccordionContent>
+                  Si tienes algún problema, puedes contactar a nuestro equipo de soporte 24/7 a través de la sección de "Contacto" o directamente desde el detalle del servicio en la aplicación. Estamos aquí para ayudarte a resolver cualquier inconveniente.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger>¿Puedo cancelar un servicio?</AccordionTrigger>
+                <AccordionContent>
+                  Sí, puedes cancelar un servicio. Por favor, consulta nuestras políticas de cancelación en los Términos de Servicio para entender los plazos y posibles cargos que podrían aplicarse.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </section>
 

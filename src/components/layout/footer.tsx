@@ -28,13 +28,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-white/80 transition-colors">
-                  Póliza de Seguro
+                <Link href="#contacto" className="text-sm hover:text-white/80 transition-colors">
+                  Contacto
                 </Link>
               </li>
               <li>
-                <Link href="#contacto" className="text-sm hover:text-white/80 transition-colors">
-                  Contacto
+                <Link href="#help" className="text-sm hover:text-white/80 transition-colors">
+                  Ayuda
                 </Link>
               </li>
             </ul>
@@ -50,6 +50,11 @@ export function Footer() {
               <li>
                 <Link href="#privacy" className="text-sm hover:text-white/80 transition-colors">
                   Aviso de Privacidad
+                </Link>
+              </li>
+              <li>
+                <Link href="#legal" className="text-sm hover:text-white/80 transition-colors">
+                  Aviso Legal
                 </Link>
               </li>
             </ul>

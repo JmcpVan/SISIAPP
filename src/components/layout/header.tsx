@@ -9,9 +9,10 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { href: '#', label: 'Acerca de' },
   { href: '#servicios', label: 'Servicios' },
-  { href: '#', label: 'Póliza de Seguro' },
+  { href: '#legal', label: 'Legal' },
   { href: '#contacto', label: 'Contacto' },
   { href: '#privacy', label: 'Privacidad' },
+  { href: '#help', label: 'Ayuda' },
 ];
 
 export function Header() {
