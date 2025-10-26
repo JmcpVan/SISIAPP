@@ -124,6 +124,9 @@ export default function TermsPage() {
                     <p>Las reclamaciones por infracción de derechos de autor deberán enviarse al agente designado de SisiApp. En la República Dominicana, Usted podrá ponerse en contacto con la siguiente dirección de correo electrónico: info.consumidor@SisiApp.com</p>
                     <h4 className="text-lg font-semibold text-foreground pt-2">Notificaciones.</h4>
                     <p>SisiApp podrá notificar por medio de una notificación general en los Servicios, mediante un correo electrónico enviado a su dirección electrónica y/o en su Cuenta de SisiApp o por comunicación escrita enviada a su dirección, según lo dispuesto en su Cuenta. Usted podrá notificar a SisiApp por comunicación escrita a la dirección de SisiApp en Santo Domingo Oeste, Calle Praderas I, #4 Rep. Dominicana o al siguiente correo electrónico: info.consumidor@SisiApp.com</p>
+                    <h4 className="text-lg font-semibold text-foreground pt-2">Disposiciones generales.</h4>
+                    <p>Usted no podrá ceder ni transferir estas Condiciones, en todo o en parte, sin el consentimiento previo por escrito de SisiApp. Usted da su aprobación a SisiApp para ceder o transferir estas Condiciones, en todo o en parte, incluido a: (i) una subsidiaria o un afiliado; (ii) un adquirente del capital, del negocio o de los activos de SisiApp; o (iii) un sucesor por fusión. No existe entre usted, SisiApp o cualquier Tercer proveedor una empresa conjunta o relación de socios, empleo o agencia como resultado del contrato entre usted y SisiApp o del uso de los Servicios.</p>
+                    <p>Si cualquier disposición de estas Condiciones se considerara ilegal, nula o inexigible, ya sea en su totalidad o en parte, de conformidad con cualquier legislación, dicha disposición o parte de esta se considerará que no forma parte de estas Condiciones, aunque la legalidad, validez y exigibilidad del resto de las disposiciones de estas Condiciones no se verá afectada. En ese caso, las partes deberán reemplazar dicha disposición ilegal, nula o inexigible, en todo o en parte por una disposición legal, válida y exigible que tenga, en la medida de lo posible, un efecto similar al que tenía la disposición ilegal, nula o inexigible, dados los contenidos y el propósito de estas Condiciones. Estas Condiciones constituyen el contrato íntegro y el entendimiento entre las partes en relación con el objeto.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -135,5 +138,7 @@ export default function TermsPage() {
     </div>
   );
 }
+
+    
 
     
