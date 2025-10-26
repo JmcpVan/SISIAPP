@@ -131,7 +131,7 @@ export default function TermsPage() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-8">
-                <AccordionTrigger className="text-xl font-semibold">8. Política de Usuarios</AccordionTrigger>
+                <AccordionTrigger className="text-xl font-semibold">Política de Usuarios</AccordionTrigger>
                 <AccordionContent>
                   <div className="text-muted-foreground space-y-4 text-justify pt-4">
                     <p>Contenido provisional para la política de usuarios.</p>
@@ -146,3 +146,5 @@ export default function TermsPage() {
     </div>
   );
 }
+
+    
