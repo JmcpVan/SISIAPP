@@ -91,6 +91,42 @@ export default function TermsPage() {
                   </div>
                 </AccordionContent>
               </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="text-xl font-semibold">5. Exclusión de garantías; Responsabilidades e Indemnidad.</AccordionTrigger>
+                <AccordionContent>
+                  <div className="text-muted-foreground space-y-4 text-justify pt-4">
+                    <h4 className="text-lg font-semibold text-foreground pt-2">EXCLUSIÓN DE GARANTÍAS.</h4>
+                    <p>EN LA MEDIDA EN QUE NO SEA CONTRARIO A LA LEY APLICABLE, LOS SERVICIOS SE PROPORCIONAN “TAL CUAL” Y “COMO ESTÁN DISPONIBLES” SIN QUE SISIAPP OTORGUE GARANTÍA, EXPRESA, IMPLÍCITA O ESTATUTARIA, NO EXPRESAMENTE ESTABLECIDA EN ESTAS CONDICIONES, INCLUIDAS LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD, IDONEIDAD PARA UN FIN PARTICULAR Y NO VIOLACIÓN. ADEMÁS, SISIAPP NO HACE DECLARACIÓN NI PRESTA GARANTÍA ALGUNA RELATIVA A LA FIABILIDAD, PUNTUALIDAD, CALIDAD, IDONEIDAD O DISPONIBILIDAD DE LOS SERVICIOS O CUALQUIERA DE LOS SERVICIOS O BIENES SOLICITADOS A TRAVÉS DEL USO DE LOS SERVICIOS, O QUE LOS SERVICIOS NO SERÁN INTERRUMPIDOS O ESTARÁN LIBRES DE ERRORES. EN CASO DE DETECTARSE POR PARTE DE SISIAPP ALGÚN ERROR O FALLA RELACIONADO CON LOS SERVICIOS, LE SERÁ INFORMADO A USTED. LA CALIDAD, IDONEIDAD, SEGURIDAD O HABILIDAD DE LOS SERVICIOS PROVEÍDOS POR TERCEROS PROVEEDORES SERÁ DE EXCLUSIVA RESPONSABILIDAD DE ÉSTOS. USTED ACUERDA QUE TODO RIESGO DERIVADO DE SU USO DE LOS SERVICIOS Y CUALQUIER SERVICIO O BIEN SOLICITADO EN RELACIÓN CON AQUELLOS SERÁ ÚNICAMENTE SUYO, EN LA MÁXIMA MEDIDA PERMITIDA PELA LEI APLICABLE.</p>
+                    <h4 className="text-lg font-semibold text-foreground pt-2">RESPONSABILIDADES.</h4>
+                    <p>LA CALIDAD, IDONEIDAD, SEGURIDAD O HABILIDAD DE LOS SERVICIOS PRESTADOS POR TERCEROS PROVEEDORES INDEPENDIENTES, SERÁ DE EXCLUSIVA RESPONSABILIDAD DE ÉSTOS.</p>
+                    <p>USTED SERÁ EL ÚNICO RESPONSABLE DE TODOS LOS DAÑOS Y RELACIONADOS O DERIVADOS DEL USO NEGLIGENTE DE SU PARTE DE LOS SERVICIOS. EN CONSECUENCIA, USTED SERÁ RESPONSABLE DE CUALQUIER DAÑO, RESPONSABILIDAD O PÉRDIDA QUE DERIVEN DE: (I) SU USO O DEPENDENCIA DE LOS SERVICIOS O SU INCAPACIDAD PARA ACCEDER O UTILIZAR LOS SERVICIOS; O (ii) CUALQUIER TRANSACCIÓN O RELACIÓN ENTRE USTED Y CUALQUIER TERCERO PROVEEDOR. USTED RECONOCE QUE LOS EVENTOS QUE VAYAN MÁS ALLÁ DEL CONTROL RAZONABLE DE SISIAPP PODRÁN CAUSAR RETRASO O FALTA DE EJECUCIÓN. USTED RECONOCE QUE LOS TERCEROS PROVEEDORES INDEPENDIENTES DE TRANSPORTE QUE PRESTEN SERVICIOS DE TRANSPORTE SOLICITADOS A TRAVÉS DE ALGUNAS MARCAS DE PEDIDOS PODRÁN OFRECER SERVICIOS DE COCHE COMPARTIDO O ENTRE PARES (PEER-TO-PEER) Y PUEDE QUE NO DISPONGAN DE LA LICENCIA O DEL PERMISO PROFESIONAL. SALVO QUE SE ACREDITE DOLO O NEGLIGENCIA GRAVE DE PARTE DE SISIAPP Y EN LA MEDIDA QUE NO SEA CONTRARIO A LA LEY APLICABLE.</p>
+                    <p>USTED PODRÁ UTILIZAR LOS SERVICIOS DE SISIAPP PARA SOLICITAR Y PLANIFICAR SERVICIOS DE CUALQUIER TIPO, CON TERCEROS PROVEEDORES Y SERÁN LOS TERCEROS PROVEEDORES LOS ÚNICOS RESPONSABLES HACIA USTED EN RELACIÓN CON CUALQUIER SERVICIO DE LOS OFRECIDOS Y PRESTADO A USTED POR ÉSTOS. SERA USTED COMO SOLICITANTE (CLIENTE) EL RESPONSABLE DE ESTAR PRESENTE Y ASEGURANDO LA VIGILANCIA DEL PROVEEDOR MIENTRAS PERMANEZCA EN SUS INSTALACIONES OFRECIENDO SUS SERVICIOS, POR LO QUE DECLARA QUE LIBERA DE CUALQUIER RESPONSABILIDAD A SISIAPP DE CUALQUIER INCONVENIENTE, ACCIDENTE O SUSTRACCION DE EFECTOS O ARTICULOS DEJADOS EN SU ENTORNO, ASÍ COMO CUALQUIER DAÑO SUFRIDO A SU PERSONA FISICA O A SU PROPIEDAD.</p>
+                    <p>LAS LIMITACIONES EN ESTE APARTADO NO PRETENDEN LIMITAR LA RESPONSABILIDAD O ALTERAR SUS DERECHOS COMO CONSUMIDOR QUE NO PUEDAN EXCLUIRSE SEGÚN LA LEY APLICABLE.</p>
+                    <h4 className="text-lg font-semibold text-foreground pt-2">INDEMNIDAD.</h4>
+                    <p>USTED ACUERDA MANTENER INDEMNES Y RESPONDER FRENTE A SISIAPP Y SUS CONSEJEROS, DIRECTORES, EMPLEADOS Y AGENTES POR CUALQUIER RECLAMACIÓN, DEMANDA, PÉRDIDA, RESPONSABILIDAD Y GASTO (INCLUIDOS LOS HONORARIOS DE ABOGADOS) QUE DERIVEN DE: (I) SU USO DOLOSO O NEGLIGENTE DE LOS SERVICIOS O SERVICIOS O BIENES OBTENIDOS A TRAVÉS DE SU USO DE LOS SERVICIOS; (II) SU INCUMPLIMIENTO O VIOLACIÓN DE CUALQUIERA DE ESTAS CONDICIONES; (III) EL USO POR PARTE DE SISIAPP DE SU CONTENIDO DE USUARIO; O (IV) SU INFRACCIÓN DE LOS DERECHOS DE CUALQUIER TERCERO, INCLUIDOS TERCEROS PROVEEDORES.</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger className="text-xl font-semibold">6. Legislación aplicable y resolución de controversias.</AccordionTrigger>
+                <AccordionContent>
+                  <div className="text-muted-foreground space-y-4 text-justify pt-4">
+                    <p>De conformidad con lo establecido en la Ley General de Protección de los Derechos del Consumidor o Usuario, las controversias relacionadas con el incumplimiento o violación, rescisión, ejecucción o el uso del Sitio web, en virtud de la protección al consumidor (“Disputas de Protección al Consumidor”), se regirán por las leyes de la República Dominicana. Las partes podrán, de mutuo acuerdo, someter la Disputas de Protección al Consumidor a los tribunales de la República Dominicana, competentes en la materia.</p>
+                    <p>En lo referente a las demás controversias que resulten de las presentes Condiciones o que se relacionen en gran parte con ellas, incluyendo las relativas a su validez, interpretación y exigibilidad (cualquier “Disputa”), las presentes Condiciones se regirán e interpretarán exclusivamente en virtud de la legislación de la República Dominicana.</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-7">
+                <AccordionTrigger className="text-xl font-semibold">7. Otras disposiciones</AccordionTrigger>
+                <AccordionContent>
+                  <div className="text-muted-foreground space-y-4 text-justify pt-4">
+                    <h4 className="text-lg font-semibold text-foreground pt-2">Reclamaciones por infracción de derechos de autor.</h4>
+                    <p>Las reclamaciones por infracción de derechos de autor deberán enviarse al agente designado de SisiApp. En la República Dominicana, Usted podrá ponerse en contacto con la siguiente dirección de correo electrónico: info.consumidor@SisiApp.com</p>
+                    <h4 className="text-lg font-semibold text-foreground pt-2">Notificaciones.</h4>
+                    <p>SisiApp podrá notificar por medio de una notificación general en los Servicios, mediante un correo electrónico enviado a su dirección electrónica y/o en su Cuenta de SisiApp o por comunicación escrita enviada a su dirección, según lo dispuesto en su Cuenta. Usted podrá notificar a SisiApp por comunicación escrita a la dirección de SisiApp en Santo Domingo Oeste, Calle Praderas I, #4 Rep. Dominicana o al siguiente correo electrónico: info.consumidor@SisiApp.com</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
             </Accordion>
           </div>
         </section>
@@ -99,3 +135,5 @@ export default function TermsPage() {
     </div>
   );
 }
+
+    
