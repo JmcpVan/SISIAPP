@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/#legal', label: 'Legal' },
   { href: '/#contacto', label: 'Contacto' },
   { href: '/privacy', label: 'Privacidad' },
+  { href: '/terms', label: 'Términos y Condiciones' },
   { href: '/#help', label: 'Ayuda' },
 ];
 

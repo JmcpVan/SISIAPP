@@ -43,7 +43,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold">Legal</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="#" className="text-sm hover:text-white/80 transition-colors">
+                <Link href="/terms" className="text-sm hover:text-white/80 transition-colors">
                   Términos de Servicio
                 </Link>
               </li>
