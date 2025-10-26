@@ -322,7 +322,7 @@ export default function TermsPage() {
                 <AccordionContent>
                   <div className="text-muted-foreground space-y-4 text-justify pt-4">
                     <p>Los proveedores y clientes, usuarios de SisiApp pueden dar y recibir calificaciones, así como dar comentarios sobre cómo fue el producto o servicio brindado.</p>
-                    <p>Las calificaciones promedio mínimas pueden variar en cada ciudad en función de factores como las diferencias culturales en la forma en que las personas de diferentes ciudades se califican entre sí. Los proveedores y clientes  que no alcancen las calificaciones promedio mínimas para su ciudad pueden perder el acceso a la totalidad o a parte de la Plataforma SisiApp. Si sus calificaciones se acercan al límite mínimo, se lo informaremos y es posible que compartamos información que pueda ayudarlo a mejorar sus calificaciones.</p>
+                    <p>Las calificaciones promedio mínimas pueden variar en cada ciudad en función de factores como las diferencias culturales en la forma en que las personas de diferentes ciudades se califican entre sí. Los proveedores y clientes  que no alcancen las calificaciones promedio mínimas para su ciudad pueden perder el acceso a la totalidad o parte de la Plataforma SisiApp. Si sus calificaciones se acercan al límite mínimo, se lo informaremos y es posible que compartamos información que pueda ayudarlo a mejorar sus calificaciones.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
