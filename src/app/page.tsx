@@ -54,7 +54,7 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 
 export default function Home() {
   const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true })
+    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })
   );
 
   const bgColors = ["bg-primary/80", "bg-google-blue/80", "bg-google-red/80"];
