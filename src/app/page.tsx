@@ -107,7 +107,7 @@ export default function Home() {
             </div>
         </section>
 
-        <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 mt-16">
+        <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 mt-16 pb-16">
           <div className="flex items-center gap-2 mb-4">
             <Users className="h-8 w-8 text-google-blue" />
             <h2 className="text-3xl font-bold text-foreground">Servicios más solicitados</h2>
@@ -142,7 +142,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contacto" className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 bg-background">
+        <section id="contacto" className="container mx-auto px-4 sm:px-6 lg:px-8 bg-background">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <div className="flex items-center gap-2 mb-8">
