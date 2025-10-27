@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail, HelpCircle, Users } from 'lucide-react';
-import { FeaturedServices } from '@/lib/placeholder-images';
+import { FeaturedServices, PlaceHolderImages } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
@@ -53,6 +53,7 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 };
 
 export default function Home() {
+  const heroImage = PlaceHolderImages.find(img => img.id === 'woman-paying');
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
@@ -82,7 +83,18 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-slide-in-right overflow-hidden h-[400px] md:h-[600px] flex items-center justify-center p-12">
-              <div className="w-full h-full transform -rotate-6 scale-125 rounded-[2rem] animate-change-bg-color"></div>
+              {heroImage && (
+                  <div className="absolute inset-0 transform -rotate-6 scale-125">
+                      <Image
+                          src={heroImage.imageUrl}
+                          alt={heroImage.description}
+                          fill
+                          className="object-cover rounded-[2rem]"
+                          data-ai-hint={heroImage.imageHint}
+                      />
+                      <div className="absolute inset-0 bg-google-blue/70 rounded-[2rem]"></div>
+                  </div>
+              )}
             </div>
           </div>
         </section>
