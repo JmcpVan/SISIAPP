@@ -84,19 +84,19 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-slide-in-right overflow-hidden min-h-[300px] md:h-[600px]">
-               <Carousel 
-                className="h-full w-full"
+              <Carousel
+                className="w-full h-full"
                 plugins={[
                   Autoplay({
                     delay: 2000,
                     stopOnInteraction: false,
                   }),
                 ]}
-                >
+              >
                 <CarouselContent className="h-full">
                   {bgColors.map((color, index) => (
-                    <CarouselItem key={index} className={`w-full h-full p-12 ${color} transform -rotate-6 scale-125 rounded-[2rem]`}>
-                      {/* El contenido de cada slide del carrusel va aquí si es necesario */}
+                    <CarouselItem key={index} className="p-12 h-full">
+                      <div className={`w-full h-full ${color} transform -rotate-6 scale-125 rounded-[2rem]`} />
                     </CarouselItem>
                   ))}
                 </CarouselContent>
