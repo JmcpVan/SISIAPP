@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail, HelpCircle, Users } from 'lucide-react';
-import { FeaturedServices, PlaceHolderImages } from '@/lib/placeholder-images';
+import { FeaturedServices, PlaceHolderImages, HeroSlides } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
@@ -83,17 +83,36 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-slide-in-right overflow-hidden h-[400px] md:h-[600px] flex items-center justify-center p-12">
+               <Carousel
+                className="absolute inset-0 w-full h-full"
+                plugins={[
+                  Autoplay({
+                    delay: 3000,
+                  }),
+                ]}
+                opts={{
+                  loop: true,
+                }}
+              >
+                <CarouselContent className="w-full h-full">
+                   {HeroSlides.map((slide) => (
+                    <CarouselItem key={slide.id} className="w-full h-full">
+                       <div className={`w-full h-full ${slide.bgColor} transform -rotate-6 scale-125 rounded-[2rem]`} />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+              </Carousel>
               {heroImage && (
-                  <div className="absolute inset-0 transform -rotate-6 scale-125">
-                      <Image
-                          src={heroImage.imageUrl}
-                          alt={heroImage.description}
-                          fill
-                          className="object-cover rounded-[2rem]"
-                          data-ai-hint={heroImage.imageHint}
-                      />
-                      <div className="absolute inset-0 bg-google-blue/70 rounded-[2rem]"></div>
-                  </div>
+                <div className="relative w-full h-full transform -rotate-6 scale-125 rounded-[2rem] overflow-hidden">
+                    <Image
+                        src={heroImage.imageUrl}
+                        alt={heroImage.description}
+                        fill
+                        className="object-cover"
+                        style={{ clipPath: 'polygon(0 0, 100% 0, 100% 50%, 0 50%)' }}
+                        data-ai-hint={heroImage.imageHint}
+                    />
+                </div>
               )}
             </div>
           </div>
