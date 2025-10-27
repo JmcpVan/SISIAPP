@@ -111,8 +111,8 @@ export default {
           },
         },
         'rotate-slow': {
-          '0%': { transform: 'rotate(-6deg)' },
-          '100%': { transform: 'rotate(354deg)' },
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
       },
       animation: {
