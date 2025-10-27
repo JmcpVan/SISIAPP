@@ -54,6 +54,7 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'woman-paying');
+  const backgroundColors = ['bg-primary', 'bg-google-red', 'bg-google-blue'];
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
@@ -83,11 +84,11 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-slide-in-right overflow-hidden h-[400px] md:h-[600px] flex items-center justify-center p-12">
-              <Carousel
+               <Carousel
                 className="absolute inset-0 w-full h-full"
                 plugins={[
                   Autoplay({
-                    delay: 3000,
+                    delay: 2000,
                   }),
                 ]}
                 opts={{
@@ -95,18 +96,10 @@ export default function Home() {
                 }}
               >
                 <CarouselContent className="w-full h-full -ml-0">
-                  {HeroSlides.map((slide) => (
-                    <CarouselItem key={slide.id} className="w-full h-full pl-0">
+                  {backgroundColors.map((color, index) => (
+                    <CarouselItem key={index} className="w-full h-full pl-0">
                       <div className="w-full h-full p-12">
-                         <div className="w-full h-full transform -rotate-6 scale-125 rounded-[2rem] overflow-hidden">
-                           <Image
-                            src={slide.imageUrl}
-                            alt={slide.description}
-                            fill
-                            className="object-cover"
-                            data-ai-hint={slide.imageHint}
-                          />
-                        </div>
+                         <div className={`w-full h-full transform -rotate-6 scale-125 rounded-[2rem] ${color}`} />
                       </div>
                     </CarouselItem>
                   ))}
