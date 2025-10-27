@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -83,38 +84,22 @@ export default function Home() {
               </div>
           </div>
            <div className="relative flex items-center justify-center p-8 animate-slide-in-right">
-            <Carousel
-              opts={{ loop: true }}
-              plugins={[
-                Autoplay({
-                  delay: 5000,
-                }),
-              ]}
-              className="w-full"
-            >
-              <CarouselContent>
-                {HeroSlides.map((slide) => (
-                  <CarouselItem key={slide.id}>
-                    <div className="relative">
-                      <div
-                        className={cn(
-                          'absolute inset-16 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
-                          slide.bgColor
-                        )}
-                      />
-                      <Image
-                        src={slide.imageUrl}
-                        alt={slide.description}
-                        width={550}
-                        height={367}
-                        data-ai-hint={slide.imageHint}
-                        className="relative w-11/12 rounded-[2rem] shadow-2xl"
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
+            <div className="relative">
+              <div
+                className={cn(
+                  'absolute inset-16 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
+                  'bg-google-blue'
+                )}
+              />
+              <Image
+                src={HeroSlides[0].imageUrl}
+                alt={HeroSlides[0].description}
+                width={550}
+                height={367}
+                data-ai-hint={HeroSlides[0].imageHint}
+                className="relative w-11/12 rounded-[2rem] shadow-2xl"
+              />
+            </div>
           </div>
         </section>
         
@@ -215,7 +200,7 @@ export default function Home() {
               <AccordionTrigger>¿Qué hago si tengo un problema con un servicio?</AccordionTrigger>
               <AccordionContent>
                 Si tienes algún problema, puedes contactar a nuestro equipo de soporte 24/7 a través de la sección de "Contacto" o directamente desde el detalle del servicio en la aplicación. Estamos aquí para ayudarte a resolver cualquier inconveniente.
-              </a-accordion>
+              </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger>¿Puedo cancelar un servicio?</AccordionTrigger>
