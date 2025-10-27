@@ -142,7 +142,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contacto" className="container mx-auto px-4 sm:px-6 lg:px-8 bg-background">
+        <section id="contacto" className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <div className="flex items-center gap-2 mb-8">
@@ -178,11 +178,11 @@ export default function Home() {
           </div>
         </section>
         
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-background flex justify-center">
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 flex justify-center">
             <HelpCircle className="h-16 w-16 text-google-blue" />
         </section>
 
-        <section id="help" className="container mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-24 bg-background">
+        <section id="help" className="container mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-24">
           <div className="flex items-center gap-2 mb-8">
             <h2 className="text-3xl font-bold text-foreground">Preguntas Frecuentes (Ayuda)</h2>
           </div>
