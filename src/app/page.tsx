@@ -107,6 +107,8 @@ export default function Home() {
             </div>
         </section>
         
+        <div className="h-16 bg-transparent" />
+
         <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 md:pb-16 scroll-mt-28">
           <div className="flex items-center gap-2 mb-4">
             <Users className="h-8 w-8 text-google-blue" />
