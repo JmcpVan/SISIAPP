@@ -99,7 +99,7 @@ export default function Home() {
             <div className="relative min-h-[300px] md:min-h-[500px] flex items-center justify-center animate-slide-in-right overflow-hidden">
                <div
                   className={cn(
-                    'absolute inset-4 transform -rotate-6 transition-colors duration-1000 rounded-[2rem]',
+                    'absolute inset-8 transform -rotate-6 transition-colors duration-1000 rounded-[2rem]',
                     currentBgColor
                   )}
                 />
