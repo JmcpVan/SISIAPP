@@ -1,18 +1,17 @@
+
 'use client';
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail, HelpCircle, Users } from 'lucide-react';
-import { FeaturedServices, PlaceHolderImages } from '@/lib/placeholder-images';
+import { FeaturedServices } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Footer } from '@/components/layout/footer';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import React from 'react';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import Autoplay from 'embla-carousel-autoplay';
 
 
 const iconComponents: { [key: string]: React.ElementType } = {
@@ -53,7 +52,6 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 };
 
 export default function Home() {
-  const backgroundColors = ['bg-primary', 'bg-google-red', 'bg-google-blue'];
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
@@ -83,27 +81,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-slide-in-right overflow-hidden h-[400px] md:h-[600px] flex items-center justify-center p-12">
-              <Carousel
-                className="absolute inset-0 w-full h-full"
-                plugins={[
-                  Autoplay({
-                    delay: 2000,
-                  }),
-                ]}
-                opts={{
-                  loop: true,
-                }}
-              >
-                <CarouselContent className="w-full h-full -ml-0">
-                  {backgroundColors.map((color, index) => (
-                    <CarouselItem key={index} className="w-full h-full pl-0">
-                      <div className="w-full h-full p-12">
-                         <div className={`w-full h-full transform -rotate-6 scale-125 rounded-[2rem] ${color}`} />
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-              </Carousel>
+              <div className="w-full h-full transform -rotate-6 scale-125 rounded-[2rem] animate-change-bg-color" />
             </div>
           </div>
         </section>
@@ -220,3 +198,5 @@ export default function Home() {
     </div>
   );
 }
+
+    

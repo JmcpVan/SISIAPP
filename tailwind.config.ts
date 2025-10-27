@@ -1,3 +1,4 @@
+
 import type {Config} from 'tailwindcss';
 
 export default {
@@ -110,14 +111,22 @@ export default {
             opacity: '1',
           },
         },
+        'change-bg-color': {
+          '0%, 100%': { backgroundColor: 'hsl(var(--primary))' },
+          '33.33%': { backgroundColor: '#DB4437' },
+          '66.66%': { backgroundColor: '#4285F4' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'slide-in-left': 'slide-in-left 0.8s ease-out forwards',
         'slide-in-right': 'slide-in-right 0.8s ease-out forwards',
+        'change-bg-color': 'change-bg-color 6s steps(1, end) infinite',
       },
     },
   },
   plugins: [require('tailwindcss-animate')],
 } satisfies Config;
+
+    
