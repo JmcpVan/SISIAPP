@@ -13,6 +13,9 @@ import { Footer } from '@/components/layout/footer';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { cn } from '@/lib/utils';
 import { useEffect, useState } from 'react';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
+
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Wrench,
@@ -53,16 +56,6 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 };
 
 export default function Home() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev === HeroSlides.length - 1 ? 0 : prev + 1));
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const activeSlide = HeroSlides[currentSlide];
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
@@ -90,21 +83,39 @@ export default function Home() {
                 </Button>
               </div>
           </div>
-          <div className="relative flex items-center justify-center p-8 animate-slide-in-right">
-            <div
-              className={cn(
-                'absolute inset-16 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
-                activeSlide.bgColor
-              )}
-            />
-            <Image
-              src={activeSlide.imageUrl}
-              alt={activeSlide.description}
-              width={550}
-              height={367}
-              data-ai-hint={activeSlide.imageHint}
-              className="relative w-11/12 rounded-[2rem] shadow-2xl transform -translate-y-24"
-            />
+           <div className="relative flex items-center justify-center p-8 animate-slide-in-right">
+            <Carousel
+              opts={{ loop: true }}
+              plugins={[
+                Autoplay({
+                  delay: 5000,
+                }),
+              ]}
+              className="w-full"
+            >
+              <CarouselContent>
+                {HeroSlides.map((slide) => (
+                  <CarouselItem key={slide.id}>
+                    <div className="relative">
+                      <div
+                        className={cn(
+                          'absolute inset-16 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
+                          slide.bgColor
+                        )}
+                      />
+                      <Image
+                        src={slide.imageUrl}
+                        alt={slide.description}
+                        width={550}
+                        height={367}
+                        data-ai-hint={slide.imageHint}
+                        className="relative w-11/12 rounded-[2rem] shadow-2xl"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
         </section>
         
