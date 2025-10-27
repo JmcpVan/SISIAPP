@@ -97,10 +97,10 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-              <div className="relative min-h-[300px] md:min-h-[500px] flex items-center justify-center animate-slide-in-right overflow-hidden rounded-[2rem]">
+              <div className="relative min-h-[300px] md:min-h-[500px] flex items-center justify-center animate-slide-in-right overflow-hidden">
                  <div
                     className={cn(
-                      'absolute inset-0 transform -rotate-6 transition-colors duration-1000',
+                      'absolute inset-4 transform -rotate-6 transition-colors duration-1000 rounded-[2rem]',
                       currentBgColor
                     )}
                   />
