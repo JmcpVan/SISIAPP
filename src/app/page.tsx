@@ -72,7 +72,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 pt-16">
         <section className="relative w-full grid md:grid-cols-2 gap-8 md:min-h-[70vh] overflow-hidden">
           <div className="flex flex-col justify-center animate-slide-in-left px-8 md:px-12 lg:px-24 py-16 md:py-0">
               <div>
@@ -106,8 +106,6 @@ export default function Home() {
               </div>
             </div>
         </section>
-        
-        <div className="h-32 bg-transparent" />
 
         <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-28">
           <div className="flex items-center gap-2 mb-4">
