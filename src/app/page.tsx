@@ -96,7 +96,7 @@ export default function Home() {
               </div>
           </div>
            <div className="relative flex items-center justify-center p-8 animate-slide-in-right overflow-hidden">
-              <div className="relative w-full h-full flex items-center justify-center">
+             <div className="relative w-full h-full md:h-[600px] overflow-hidden">
                 <div
                   className={cn(
                     'absolute inset-4 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
