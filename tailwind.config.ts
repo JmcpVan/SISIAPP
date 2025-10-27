@@ -110,17 +110,12 @@ export default {
             opacity: '1',
           },
         },
-        'rotate-slow': {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
-        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'slide-in-left': 'slide-in-left 0.8s ease-out forwards',
         'slide-in-right': 'slide-in-right 0.8s ease-out forwards',
-        'rotate-slow': 'rotate-slow 30s linear infinite',
       },
     },
   },
