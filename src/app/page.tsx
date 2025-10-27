@@ -11,9 +11,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Footer } from '@/components/layout/footer';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import React from 'react';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import Autoplay from 'embla-carousel-autoplay';
-
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Wrench,
@@ -53,7 +50,6 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 };
 
 export default function Home() {
-  const bgColors = ['bg-primary', 'bg-google-red', 'bg-google-blue'];
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
@@ -83,19 +79,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-slide-in-right overflow-hidden h-[300px] md:h-[600px] flex items-center justify-center p-12">
-              <Carousel
-                className="w-full h-full"
-                plugins={[Autoplay({ delay: 3000, stopOnInteraction: false })]}
-                opts={{ loop: true }}
-              >
-                <CarouselContent className="h-full">
-                  {bgColors.map((color, index) => (
-                    <CarouselItem key={index} className="h-full">
-                      <div className={`w-full h-full transform -rotate-6 scale-125 rounded-[2rem] ${color}`}></div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-              </Carousel>
+              <div className="w-full h-full transform -rotate-6 scale-125 rounded-[2rem] animate-change-bg-color"></div>
             </div>
           </div>
         </section>
