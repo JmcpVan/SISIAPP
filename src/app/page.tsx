@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail, HelpCircle, Users } from 'lucide-react';
-import { FeaturedServices, PlaceHolderImages, HeroSlides } from '@/lib/placeholder-images';
+import { FeaturedServices, PlaceHolderImages } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
@@ -53,7 +53,6 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 };
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'woman-paying');
   const backgroundColors = ['bg-primary', 'bg-google-red', 'bg-google-blue'];
 
   return (
@@ -84,7 +83,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-slide-in-right overflow-hidden h-[400px] md:h-[600px] flex items-center justify-center p-12">
-               <Carousel
+              <Carousel
                 className="absolute inset-0 w-full h-full"
                 plugins={[
                   Autoplay({
