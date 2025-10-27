@@ -73,7 +73,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-        <section className="w-full grid md:grid-cols-2 gap-8 md:min-h-[80vh]">
+      <section className="relative w-full grid md:grid-cols-2 gap-8 md:min-h-[60vh] overflow-hidden">
           <div className="flex flex-col justify-center animate-slide-in-left px-8 md:px-12 lg:px-24 py-16 md:py-0">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
@@ -105,10 +105,17 @@ export default function Home() {
                 />
               </div>
             </div>
+            <div className="absolute bottom-0 left-0 w-full text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full h-auto">
+                <path fill="currentColor" fillOpacity="1" d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,186.7C672,192,768,160,864,138.7C960,117,1056,107,1152,122.7C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                style={{
+                  color: 'hsl(var(--background))'
+                }}></path>
+              </svg>
+            </div>
         </section>
         
-        <div id="servicios">
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12 md:pb-16 scroll-mt-20">
+        <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 md:pb-16 scroll-mt-28">
           <div className="flex items-center gap-2 mb-4">
             <Users className="h-8 w-8 text-google-blue" />
             <h2 className="text-3xl font-bold text-foreground">Servicios más solicitados</h2>
@@ -142,7 +149,6 @@ export default function Home() {
             })}
           </div>
         </section>
-        </div>
 
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 bg-background">
           <div className="grid md:grid-cols-2 gap-12" id="contacto">
@@ -221,6 +227,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
-    
