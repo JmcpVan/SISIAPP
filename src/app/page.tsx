@@ -73,39 +73,43 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-      <section id="acerca-de" className="relative w-full grid md:grid-cols-2 gap-8 md:mt-8">
-          <div className="flex flex-col justify-center animate-slide-in-left px-8 md:px-12 lg:px-24 py-8 mt-12">
-              <div>
-                <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
-                  SisiApp
-                </h1>
-                <p className="mt-2 text-lg text-muted-foreground">
-                  Profesionales verificados, tranquilidad garantizada.
-                </p>
+      <section id="acerca-de" className="w-full py-16 md:py-24">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="flex flex-col justify-center animate-slide-in-left">
+                <div>
+                  <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
+                    SisiApp
+                  </h1>
+                  <p className="mt-2 text-lg text-muted-foreground">
+                    Profesionales verificados, tranquilidad garantizada.
+                  </p>
+                </div>
+                <div className="my-8">
+                  <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={256} height={256} className="mx-auto w-40 h-40 md:w-48 md:h-48" />
+                </div>
+                <div>
+                  <p className="mt-4 text-muted-foreground text-justify">
+                    En SisiApp creemos que la confianza y la comodidad van de la mano. Por eso, reunimos a los mejores profesionales verificados para que encuentres soluciones rápidas y seguras, desde el mantenimiento del hogar hasta el cuidado personal, todo en un solo lugar.
+                  </p>
+                  <Button size="lg" className="mt-8">
+                    Reservar tu servicio
+                  </Button>
+                </div>
               </div>
-              <div className="my-8">
-                <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={256} height={256} className="mx-auto w-40 h-40 md:w-48 md:h-48" />
-              </div>
-              <div>
-                <p className="mt-4 text-muted-foreground text-justify">
-                  En SisiApp creemos que la confianza y la comodidad van de la mano. Por eso, reunimos a los mejores profesionales verificados para que encuentres soluciones rápidas y seguras, desde el mantenimiento del hogar hasta el cuidado personal, todo en un solo lugar.
-                </p>
-                <Button size="lg" className="mt-8">
-                  Reservar tu servicio
-                </Button>
-              </div>
-          </div>
-           <div className="relative flex items-center justify-center p-8 animate-slide-in-right overflow-hidden">
-             <div
-                className={cn(
-                  'absolute inset-4 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
-                  currentBgColor
-                )}
-              />
+              <div className="relative min-h-[300px] md:min-h-[500px] flex items-center justify-center animate-slide-in-right overflow-hidden rounded-[2rem]">
+                 <div
+                    className={cn(
+                      'absolute inset-0 transform -rotate-6 transition-colors duration-1000',
+                      currentBgColor
+                    )}
+                  />
+                </div>
             </div>
+          </div>
         </section>
 
-        <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 mt-16 pb-16">
+        <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 pb-16">
           <div className="flex items-center gap-2 mb-4">
             <Users className="h-8 w-8 text-google-blue" />
             <h2 className="text-3xl font-bold text-foreground">Servicios más solicitados</h2>
