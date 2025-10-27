@@ -6,15 +6,13 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail, HelpCircle, Users } from 'lucide-react';
-import { FeaturedServices, HeroSlides, PlaceHolderImages } from '@/lib/placeholder-images';
+import { FeaturedServices } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Footer } from '@/components/layout/footer';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { cn } from '@/lib/utils';
-import { useEffect, useState } from 'react';
-
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Wrench,
@@ -56,24 +54,11 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 
 export default function Home() {
 
-  const [currentBgColor, setCurrentBgColor] = useState(HeroSlides[0].bgColor);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentBgColor(prevColor => {
-        const currentIndex = HeroSlides.findIndex(slide => slide.bgColor === prevColor);
-        const nextIndex = (currentIndex + 1) % HeroSlides.length;
-        return HeroSlides[nextIndex].bgColor;
-      });
-    }, 5000); // Change color every 5 seconds
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-      <section id="acerca-de" className="w-full py-8 md:pb-24">
+      <section id="acerca-de" className="w-full md:pb-24">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center animate-slide-in-left">
               <div>
@@ -99,8 +84,7 @@ export default function Home() {
             <div className="relative flex items-center justify-center animate-slide-in-right overflow-hidden md:h-[600px]">
                <div
                   className={cn(
-                    'absolute inset-8 transform -rotate-6 transition-colors duration-1000 rounded-[2rem]',
-                    currentBgColor
+                    'absolute inset-8 transform -rotate-6 rounded-[2rem] bg-google-blue'
                   )}
                 />
               </div>
