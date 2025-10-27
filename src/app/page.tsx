@@ -11,8 +11,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Footer } from '@/components/layout/footer';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import React from 'react';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import Autoplay from "embla-carousel-autoplay";
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Wrench,
@@ -35,9 +33,6 @@ const colorClasses: { [key: string]: string } = {
   'yellow-400': 'text-yellow-400',
   'red-500': 'text-red-500'
 };
-
-const bgColors = ['bg-primary', 'bg-google-blue', 'bg-google-red'];
-
 
 const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number }) => {
   return (
@@ -83,26 +78,8 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative animate-slide-in-right overflow-hidden min-h-[300px] md:h-[600px]">
-              <Carousel
-                className="w-full h-full"
-                plugins={[
-                  Autoplay({
-                    delay: 2000,
-                    stopOnInteraction: false,
-                  }),
-                ]}
-              >
-                <CarouselContent className="h-full">
-                  {bgColors.map((color, index) => (
-                    <CarouselItem key={index} className="h-full">
-                      <div className="p-12 h-full">
-                        <div className={`w-full h-full ${color} transform -rotate-6 scale-125 rounded-[2rem]`} />
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-              </Carousel>
+            <div className="relative animate-slide-in-right overflow-hidden min-h-[300px] md:h-[600px] flex items-center justify-center p-12">
+               <div className="w-full h-full bg-primary transform -rotate-6 scale-125 rounded-[2rem]" />
             </div>
           </div>
         </section>
