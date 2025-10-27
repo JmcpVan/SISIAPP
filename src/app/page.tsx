@@ -13,8 +13,6 @@ import { Footer } from '@/components/layout/footer';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { cn } from '@/lib/utils';
 import { useEffect, useState } from 'react';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import Autoplay from 'embla-carousel-autoplay';
 
 
 const iconComponents: { [key: string]: React.ElementType } = {
@@ -74,8 +72,8 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-      <section className="w-full grid md:grid-cols-2 gap-8 md:min-h-[calc(100vh-5rem)]">
-          <div className="flex flex-col justify-center animate-slide-in-left px-8 md:px-12 lg:px-24 py-8 md:py-0 mb-16 md:mb-0">
+      <section className="w-full grid md:grid-cols-2 gap-8 md:min-h-[80vh]">
+          <div className="flex flex-col justify-center animate-slide-in-left px-8 md:px-12 lg:px-24 py-16 md:py-0">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
                   SisiApp
@@ -221,3 +219,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
