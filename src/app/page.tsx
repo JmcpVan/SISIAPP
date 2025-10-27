@@ -57,7 +57,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-      <section id="acerca-de" className="w-full md:pb-24 py-16">
+        <section id="acerca-de" className="w-full md:pb-24 py-16">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 animate-slide-in-left pt-16">
               <div>
