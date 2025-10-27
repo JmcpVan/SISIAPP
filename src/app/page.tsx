@@ -57,6 +57,19 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 
 export default function Home() {
 
+  const [currentBgColor, setCurrentBgColor] = useState(HeroSlides[0].bgColor);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBgColor(prevColor => {
+        const currentIndex = HeroSlides.findIndex(slide => slide.bgColor === prevColor);
+        const nextIndex = (currentIndex + 1) % HeroSlides.length;
+        return HeroSlides[nextIndex].bgColor;
+      });
+    }, 5000); // Change color every 5 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
@@ -84,23 +97,15 @@ export default function Home() {
               </div>
           </div>
            <div className="relative flex items-center justify-center p-8 animate-slide-in-right">
-            <div className="relative">
-              <div
-                className={cn(
-                  'absolute inset-16 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
-                  'bg-google-blue'
-                )}
-              />
-              <Image
-                src={HeroSlides[0].imageUrl}
-                alt={HeroSlides[0].description}
-                width={550}
-                height={367}
-                data-ai-hint={HeroSlides[0].imageHint}
-                className="relative w-11/12 rounded-[2rem] shadow-2xl"
-              />
+              <div className="relative w-full h-full flex items-center justify-center">
+                <div
+                  className={cn(
+                    'absolute inset-0 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
+                    currentBgColor
+                  )}
+                />
+              </div>
             </div>
-          </div>
         </section>
         
         <div id="servicios" className="relative"></div>
