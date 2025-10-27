@@ -85,3 +85,58 @@
     @apply bg-background text-foreground;
   }
 }
+
+.text-google-blue {
+  color: #4285F4;
+}
+
+.bg-google-blue {
+  background-color: #4285F4;
+}
+
+.bg-google-red {
+  background-color: #DB4437;
+}
+
+.text-pink-500 {
+  color: #ec4899;
+}
+.bg-pink-500 {
+  background-color: #ec4899;
+}
+.text-green-500 {
+  color: #22c55e;
+}
+.bg-green-500 {
+  background-color: #22c55e;
+}
+.text-purple-500 {
+  color: #a855f7;
+}
+.bg-purple-500 {
+  background-color: #a855f7;
+}
+.text-indigo-500 {
+  color: #6366f1;
+}
+.bg-indigo-500 {
+  background-color: #6366f1;
+}
+.text-orange-500 {
+  color: #f97316;
+}
+.bg-orange-500 {
+  background-color: #f97316;
+}
+.text-yellow-400 {
+  color: #facc15;
+}
+.bg-yellow-400 {
+  background-color: #facc15;
+}
+.text-red-500 {
+  color: #ef4444;
+}
+.bg-red-500 {
+  background-color: #ef4444;
+}

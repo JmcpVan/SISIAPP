@@ -6,13 +6,12 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail, HelpCircle, Users } from 'lucide-react';
-import { FeaturedServices } from '@/lib/placeholder-images';
+import { FeaturedServices, PlaceHolderImages } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Footer } from '@/components/layout/footer';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { cn } from '@/lib/utils';
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Wrench,
@@ -53,6 +52,7 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 };
 
 export default function Home() {
+  const heroImage = PlaceHolderImages.find(img => img.id === 'doctor-hero');
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
@@ -81,19 +81,24 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative flex items-center justify-center animate-slide-in-right overflow-hidden md:h-[600px]">
-               <div
-                  className={cn(
-                    'absolute inset-8 transform -rotate-6 rounded-[2rem] bg-google-blue'
-                  )}
+            <div className="relative animate-slide-in-right overflow-hidden md:h-[600px] flex items-center justify-center">
+              {heroImage && (
+                <Image
+                  src={heroImage.imageUrl}
+                  alt={heroImage.description}
+                  fill
+                  className="object-cover"
+                  data-ai-hint={heroImage.imageHint}
                 />
-              </div>
+              )}
+              <div className="absolute inset-8 transform -rotate-6 rounded-[2rem] bg-primary/80 backdrop-blur-sm"></div>
+            </div>
           </div>
         </section>
 
         <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:mt-16">
           <div className="flex items-center gap-2 mb-4">
-            <Users className="h-8 w-8 text-google-blue" />
+            <Users className="h-8 w-8 text-primary" />
             <h2 className="text-3xl font-bold text-foreground">Servicios más solicitados</h2>
           </div>
           <div className="text-muted-foreground mb-8">
@@ -130,7 +135,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <div className="flex items-center gap-2 mb-8">
-                <Mail className="h-8 w-8 text-google-blue" />
+                <Mail className="h-8 w-8 text-primary" />
                 <h2 className="text-3xl font-bold text-foreground">Contacto</h2>
               </div>
               <form className="space-y-6">
@@ -151,7 +156,7 @@ export default function Home() {
             </div>
             <div id="legal">
               <div className="flex items-center gap-2 mb-8">
-                <ShieldCheck className="h-8 w-8 text-google-blue" />
+                <ShieldCheck className="h-8 w-8 text-primary" />
                 <h2 className="text-3xl font-bold text-foreground">Aviso Legal</h2>
               </div>
               <div className="text-muted-foreground space-y-4 text-justify">
@@ -163,7 +168,7 @@ export default function Home() {
         </section>
         
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 flex justify-center">
-            <HelpCircle className="h-16 w-16 text-google-blue" />
+            <HelpCircle className="h-16 w-16 text-primary" />
         </section>
 
         <section id="help" className="container mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-24">
