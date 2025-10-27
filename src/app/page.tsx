@@ -96,7 +96,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative min-h-[300px] flex items-center justify-center animate-slide-in-right overflow-hidden md:h-[600px]">
+            <div className="relative flex items-center justify-center animate-slide-in-right overflow-hidden md:h-[600px]">
                <div
                   className={cn(
                     'absolute inset-8 transform -rotate-6 transition-colors duration-1000 rounded-[2rem]',
@@ -107,7 +107,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16">
           <div className="flex items-center gap-2 mb-4">
             <Users className="h-8 w-8 text-google-blue" />
             <h2 className="text-3xl font-bold text-foreground">Servicios más solicitados</h2>
