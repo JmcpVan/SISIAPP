@@ -1,4 +1,5 @@
 
+
 'use client';
 
 import Image from 'next/image';
@@ -72,7 +73,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-      <section className="w-full grid md:grid-cols-2 gap-8 md:min-h-[80vh]">
+        <section className="w-full grid md:grid-cols-2 gap-8 md:min-h-[80vh]">
           <div className="flex flex-col justify-center animate-slide-in-left px-8 md:px-12 lg:px-24 py-16 md:py-0">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
@@ -106,8 +107,8 @@ export default function Home() {
             </div>
         </section>
         
-        <div id="servicios" className="relative"></div>
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12 md:pb-16">
+        <div id="servicios">
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12 md:pb-16 scroll-mt-20">
           <div className="flex items-center gap-2 mb-4">
             <Users className="h-8 w-8 text-google-blue" />
             <h2 className="text-3xl font-bold text-foreground">Servicios más solicitados</h2>
@@ -141,6 +142,7 @@ export default function Home() {
             })}
           </div>
         </section>
+        </div>
 
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 bg-background">
           <div className="grid md:grid-cols-2 gap-12" id="contacto">
@@ -220,4 +222,5 @@ export default function Home() {
   );
 }
 
+    
     
