@@ -99,7 +99,7 @@ export default function Home() {
               <div className="relative w-full h-full flex items-center justify-center">
                 <div
                   className={cn(
-                    'absolute inset-0 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
+                    'absolute inset-4 rounded-[2rem] transform -rotate-6 transition-colors duration-1000',
                     currentBgColor
                   )}
                 />
