@@ -52,8 +52,6 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 };
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'doctor-hero');
-
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
@@ -81,17 +79,8 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative animate-slide-in-right overflow-hidden md:h-[600px] flex items-center justify-center">
-              {heroImage && (
-                <Image
-                  src={heroImage.imageUrl}
-                  alt={heroImage.description}
-                  fill
-                  className="object-cover"
-                  data-ai-hint={heroImage.imageHint}
-                />
-              )}
-              <div className="absolute inset-8 transform -rotate-6 rounded-[2rem] bg-primary/80 backdrop-blur-sm"></div>
+            <div className="relative animate-slide-in-right overflow-hidden min-h-[300px] md:h-[600px] flex items-center justify-center">
+              <div className="absolute inset-8 transform -rotate-6 rounded-[2rem] bg-primary/80 backdrop-blur-sm animate-rotate-slow"></div>
             </div>
           </div>
         </section>
