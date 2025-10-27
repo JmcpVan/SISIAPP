@@ -4,13 +4,15 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail, HelpCircle, Users } from 'lucide-react';
-import { FeaturedServices, HeroSlides } from '@/lib/placeholder-images';
+import { FeaturedServices } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Footer } from '@/components/layout/footer';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import React from 'react';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
+import Autoplay from "embla-carousel-autoplay";
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Wrench,
@@ -34,6 +36,8 @@ const colorClasses: { [key: string]: string } = {
   'red-500': 'text-red-500'
 };
 
+const bgColors = ['bg-primary', 'bg-google-blue', 'bg-google-red'];
+
 
 const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number }) => {
   return (
@@ -51,7 +55,6 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 };
 
 export default function Home() {
-  const heroImage = HeroSlides[0];
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
@@ -81,13 +84,23 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-slide-in-right overflow-hidden min-h-[300px] md:h-[600px]">
-              <Image
-                  src={heroImage.imageUrl}
-                  alt={heroImage.description}
-                  fill
-                  className="object-cover"
-                  data-ai-hint={heroImage.imageHint}
-                />
+               <Carousel 
+                className="h-full w-full"
+                plugins={[
+                  Autoplay({
+                    delay: 2000,
+                    stopOnInteraction: false,
+                  }),
+                ]}
+                >
+                <CarouselContent className="h-full">
+                  {bgColors.map((color, index) => (
+                    <CarouselItem key={index} className={`w-full h-full p-12 ${color} transform -rotate-6 scale-125 rounded-[2rem]`}>
+                      {/* El contenido de cada slide del carrusel va aquí si es necesario */}
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+              </Carousel>
             </div>
           </div>
         </section>
