@@ -95,8 +95,10 @@ export default function Home() {
               >
                 <CarouselContent className="h-full">
                   {bgColors.map((color, index) => (
-                    <CarouselItem key={index} className="p-12 h-full">
-                      <div className={`w-full h-full ${color} transform -rotate-6 scale-125 rounded-[2rem]`} />
+                    <CarouselItem key={index} className="h-full">
+                      <div className="p-12 h-full">
+                        <div className={`w-full h-full ${color} transform -rotate-6 scale-125 rounded-[2rem]`} />
+                      </div>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
