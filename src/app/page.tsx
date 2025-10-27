@@ -59,7 +59,7 @@ export default function Home() {
       <main className="flex-1">
         <section id="acerca-de" className="w-full md:pb-24 py-16">
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 animate-slide-in-left pt-16">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center animate-slide-in-left">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
                   SisiApp
@@ -80,7 +80,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative animate-slide-in-right overflow-hidden h-[500px] md:h-[700px] flex items-center">
+            <div className="relative animate-slide-in-right overflow-hidden h-[500px] md:h-[700px] flex justify-center items-center">
               <div className="w-full h-full transform -rotate-6 rounded-[2rem] animate-change-bg-color" />
             </div>
           </div>
