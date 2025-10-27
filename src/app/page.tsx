@@ -83,7 +83,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-slide-in-right overflow-hidden h-[400px] md:h-[600px] flex items-center justify-center p-12">
-               <Carousel
+              <Carousel
                 className="absolute inset-0 w-full h-full"
                 plugins={[
                   Autoplay({
@@ -94,26 +94,24 @@ export default function Home() {
                   loop: true,
                 }}
               >
-                <CarouselContent className="w-full h-full">
-                   {HeroSlides.map((slide) => (
-                    <CarouselItem key={slide.id} className="w-full h-full">
-                       <div className={`w-full h-full ${slide.bgColor} transform -rotate-6 scale-125 rounded-[2rem]`} />
+                <CarouselContent className="w-full h-full -ml-0">
+                  {HeroSlides.map((slide) => (
+                    <CarouselItem key={slide.id} className="w-full h-full pl-0">
+                      <div className="w-full h-full p-12">
+                         <div className="w-full h-full transform -rotate-6 scale-125 rounded-[2rem] overflow-hidden">
+                           <Image
+                            src={slide.imageUrl}
+                            alt={slide.description}
+                            fill
+                            className="object-cover"
+                            data-ai-hint={slide.imageHint}
+                          />
+                        </div>
+                      </div>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
               </Carousel>
-              {heroImage && (
-                <div className="relative w-full h-full transform -rotate-6 scale-125 rounded-[2rem] overflow-hidden">
-                    <Image
-                        src={heroImage.imageUrl}
-                        alt={heroImage.description}
-                        fill
-                        className="object-cover"
-                        style={{ clipPath: 'polygon(0 0, 100% 0, 100% 50%, 0 50%)' }}
-                        data-ai-hint={heroImage.imageHint}
-                    />
-                </div>
-              )}
             </div>
           </div>
         </section>
