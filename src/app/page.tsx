@@ -4,14 +4,12 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/header';
 import { ShieldCheck, User, Wrench, HeartHandshake, BookUser, HardHat, Dog, Scale, Star, Zap, Dumbbell, Mail, HelpCircle, Users } from 'lucide-react';
-import { FeaturedServices, PlaceHolderImages } from '@/lib/placeholder-images';
+import { FeaturedServices, HeroSlides } from '@/lib/placeholder-images';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Footer } from '@/components/layout/footer';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 import React from 'react';
 
 const iconComponents: { [key: string]: React.ElementType } = {
@@ -53,11 +51,7 @@ const Rating = ({ rating, maxRating = 5 }: { rating: number, maxRating?: number 
 };
 
 export default function Home() {
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })
-  );
-
-  const bgColors = ["bg-primary/80", "bg-google-blue/80", "bg-google-red/80"];
+  const heroImage = HeroSlides[0];
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
@@ -87,24 +81,13 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-slide-in-right overflow-hidden min-h-[300px] md:h-[600px]">
-               <Carousel
-                plugins={[plugin.current]}
-                className="w-full h-full"
-                opts={{
-                  loop: true,
-                }}
-              >
-                <CarouselContent className="h-full">
-                  {bgColors.map((color, index) => (
-                    <CarouselItem
-                      key={index}
-                      className={`p-8 transform -rotate-6 rounded-[2rem] backdrop-blur-sm ${color}`}
-                    >
-                      {/* El contenido visual es el propio item ahora */}
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-              </Carousel>
+              <Image
+                  src={heroImage.imageUrl}
+                  alt={heroImage.description}
+                  fill
+                  className="object-cover"
+                  data-ai-hint={heroImage.imageHint}
+                />
             </div>
           </div>
         </section>
