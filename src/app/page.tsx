@@ -216,7 +216,7 @@ export default function Home() {
               <AccordionTrigger>¿Qué hago si tengo un problema con un servicio?</AccordionTrigger>
               <AccordionContent>
                 Si tienes algún problema, puedes contactar a nuestro equipo de soporte 24/7 a través de la sección de "Contacto" o directamente desde el detalle del servicio en la aplicación. Estamos aquí para ayudarte a resolver cualquier inconveniente.
-              </AccordionContent>
+              </a-accordion>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger>¿Puedo cancelar un servicio?</AccordionTrigger>
