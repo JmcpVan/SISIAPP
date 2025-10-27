@@ -73,7 +73,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900/50">
       <Header />
       <main className="flex-1">
-      <section id="acerca-de" className="w-full py-8 md:py-12">
+      <section id="acerca-de" className="w-full py-8 md:pb-24">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center animate-slide-in-left">
               <div>
@@ -107,7 +107,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 md:pt-16 pb-16">
+        <section id="servicios" className="container mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:mt-16">
           <div className="flex items-center gap-2 mb-4">
             <Users className="h-8 w-8 text-google-blue" />
             <h2 className="text-3xl font-bold text-foreground">Servicios más solicitados</h2>
