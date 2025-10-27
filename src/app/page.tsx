@@ -96,7 +96,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative min-h-[300px] md:min-h-[600px] flex items-center justify-center animate-slide-in-right overflow-hidden">
+            <div className="relative min-h-[300px] flex items-center justify-center animate-slide-in-right overflow-hidden md:h-[600px]">
                <div
                   className={cn(
                     'absolute inset-8 transform -rotate-6 transition-colors duration-1000 rounded-[2rem]',
