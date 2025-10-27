@@ -80,7 +80,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative animate-slide-in-right overflow-hidden h-[400px] md:h-[600px] flex items-center justify-center p-12">
+            <div className="relative animate-slide-in-right overflow-hidden h-[500px] md:h-[700px] flex items-center justify-center p-12">
               <div className="w-full h-full transform -rotate-6 rounded-[2rem] animate-change-bg-color" />
             </div>
           </div>
