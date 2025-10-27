@@ -87,7 +87,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-slide-in-right overflow-hidden min-h-[300px] md:h-[600px]">
-              <Carousel
+               <Carousel
                 plugins={[plugin.current]}
                 className="w-full h-full"
                 opts={{
@@ -96,12 +96,11 @@ export default function Home() {
               >
                 <CarouselContent className="h-full">
                   {bgColors.map((color, index) => (
-                    <CarouselItem key={index} className="h-full">
-                      <div className="p-1 h-full">
-                        <div
-                          className={`absolute inset-8 transform -rotate-6 rounded-[2rem] backdrop-blur-sm ${color}`}
-                        ></div>
-                      </div>
+                    <CarouselItem
+                      key={index}
+                      className={`p-8 transform -rotate-6 rounded-[2rem] backdrop-blur-sm ${color}`}
+                    >
+                      {/* El contenido visual es el propio item ahora */}
                     </CarouselItem>
                   ))}
                 </CarouselContent>
