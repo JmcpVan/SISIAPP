@@ -112,8 +112,8 @@ export default {
         },
         'change-bg-color': {
           '0%, 100%': { backgroundColor: 'hsl(var(--primary))' },
-          '33%': { backgroundColor: '#DB4437' }, // google-red
-          '66%': { backgroundColor: '#4285F4' }, // google-blue
+          '33%': { backgroundColor: '#DB4437' },
+          '66%': { backgroundColor: '#4285F4' },
         }
       },
       animation: {
