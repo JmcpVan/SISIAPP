@@ -81,7 +81,7 @@ export default function Home() {
               </div>
                <div className="hidden md:flex items-center justify-center h-[500px]">
                 <div className="relative w-full h-full">
-                  <div className="absolute inset-0 bg-destructive transform -rotate-6 rounded-tl-[60px] rounded-tr-[80px] rounded-br-[60px] rounded-bl-[20px]"></div>
+                  <div className="absolute inset-0 bg-destructive transform -rotate-6 rounded-tl-[60px] rounded-tr-[20px] rounded-br-[60px] rounded-bl-[80px]"></div>
                 </div>
               </div>
             </div>

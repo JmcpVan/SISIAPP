@@ -15,9 +15,9 @@ export default {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
         'tl-60': '60px',
-        'tr-80': '80px',
+        'tr-20': '20px',
         'br-60': '60px',
-        'bl-20': '20px',
+        'bl-80': '80px',
       },
       fontFamily: {
         sans: ['"Inter"', 'sans-serif'],
