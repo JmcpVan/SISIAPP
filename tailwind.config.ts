@@ -10,6 +10,15 @@ export default {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
+        'tl-60': '60px',
+        'tr-80': '80px',
+        'br-60': '60px',
+        'bl-20': '20px',
+      },
       fontFamily: {
         sans: ['"Inter"', 'sans-serif'],
       },
@@ -69,11 +78,6 @@ export default {
           ring: 'hsl(var(--sidebar-ring))',
         },
       },
-      borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
-      },
       keyframes: {
         'accordion-down': {
           from: {
@@ -111,20 +115,16 @@ export default {
             opacity: '1',
           },
         },
-        'change-bg-color': {
-          '0%, 100%': { backgroundColor: '#4285F4' }, // google-blue
-          '33%': { backgroundColor: '#DB4437' }, // google-red
-          '66%': { backgroundColor: '#FFBB00' }, // primary
-        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'slide-in-left': 'slide-in-left 0.8s ease-out forwards',
         'slide-in-right': 'slide-in-right 0.8s ease-out forwards',
-        'change-bg-color': 'change-bg-color 10s ease-in-out infinite',
       },
     },
   },
   plugins: [require('tailwindcss-animate')],
 } satisfies Config;
+
+    

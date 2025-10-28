@@ -59,7 +59,7 @@ export default function Home() {
       <main className="flex-1">
       <section id="acerca-de" className="w-full py-16 md:py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12">
-            <div className="flex flex-col justify-center animate-slide-in-left text-center md:text-left items-center md:items-start">
+            <div className="flex flex-col justify-center text-center md:text-left items-center md:items-start">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
                   SisiApp
@@ -82,7 +82,7 @@ export default function Home() {
             </div>
             <div className="relative h-[500px] hidden md:flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 transform -rotate-6 scale-110">
-                    <div className="absolute inset-0 bg-google-blue rounded-tl-[60px] rounded-tr-[80px] rounded-br-[60px] rounded-bl-[20px] animate-change-bg-color"></div>
+                    <div className="absolute inset-0 bg-google-blue rounded-tl-[60px] rounded-tr-[80px] rounded-br-[60px] rounded-bl-[20px]"></div>
                     <div className="absolute -top-10 -right-10 w-24 h-24 bg-yellow-400 rounded-full opacity-70 animate-pulse"></div>
                     <div className="absolute -bottom-12 -left-12 w-32 h-32 bg-green-500 rounded-lg opacity-60 animate-pulse delay-75"></div>
                 </div>
@@ -202,3 +202,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
