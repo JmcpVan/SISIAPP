@@ -58,8 +58,8 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <section id="acerca-de" className="w-full py-16 md:py-24">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12">
-            <div className="flex flex-col justify-center animate-slide-in-left">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-1 gap-12">
+            <div className="flex flex-col justify-center animate-slide-in-left text-center md:text-left items-center md:items-start">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">
                   SisiApp
@@ -79,9 +79,6 @@ export default function Home() {
                   Reservar tu servicio
                 </Button>
               </div>
-            </div>
-            <div className="relative animate-slide-in-right flex items-center h-[500px] overflow-hidden">
-              <div className="w-full h-full transform -rotate-6 rounded-[2rem] animate-change-bg-color" />
             </div>
           </div>
         </section>
