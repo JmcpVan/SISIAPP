@@ -68,7 +68,7 @@ export default function Home() {
                     Profesionales verificados, tranquilidad garantizada.
                   </p>
                 <div className="my-8">
-                  <Image src="/img/logo-circular.svg" alt="SisiApp Logo" width={256} height={256} className="mx-auto md:mx-0 w-40 h-40 md:w-48 md:h-48" />
+                  <Image src="/img/logo-sisi.svg" alt="SisiApp Logo" width={256} height={256} className="mx-auto md:mx-0 w-40 h-40 md:w-48 md:h-48" />
                 </div>
                 <div>
                   <p className="mt-4 text-muted-foreground text-justify">
